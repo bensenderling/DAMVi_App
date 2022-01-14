@@ -9,9 +9,11 @@ h5_APDM.meta = h5info(file);
 for i = 1:length({h5_APDM.meta.Groups(2).Groups.Name})
     name = h5readatt(file,[h5_APDM.meta.Groups(2).Groups(i).Name '/Configuration'], 'Label 0');
     name = regexprep(name, {' ', char(0)}, {'_', ''});
-    h5_APDM.(name) = double(h5read(file,[h5_APDM.meta.Groups(2).Groups(i).Name '/Time']));
-    h5_APDM.(name) = (h5_APDM.(name) - h5_APDM.(name)(1))/1e6;
-    h5_APDM.(name)(:,2:4) = h5read(file, [h5_APDM.meta.Groups(2).Groups(i).Name '/Accelerometer'])';
+    time = double(h5read(file,[h5_APDM.meta.Groups(2).Groups(i).Name '/Time']));
+    h5_APDM.(name).freq = 1/mean(diff(time - time(1))/1e6);
+    h5_APDM.(name).data.acc = h5read(file, [h5_APDM.meta.Groups(2).Groups(i).Name '/Accelerometer'])';
+    h5_APDM.(name).data.mag = h5read(file, [h5_APDM.meta.Groups(2).Groups(i).Name '/Magnetometer'])';
+    h5_APDM.(name).data.gyr = h5read(file, [h5_APDM.meta.Groups(2).Groups(i).Name '/Gyroscope'])';
 end
 % 
 % figure

@@ -2,13 +2,14 @@ function results = analysis002_01_WESENS_SCT_RQA(data)
 
 %%
 
-x_RFoot = data.Lumbar(:,2);
-y_Lumbar = data.Lumbar(:,3);
-z_Lumbar = data.Lumbar(:,4);
+x_RFoot = data.Lumbar.data.acc(:,1);
+y_Lumbar = data.Lumbar.data.acc(:,2);
+z_Lumbar = data.Lumbar.data.acc(:,3);
+freq = data.Lumbar.freq;
 
-[tau_x_Lumbar,AMI_x_Lumbar] =AMI_Thomas(x_RFoot, 30);
-[tau_y_Lumbar,AMI_y_Lumbar] = AMI_Thomas(y_Lumbar, 30);
-[tau_z_Lumbar,AMI_z_Lumbar] = AMI_Thomas(z_Lumbar, 30);
+[tau_x_Lumbar,AMI_x_Lumbar] =AMI_Thomas(x_RFoot, freq/2);
+[tau_y_Lumbar,AMI_y_Lumbar] = AMI_Thomas(y_Lumbar, freq/2);
+[tau_z_Lumbar,AMI_z_Lumbar] = AMI_Thomas(z_Lumbar, freq/2);
 
 MaxDim = 12;
 Rtol = 15;
@@ -30,11 +31,29 @@ plotOption = 1;
 [RP_y_Lumbar, RESULTS_y_Lumbar] = RQA(y_Lumbar,TYPE,tau_y_Lumbar(1),dim_y_Lumbar,ZSCORE,NORM,SETPARA,SETVALUE,plotOption);
 [RP_z_Lumbar, RESULTS_z_Lumbar] = RQA(z_Lumbar,TYPE,tau_z_Lumbar(1),dim_z_Lumbar,ZSCORE,NORM,SETPARA,SETVALUE,plotOption);
 
+results.segment1{1,1} = 'Lumbar';
+results.component{1,1} = 'x';
+results.tau{1,1} = tau_x_Lumbar;
+results.tau_v2{1,1} = AMI_x_Lumbar;
+results.maxdim{1,1} = MaxDim;
+results.rtol{1,1} = Rtol;
+results.atol{1,1} = Atol;
+results.speed{1,1} = speed;
+results.dim{1,1} = dim_x_Lumbar;
+results.dim_v{1,1} = dE_x_Lumbar;
+results.type{1,1} = TYPE;
+results.zscore{1,1} = ZSCORE;
+results.norm{1,1} = NORM;
+results.setpara{1,1} = SETPARA;
+results.setvalue{1,1} = SETVALUE;
+results.recurrancePlot{1,1} = RP_x_Lumbar;
+results.recurranceResults{1,1} = RESULTS_x_Lumbar;
+
 %%
 
-x_RFoot = data.Right_Foot(:,2);
-y_RFoot = data.Right_Foot(:,3);
-z_RFoot = data.Right_Foot(:,4);
+x_RFoot = data.Right_Foot.data.acc(:,1);
+y_RFoot = data.Right_Foot.data.acc(:,2);
+z_RFoot = data.Right_Foot.data.acc(:,3);
 
 [tau_x_RFoot,AMI_x_RFoot] =AMI_Thomas(x_RFoot, 30);
 [tau_y_RFoot,AMI_y_RFoot] = AMI_Thomas(y_RFoot, 30);
@@ -61,9 +80,9 @@ plotOption = 1;
 
 %%
 
-x_LFoot = data.Left_Foot(:,2);
-y_LFoot = data.Left_Foot(:,3);
-z_LFoot = data.Left_Foot(:,4);
+x_LFoot = data.Left_Foot.data.acc(:,1);
+y_LFoot = data.Left_Foot.data.acc(:,2);
+z_LFoot = data.Left_Foot.data.acc(:,3);
 
 [tau_x_LFoot,AMI_x_LFoot] =AMI_Thomas(x_LFoot, 30);
 [tau_y_LFoot,AMI_y_LFoot] = AMI_Thomas(y_LFoot, 30);
