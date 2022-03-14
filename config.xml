@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struct>
+    <options>
+        <files>
+            <h5>APDM</h5>
+            <txt>V3D</txt>
+        </files>
+    </options>
+    <analysis>Time Lag</analysis>
+    <analysis>analysis_TimeLag</analysis>
+</struct>
