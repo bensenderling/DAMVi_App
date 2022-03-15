@@ -9,10 +9,14 @@ config.options.files.h5 = 'APDM';
 % Assign equipment names to the text file type option.
 config.options.files.txt = 'V3D';
 
+% Assign equipment names to the mat file type option.
+config.options.files.mat = 'BAR';
+
 % Create analysis options.
 config.analysis = {...
     'Time Lag', 'analysis_TimeLag',...
-    'FNN', 'analysis_FNN'};
+    'FNN', 'analysis_FNN',...
+    'RQA', 'analysis_RQA'};
 
 % Write the config file to an xml file.
 writestruct(config,'config.xml')
