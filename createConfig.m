@@ -11,7 +11,8 @@ config.options.files.txt = 'V3D';
 
 % Create analysis options.
 config.analysis = {...
-    'Time Lag', 'analysis_TimeLag'};
+    'Time Lag', 'analysis_TimeLag',...
+    'FNN', 'analysis_FNN'};
 
 % Write the config file to an xml file.
 writestruct(config,'config.xml')

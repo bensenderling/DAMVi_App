@@ -8,4 +8,6 @@
     </options>
     <analysis>Time Lag</analysis>
     <analysis>analysis_TimeLag</analysis>
+    <analysis>FNN</analysis>
+    <analysis>analysis_FNN</analysis>
 </struct>

@@ -1,4 +1,4 @@
-function dataout = load_v3d(file)
+function txt_V3D = load_txt_V3D(file)
 % [dataout] = load_v3d20200825(file)
 % inputs  - file, file path and name of a V3D text file
 % outputs - dataout, structure containing file from V3D text file
@@ -21,6 +21,7 @@ function dataout = load_v3d(file)
 % Mar 2022 - Updated by Ben Senderling, bsender@bu.edu
 %          - Incorporated into the Biomechanics Analysis and Reporting app
 %            for publishment.
+%          - Reformated output to meet developing BAR App standards.
 %
 % Copyright 2020 Movement Analysis Core, Center for Human Movement
 % Variability, University of Nebraska at Omaha
@@ -97,7 +98,7 @@ end
 
 %% Inport numeric data
 
-data = dlmread(file,'\t',5,0);
+data = readmatrix(file,'Delimiter','\t','NumHeaderLines',5);
 
 %% Assign data to fields
 
@@ -129,10 +130,9 @@ for j = 1:length(sources)
     type = strrep(type,' ','_');
     measure = strrep(measure,' ','_');
     dimension = strrep(dimension,' ','_');
-    num = sum(strcmp(fieldname,fields))+1;
+%     num = sum(strcmp(fieldname,fields))+1;
     
-%     if strcmp(
-    dataout.(sources{j}(1:end-4)).(type{j}).(folder{j}).(measure{j}).(dimension{j})(num,1) = {temp};
+    txt_V3D.([sources{j}(1:end-4) '_' type{j} '_' folder{j} '_' measure{j} '_' dimension{j}]).data = temp;
     
     fields{j} = fieldname;
     
