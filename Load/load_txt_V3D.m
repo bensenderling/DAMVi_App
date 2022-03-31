@@ -88,10 +88,10 @@ dimension(1) = [];
 
 clear data;
 
-% this if statement has not been tested
-if ~isempty(strfind(sources{1},'\')) %checks if long file names are used on the headers
+% Check if long file names are used and shorten them.
+if ~isempty(strfind(sources{1},'\')) 
     for i = 1:length(sources)
-        ind = strfind(sources{1},'\');
+        ind = strfind(sources{i},'\');
         sources{i} = sources{i}(ind(end)+1:end); % trims headers
     end
 end
