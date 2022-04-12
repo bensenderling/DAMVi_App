@@ -17,6 +17,12 @@
     <treatment>process_Treatment</treatment>
     <treatment>Segment</treatment>
     <treatment>process_Segment</treatment>
+    <treatment_general>Low-pass Filter</treatment_general>
+    <treatment_general>process_Treatment_LowPass</treatment_general>
+    <treatment_general>Resample</treatment_general>
+    <treatment_general>process_Treatment_Resample</treatment_general>
+    <segmentation_general>Threshold</segmentation_general>
+    <segmentation_general>process_Segment_Threshold</segmentation_general>
     <export>General</export>
     <export>BU Caltesting</export>
 </struct>
