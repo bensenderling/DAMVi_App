@@ -3,6 +3,16 @@ function createConfig
 % Create the structure that will be the conf file.
 config = struct;
 
+% Creates an empty directory to search for files. This will be remembered
+% after running the app the first time.
+config.directory = '';
+
+% Creates an empty directory to specify the database. This will be
+% remembered after running the app the first time. When a folder is
+% selected the app will check that all the needed subfolders are present
+% and if they aren't, create them.
+config.database = '';
+
 % Assign equipment names to the h5 file type option.
 config.options.files.h5 = 'APDM';
 
