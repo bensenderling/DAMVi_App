@@ -100,6 +100,10 @@ end
 
 data = readmatrix(file,'Delimiter','\t','NumHeaderLines',5);
 
+% Get the sampling frequency.
+freq = inputdlg('Please enter the sampling frequency', 'Sampling');
+freq = str2double(freq{1});
+
 %% Assign data to fields
 
 nlast = inf;
@@ -132,7 +136,17 @@ for j = 1:length(sources)
     dimension = strrep(dimension,' ','_');
 %     num = sum(strcmp(fieldname,fields))+1;
     
-    txt_V3D.([sources{j}(1:end-4) '_' type{j} '_' folder{j} '_' measure{j} '_' dimension{j}]).data = temp;
+    c = 1;
+    switch dimension{j}
+        case 'X'
+            c = 1;
+        case 'Y'
+            c = 2;
+        case 'Z'
+            c = 3;
+    end
+    txt_V3D.([sources{j}(1:end-4) '_' folder{j} '_' measure{j}]).data.(type{j})(:,c) = temp;
+    txt_V3D.([sources{j}(1:end-4) '_' folder{j} '_' measure{j}]).freq = freq;
     
     fields{j} = fieldname;
     
