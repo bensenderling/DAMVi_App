@@ -25,12 +25,22 @@
     <analysis>analysis_FNN</analysis>
     <analysis>RQA</analysis>
     <analysis>analysis_RQA</analysis>
+    <review>Raw Data</review>
+    <review>review_RAW</review>
     <review>Time Lag</review>
     <review>review_TimeLag</review>
     <review>FNN</review>
     <review>review_FNN</review>
     <review>RQA</review>
     <review>review_RQA</review>
+    <figures>1D</figures>
+    <figures></figures>
+    <figures>2D</figures>
+    <figures></figures>
+    <figures>3D</figures>
+    <figures></figures>
+    <figures>MD</figures>
+    <figures>figure_MD</figures>
     <export>General</export>
     <export>BU Caltesting</export>
 </struct>
