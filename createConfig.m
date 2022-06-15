@@ -22,6 +22,9 @@ config.options.files.txt = 'V3D';
 % Assign equipment names to the mat file type option.
 config.options.files.mat = 'BAR';
 
+% Assign equipment names to the mat file type option.
+config.options.files.xls = 'XLSX';
+
 % Available treatment modules.
 config.treatment = {...
     'General Treatment', 'process_Treatment',...
