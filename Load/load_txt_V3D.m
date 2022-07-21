@@ -101,8 +101,8 @@ end
 data = readmatrix(file,'Delimiter','\t','NumHeaderLines',5);
 
 % Get the sampling frequency.
-freq = inputdlg('Please enter the sampling frequency', 'Sampling');
-freq = str2double(freq{1});
+% freq = inputdlg('Please enter the sampling frequency', 'Sampling');
+freq = 100;%str2double(freq{1});
 
 %% Assign data to fields
 
