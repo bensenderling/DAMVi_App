@@ -7,6 +7,7 @@
             <h5>APDM</h5>
             <txt>V3D</txt>
             <mat>BAR</mat>
+            <xls>XLSX</xls>
         </files>
     </options>
     <treatment>General Treatment</treatment>
@@ -19,6 +20,8 @@
     <treatment_general>process_Treatment_Resample</treatment_general>
     <segmentation_general>Threshold</segmentation_general>
     <segmentation_general>process_Segment_Threshold</segmentation_general>
+    <segmentation_general>Turning in IMUs</segmentation_general>
+    <segmentation_general>process_Segment_IMUTurns</segmentation_general>
     <analysis>Time Lag</analysis>
     <analysis>analysis_TimeLag</analysis>
     <analysis>FNN</analysis>
