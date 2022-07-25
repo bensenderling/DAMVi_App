@@ -59,7 +59,51 @@ end
 
 function ind_Turn = segment(imu)
 
-ind_Turn = [1, floor(length(imu.Lumbar.data.mag)/2);...
-    floor(length(imu.Lumbar.data.mag)/2), length(imu.Lumbar.data.mag)];
+        FUSE = ahrsfilter('SampleRate', imu.Lumbar.freq, 'MagneticDisturbanceNoise', 2);
+
+        accelReadings = imu.Lumbar.data.acc;
+        gyroReadings = imu.Lumbar.data.gyr;
+        magReadings = imu.Lumbar.data.mag;
+        [orientation,angularVelocity] = FUSE(accelReadings,gyroReadings,magReadings);
+        t = (0:length(imu.Lumbar.data.mag)-1)'/imu.Lumbar.freq;
+        ang = abs(180/pi*euler(orientation, 'ZYX', 'frame'));
+        
+        turn_times_full = zeros(length(orientation),1);
+        turn_times_start = zeros(length(orientation),1);
+        turn_times_end = zeros(length(orientation),1);
+        for diff_time = 0.2:0.1:1
+            
+            d = abs(diff(ang(1:round(diff_time*imu.Lumbar.freq):end,1)));
+            t_d = t(1:round(diff_time*imu.Lumbar.freq):end);
+            t_d(end) = [];
+
+            d_step = d >= 30;
+
+            ind_start = (find(diff(d_step) == 1))*round(diff_time*imu.Lumbar.freq);
+            turn_times_start(ind_start) = 1;
+            ind_end = (find(diff(d_step) == -1))*round(diff_time*imu.Lumbar.freq);
+            turn_times_end(ind_end) = 1;
+
+            for jj = 1:size(ind_start,1)
+                turn_times_full(ind_start(jj):ind_end(jj)) = 1;
+            end
+
+%             figure
+%             subplot(4,1,1), plot(t, ang, 'k', t(logical(turn_times_start)), ang(logical(turn_times_start),1), '.g', t(logical(turn_times_end)), ang(logical(turn_times_end),1), '.r')
+%             xlim([0, 60])
+%             subplot(4,1,2), plot(t_d, d(:,1), 'k')
+%             xlim([0, 60])
+%             subplot(4,1,3), plot(t_d, d_step, 'k')
+%             xlim([0, 60])
+%             subplot(4,1,4), plot(t, turn_times_full, 'k')
+%             xlim([0, 60])
+
+        end
+
+%         figure
+%         subplot(2,1,1), plot(t, ang, 'k', t(logical(turn_times_start)), ang(logical(turn_times_start),1), '.g', t(logical(turn_times_end)), ang(logical(turn_times_end),1), '.r')
+%         subplot(2,1,2), plot(t, turn_times_full, 'k')
+
+        ind_Turn = [find(diff(turn_times_full) == 1), find(diff(turn_times_full) == -1)];
 
 end
