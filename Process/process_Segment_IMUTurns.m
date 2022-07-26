@@ -1,11 +1,57 @@
-function x_segmented = process_Segment_IMUTurns(x)
+function x_segmented = process_Segment_IMUTurns(x, sel)
 
-if isnumeric(x)
+switch sel
 
-    x_segmented{1} = x(1:floor(end/2),1);
-    x_segmented{2} = x(ceil(end/2):end,1);
+    case 'timeseries'
+        
+        x_segmented = '004';
 
-elseif isstruct(x)
+    case 'file'
+        
+        
+        ind_Turn = segment(x);
+
+        objs = fieldnames(x);
+
+        for j = 1:length(objs)
+            % Meta data is carried over if it is present.
+            if strcmp(objs{j}, 'Lumbar')
+
+                x_segmented.raw = x.(objs{j}).data.mag(:,2);
+
+                for k = 1:size(ind_Turn,1) + 1
+
+                    if k < 10
+                        k_string = ['0' num2str(k)];
+                    else
+                        k_string = num2str(k);
+                    end
+
+                    if k == 1
+                        frame_start = 1;
+                        frame_end = ind_Turn(k, 1);
+                    elseif k == size(ind_Turn,1) + 1
+                        frame_start = ind_Turn(k - 1, 2);
+                        frame_end = length(x_segmented.raw);
+                    else
+                        frame_start = ind_Turn(k - 1, 2);
+                        frame_end = ind_Turn(k, 1);
+                    end
+                    x_segmented.processed{k} = x.(objs{j}).data.mag(frame_start:frame_end, 3);
+
+                    x_segmented.res.(['IMUTurns']).(['turn' k_string]).startFrame = frame_start;
+                    x_segmented.res.(['IMUTurns']).(['turn' k_string]).startTime = frame_start/x.(objs{j}).freq;
+                    x_segmented.res.(['IMUTurns']).(['turn' k_string]).endFrame = frame_end;
+                    x_segmented.res.(['IMUTurns']).(['turn' k_string]).endTime = frame_end/x.(objs{j}).freq;
+                    x_segmented.res.(['IMUTurns']).(['turn' k_string]).duration_frame = frame_end - frame_start;
+                    x_segmented.res.(['IMUTurns']).(['turn' k_string]).duration_time = (frame_end - frame_start)/x.(objs{j}).freq;
+                end
+
+            end
+
+        end
+
+    case 'all'
 
     x_segmented = x;
 
@@ -31,6 +77,14 @@ elseif isstruct(x)
                 k_string = num2str(k);
             end
 
+            if k == 1
+                frame_start = 1;
+                frame_end = ind_Turn(k, 1);
+            else
+                frame_start = ind_Turn(k - 1, 2);
+                frame_end = ind_Turn(k, 1);
+            end
+
             for j = 1:length(objs)
                 % Meta data is carried over if it is present.
                 if strcmp(objs{j}, 'meta')
@@ -43,7 +97,7 @@ elseif isstruct(x)
 
                     sigs = fieldnames(x.raw.(files{i}).(objs{j}).data);
                     for ii = 1:length(sigs)
-                        x_segmented.processed.([files{i} '_seg' k_string]).(objs{j}).data.(sigs{ii}) = x.raw.(files{i}).(objs{j}).data.(sigs{ii})(ind_Turn(k,1):ind_Turn(k,2), :);
+                        x_segmented.processed.([files{i} '_seg' k_string]).(objs{j}).data.(sigs{ii}) = x.raw.(files{i}).(objs{j}).data.(sigs{ii})(frame_start:frame_end, :);
                     end
 
                 end
