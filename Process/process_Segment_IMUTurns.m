@@ -39,12 +39,12 @@ switch sel
                     end
                     x_segmented.processed{k} = x.(objs{j}).data.mag(frame_start:frame_end, 3);
 
-                    x_segmented.res.(['IMUTurns']).(['turn' k_string]).startFrame = frame_start;
-                    x_segmented.res.(['IMUTurns']).(['turn' k_string]).startTime = frame_start/x.(objs{j}).freq;
-                    x_segmented.res.(['IMUTurns']).(['turn' k_string]).endFrame = frame_end;
-                    x_segmented.res.(['IMUTurns']).(['turn' k_string]).endTime = frame_end/x.(objs{j}).freq;
-                    x_segmented.res.(['IMUTurns']).(['turn' k_string]).duration_frame = frame_end - frame_start;
-                    x_segmented.res.(['IMUTurns']).(['turn' k_string]).duration_time = (frame_end - frame_start)/x.(objs{j}).freq;
+                    x_segmented.res.(['Segment']).(['turn' k_string]).startFrame = frame_start;
+                    x_segmented.res.(['Segment']).(['turn' k_string]).startTime = frame_start/x.(objs{j}).freq;
+                    x_segmented.res.(['Segment']).(['turn' k_string]).endFrame = frame_end;
+                    x_segmented.res.(['Segment']).(['turn' k_string]).endTime = frame_end/x.(objs{j}).freq;
+                    x_segmented.res.(['Segment']).(['turn' k_string]).duration_frame = frame_end - frame_start;
+                    x_segmented.res.(['Segment']).(['turn' k_string]).duration_time = (frame_end - frame_start)/x.(objs{j}).freq;
                 end
 
             end
@@ -98,6 +98,13 @@ switch sel
                     sigs = fieldnames(x.raw.(files{i}).(objs{j}).data);
                     for ii = 1:length(sigs)
                         x_segmented.processed.([files{i} '_seg' k_string]).(objs{j}).data.(sigs{ii}) = x.raw.(files{i}).(objs{j}).data.(sigs{ii})(frame_start:frame_end, :);
+
+                        x_segmented.res.(['Segment']).(['turn' k_string]).startFrame = frame_start;
+                        x_segmented.res.(['Segment']).(['turn' k_string]).startTime = frame_start/x.(objs{j}).freq;
+                        x_segmented.res.(['Segment']).(['turn' k_string]).endFrame = frame_end;
+                        x_segmented.res.(['Segment']).(['turn' k_string]).endTime = frame_end/x.(objs{j}).freq;
+                        x_segmented.res.(['Segment']).(['turn' k_string]).duration_frame = frame_end - frame_start;
+                        x_segmented.res.(['Segment']).(['turn' k_string]).duration_time = (frame_end - frame_start)/x.(objs{j}).freq;
                     end
 
                 end
