@@ -27,6 +27,7 @@ switch sel
     case 'all'
 
         x_segmented = x;
+        x_segmented.processed = x_segmented.raw;
 
         files = fieldnames(x.raw);
         ind1 = 1;
@@ -45,8 +46,8 @@ switch sel
                         if contains(files{i}, 'gait')
                             % A 30 s stationary period is at the start of
                             % every 7 m gait test.
-                            frame_start = 30*x.raw.(files{i}).(objs{j}).freq;
-                            frame_end = length(x.raw.(files{i}).(objs{j}).data.(sigs{ii}));
+                            frame_start = floor(30*x.raw.(files{i}).(objs{j}).freq);
+                            frame_end = floor(length(x.raw.(files{i}).(objs{j}).data.(sigs{ii})));
                         elseif contains(files{i}, 'walk6m')
                             % A 3 s stationary period is at the start of
                             % every 6 min walk test.

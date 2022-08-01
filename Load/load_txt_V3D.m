@@ -1,5 +1,5 @@
 function txt_V3D = load_txt_V3D(file)
-% [dataout] = load_v3d20200825(file)
+% [dataout] = load_txt_V3D(file)
 % inputs  - file, file path and name of a V3D text file
 % outputs - dataout, structure containing file from V3D text file
 % Remarks

@@ -13,17 +13,16 @@ config.directory = '';
 % and if they aren't, create them.
 config.database = '';
 
-% Assign equipment names to the h5 file type option.
-config.options.files.h5 = 'APDM';
+% This was the previous method of assigning load functions to file types 
+% and specific equipment formats. It was replaced with the Configuration
+% window in the app and the lines of code further below.
+% config.options.files.h5 = 'APDM';
+% config.options.files.txt = 'V3D';
+% config.options.files.mat = 'BAR';
+% config.options.files.xls = 'XLSX';
+% config.options.files.png = 'Windows';
 
-% Assign equipment names to the text file type option.
-config.options.files.txt = 'V3D';
-
-% Assign equipment names to the mat file type option.
-config.options.files.mat = 'BAR';
-
-% Assign equipment names to the mat file type option.
-config.options.files.xls = 'XLSX';
+config.options.filesload = 'C:\Users\QTM\OneDrive - Boston University\BU\Development\001 BAR\Code\BAR_App\Load';
 
 % Available treatment modules.
 config.treatment = {...
@@ -54,7 +53,8 @@ config.figures = {...
     '1D', '',...
     '2D', '',...
     '3D', '',...
-    'MD', 'figure_MD'};
+    'MD', 'figure_MD',...
+    'Image', ''};
 
 % Available export modules.
 config.export = {...

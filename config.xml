@@ -3,12 +3,13 @@
     <directory>R:\KumarLab3\PROJECTS\wesens\Data\W002</directory>
     <database>R:\KumarLab3\PROJECTS\wesens\Data\Senderling\013 Nonlinear Variability of Stair Climbing\Data</database>
     <options>
-        <files>
+        <filesload>C:\Users\QTM\OneDrive - Boston University\BU\Development\001 BAR\Code\BAR_App\Load</filesload>
+        <filetypes>
             <h5>APDM</h5>
-            <txt>V3D</txt>
             <mat>BAR</mat>
-            <xls>XLSX</xls>
-        </files>
+            <png>WIN</png>
+            <txt>V3D</txt>
+        </filetypes>
     </options>
     <treatment>General Treatment</treatment>
     <treatment>process_Treatment</treatment>
@@ -46,6 +47,8 @@
     <figures></figures>
     <figures>MD</figures>
     <figures>figure_MD</figures>
+    <figures>Image</figures>
+    <figures></figures>
     <export>General</export>
     <export>BU Caltesting</export>
 </struct>
