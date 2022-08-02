@@ -38,10 +38,6 @@ function data = load_png_WIN(file)
 % SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 %% Begin Code
 
-
-ind = strfind(file, '\');
-ind2 = strfind(file, '.');
-filename = file(ind(end) + 1:ind2(end) - 1);
-data.(filename).image.data = imread(file);
+data.image.data.img = imread(file);
 
 end
