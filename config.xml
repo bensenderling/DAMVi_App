@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
-    <directory>R:\PROJECTS\wesens\Data\W002</directory>
+    <directory>R:\PROJECTS\wesens\Data</directory>
     <database>R:\PROJECTS\wesens\Data\Senderling\APDM</database>
     <options>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Load</filesload>
@@ -10,6 +10,7 @@
             <csv>Pfizer01</csv>
             <gt3x>Actigraph</gt3x>
             <h5>APDM</h5>
+            <h5>Pfizer</h5>
             <mat>BAR</mat>
             <png>WIN</png>
             <txt>V3D</txt>
