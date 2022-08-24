@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
     <directory>R:\PROJECTS\wesens\Data\W002</directory>
-    <database>R:\PROJECTS\wesens\Data\Senderling\013 Nonlinear Variability of Stair Climbing\Data</database>
+    <database>R:\PROJECTS\wesens\Data\Senderling\APDM</database>
     <options>
-        <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Development\001 BAR\Code\BAR_App\Load</filesload>
+        <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Load</filesload>
         <filetypes>
             <agd>Actigraph</agd>
+            <csv>Actigraph</csv>
             <csv>Pfizer01</csv>
             <gt3x>Actigraph</gt3x>
             <h5>APDM</h5>
@@ -13,6 +14,10 @@
             <png>WIN</png>
             <txt>V3D</txt>
         </filetypes>
+        <filesprocess>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Process</filesprocess>
+        <process>Groupings</process>
+        <process>Segment</process>
+        <process>Treatment</process>
     </options>
     <treatment>General Treatment</treatment>
     <treatment>process_Treatment</treatment>
@@ -51,6 +56,8 @@
     <figures>MD</figures>
     <figures>figure_MD</figures>
     <figures>Image</figures>
+    <figures></figures>
+    <figures>Histogram</figures>
     <figures></figures>
     <export>General</export>
     <export>BU Caltesting</export>

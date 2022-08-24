@@ -101,17 +101,13 @@ while line ~= -1
             dat = str2double(data{1}{i + 1});
         end
         % Assign the data dynamically using the headers.
-        csv_pfizer01.(headers{i}).data.x(str2double(data{1}{1}), 1) = dat;
+        csv_pfizer01.data.(headers{i})(str2double(data{1}{1}), 1) = dat;
     end
     % Read the next line for the while loop.
     line = fgetl(fid);
 end
 
-% This data contains a lot of NaNs so they are removed here instead of 
-% relying on later code to handle them.
-for i = 1:length(headers)
-    csv_pfizer01.(headers{i}).data.x(isnan(csv_pfizer01.(headers{i}).data.x)) = [];
-end
+
 
 
 end

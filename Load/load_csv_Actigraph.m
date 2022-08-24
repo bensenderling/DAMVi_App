@@ -1,13 +1,16 @@
-function dataout = load_csv_Actigraph(file)
-% [dataout] = load_agd_Actigraph(file)
-% inputs  - file, this input is not used.
-% outputs - dataout, this output is not used
+function csv_Actigraph = load_csv_Actigraph(file)
+% [dataout] = load_csv_Actigraph(file)
+% inputs  - file, path of the file to load.
+% outputs - csv_Actigraph, structure with the data from the file.
 % Remarks
-% - This function is a placeholder so agd files can be moved and copied
-%   within the BAR App. These files are binary and currently there is not a
-%   way to load them directly into MATLAB.
+% - This function aims to load data from a number of Actigraph csv exports.
+%   These include the spreadsheets called: DailyDetailed, DailyTotals,
+%   HourlyDetailed, HourlyTotals, SedentaryAnalysis, SleepScores and
+%   WearTimeValidation. It will not load the Variables spreadsheet.
 % Future Work
-% - Possibly these files could be read directly into MATLAB.
+% - There is nothing put in for the object name. This could be replaced
+%   with the file name stored in the first column of the Actigraph file.
+%   The other column headers would then be the 'x' field under data.
 % Aug 2022 - Created by Ben Senderling, bsender@bu.edu
 %
 % Copyright 2020 Movement and Applied Imaging Lab, Department of Physical
@@ -41,6 +44,11 @@ function dataout = load_csv_Actigraph(file)
 % SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 %% Begin Code
 
-dataout = [];
+data = readtable(file);
+
+headers = data.Properties.VariableNames;
+
+for i = 1:length(headers)
+    csv_Actigraph.(headers{i}).data.x = data.(headers{i});
 
 end
