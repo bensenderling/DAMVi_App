@@ -1,4 +1,4 @@
-function createConfig
+function createConfig(filepath)
 
 % Create the structure that will be the conf file.
 config = struct;
@@ -62,4 +62,4 @@ config.export = {...
     'BU Caltesting'};
 
 % Write the config file to an xml file.
-writestruct(config,'config.xml')
+writestruct(config, [filepath '\config.xml'])

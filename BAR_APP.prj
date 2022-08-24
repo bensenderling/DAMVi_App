@@ -1,0 +1,92 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="4084499922" file="C:\Users\QTM\OneDrive - Boston University\BU\Development\001 BAR\Code\BAR_App\BAR_APP.prj" location="C:\Users\QTM\OneDrive - Boston University\BU\Development\001 BAR\Code\BAR_App" name="BAR_APP" target="target.mlapps" target-name="Package App">
+    <param.appname>BAR_APP</param.appname>
+    <param.authnamewatermark>Ben Senderling</param.authnamewatermark>
+    <param.email>bsender@bu.edu</param.email>
+    <param.company>Boston University</param.company>
+    <param.icon />
+    <param.icons />
+    <param.summary>This app is designed to help streamline data processing, data review and reporting.</param.summary>
+    <param.description>The app has a main core that uses modules to perform various tasks. These includes processing, analyzing, reviewing and reporting. They work around data types designed for specific files from specific equipment. Such as TRC files from motion capture systems. Those modules can be added on by other users without needing an in-depth understanding of MATLAB or app design.</param.description>
+    <param.screenshot>C:\Users\QTM\AppData\Local\Temp\tp911fb709_0836_44c4_8e77_907a60153509.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms>
+      <item>win64</item>
+    </param.platforms>
+    <param.output>${PROJECT_ROOT}</param.output>
+    <param.guid>cbc40727-5b95-4b43-b7fc-5c023353c083</param.guid>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\BAR_App.mlapp</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\createConfig.m</file>
+      <file>C:\Users\QTM\OneDrive - Boston University\BU\Development\001 BAR\Code\NONANLibrary\matlab\AMI_Stergiou.m</file>
+      <file>C:\Users\QTM\OneDrive - Boston University\BU\Development\001 BAR\Code\NONANLibrary\matlab\AMI_Thomas.m</file>
+      <file>C:\Users\QTM\OneDrive - Boston University\BU\Development\001 BAR\Code\NONANLibrary\matlab\FNN.m</file>
+      <file>C:\Users\QTM\OneDrive - Boston University\BU\Development\001 BAR\Code\NONANLibrary\matlab\linear_depth_mex.mexw64</file>
+      <file>C:\Users\QTM\OneDrive - Boston University\BU\Development\001 BAR\Code\NONANLibrary\matlab\RQA.m</file>
+    </fileset.depfun>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\Analysis</file>
+      <file>${PROJECT_ROOT}\Load</file>
+      <file>${PROJECT_ROOT}\Process</file>
+      <file>${PROJECT_ROOT}\Review</file>
+      <file>${PROJECT_ROOT}\Subroutines</file>
+    </fileset.resources>
+    <fileset.package />
+    <build-deliverables>
+      <file location="C:\Users\QTM\OneDrive - Boston University\BU\Development\001 BAR\Code" name="BAR_App" optional="false">C:\Users\QTM\OneDrive - Boston University\BU\Development\001 BAR\Code\BAR_App</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2021b</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

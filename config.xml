@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
-    <directory>R:\KumarLab3\PROJECTS\wesens\Data\W002</directory>
-    <database>R:\KumarLab3\PROJECTS\wesens\Data\Senderling\013 Nonlinear Variability of Stair Climbing\Data</database>
+    <directory>R:\PROJECTS\wesens\Data\W002</directory>
+    <database>R:\PROJECTS\wesens\Data\Senderling\013 Nonlinear Variability of Stair Climbing\Data</database>
     <options>
-        <filesload>C:\Users\QTM\OneDrive - Boston University\BU\Development\001 BAR\Code\BAR_App\Load</filesload>
+        <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Development\001 BAR\Code\BAR_App\Load</filesload>
         <filetypes>
+            <agd>Actigraph</agd>
+            <csv>Pfizer01</csv>
+            <gt3x>Actigraph</gt3x>
             <h5>APDM</h5>
             <mat>BAR</mat>
             <png>WIN</png>
