@@ -23,8 +23,8 @@ function txt_V3D = load_txt_V3D(file)
 %            for publishment.
 %          - Reformated output to meet developing BAR App standards.
 %
-% Copyright 2020 Movement Analysis Core, Center for Human Movement
-% Variability, University of Nebraska at Omaha
+% Copyright 2020 Movement and Applied Imaging Lab, Department of Physical
+% Therapy and Athletic Training, Sargent College, Boston University
 %
 % Redistribution and use in source and binary forms, with or without 
 % modification, are permitted provided that the following conditions are 
@@ -110,6 +110,15 @@ nlast = inf;
 lasttype = 'boom';
 fields = cell(length(sources),1);
 for j = 1:length(sources)
+
+    % Standard statistics should not be calculated in Visual3D. This has
+    % had a tendency to elongate field names past what MATLAB allows. They
+    % are also simple to calculate in MATLAB instead of in the Global V3D
+    % Workspace. Working with only the original values also enables higher
+    % quality data review in the BAR App.
+    if contains(measure{j}, 'Count') || contains(measure{j}, 'Mean') || contains(measure{j}, 'StdDev')
+        continue
+    end
     
     temp = data(:,j+1);
     
@@ -131,6 +140,12 @@ for j = 1:length(sources)
     
     fieldname = [sources{j}(1:end-4) '_' type{j} '_' measure{j} '_' dimension{j}];
     sources = strrep(sources,' ','_');
+    % This statement was added in to catch backup files created by QTM that
+    % were then imported into Visual3D. The "Backup..." appended to the
+    % filename is not a valid field name.
+    if contains(sources{j}, 'Backup')
+        sources{j}(strfind(sources{j}, 'Backup') - 1:end - 4) = [];
+    end
     type = strrep(type,' ','_');
     measure = strrep(measure,' ','_');
     dimension = strrep(dimension,' ','_');

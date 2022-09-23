@@ -60,11 +60,17 @@ csv_pfizer01.meta.(regexprep(line{1}{1},' ','_')) = line{1}{2};
 % Read in the text from the analysis log.
 line = fgetl(fid);
 line = textscan(line,'%s','Delimiter',',');
+if numel(line) == 1
+    line{1}{2} = [];
+end
 csv_pfizer01.meta.(regexprep(line{1}{1},' ','_')) = line{1}{2};
 
 % Read in the test from the quality control line.
 line = fgetl(fid);
 line = textscan(line,'%s','Delimiter',',');
+if numel(line) == 1
+    line{1}{2} = [];
+end
 csv_pfizer01.meta.(regexprep(line{1}{1},' ','_')) = line{1}{2};
 
 % The next line is blank.
