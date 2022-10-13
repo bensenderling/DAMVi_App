@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
-    <directory>R:\KumarLab3\PROJECTS\wesens\Data</directory>
-    <database>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Data</database>
+    <directory>R:\PROJECTS\CalTester\Data</directory>
+    <database>R:\PROJECTS\wesens\Data\Analysis\Senderling\Medoc Data</database>
     <options>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Load</filesload>
         <filetypes>
             <agd>Actigraph</agd>
             <csv>Actigraph</csv>
+            <csv>Delsys</csv>
             <csv>Pfizer01</csv>
             <gt3x>Actigraph</gt3x>
-            <h5>APDM</h5>
-            <h5>Pfizer</h5>
+            <h5>APDM1</h5>
+            <h5>APDM2</h5>
             <mat>BAR</mat>
             <png>WIN</png>
             <qtm>Qualisys</qtm>
             <txt>V3D</txt>
+            <xlsx>Medoc</xlsx>
         </filetypes>
         <filesprocess>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Process</filesprocess>
+        <process>EMG</process>
         <process>Groupings</process>
         <process>Segment</process>
         <process>Treatment</process>
+        <process>quick</process>
     </options>
     <treatment>General Treatment</treatment>
     <treatment>process_Treatment</treatment>

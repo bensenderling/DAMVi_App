@@ -1,19 +1,19 @@
-function h5_Pfizer = load_h5_Pfizer(file)
+function h5_APDM1 = load_h5_APDM1(file)
 
 dbstop if error
 
-h5_APDM.meta = h5info(file);
+h5_APDM1.meta = h5info(file);
 
 %%
 
-for i = 1:length({h5_APDM.meta.Groups(2).Groups.Name})
-    name = h5readatt(file,[h5_APDM.meta.Groups(2).Groups(i).Name '/Configuration'], 'Label 0');
+for i = 1:length({h5_APDM1.meta.Groups(2).Groups.Name})
+    name = h5readatt(file,[h5_APDM1.meta.Groups(2).Groups(i).Name '/Configuration'], 'Label 0');
     name = regexprep(name, {' ', char(0)}, {'_', ''});
-    time = double(h5read(file,[h5_APDM.meta.Groups(2).Groups(i).Name '/Time']));
-    h5_APDM.(name).freq = 1/mean(diff(time - time(1))/1e6);
-    h5_APDM.(name).data.acc = h5read(file, [h5_APDM.meta.Groups(2).Groups(i).Name '/Accelerometer'])';
-    h5_APDM.(name).data.mag = h5read(file, [h5_APDM.meta.Groups(2).Groups(i).Name '/Magnetometer'])';
-    h5_APDM.(name).data.gyr = h5read(file, [h5_APDM.meta.Groups(2).Groups(i).Name '/Gyroscope'])';
+    time = double(h5read(file,[h5_APDM1.meta.Groups(2).Groups(i).Name '/Time']));
+    h5_APDM1.(name).freq = 1/mean(diff(time - time(1))/1e6);
+    h5_APDM1.(name).data.acc = h5read(file, [h5_APDM1.meta.Groups(2).Groups(i).Name '/Accelerometer'])';
+    h5_APDM1.(name).data.mag = h5read(file, [h5_APDM1.meta.Groups(2).Groups(i).Name '/Magnetometer'])';
+    h5_APDM1.(name).data.gyr = h5read(file, [h5_APDM1.meta.Groups(2).Groups(i).Name '/Gyroscope'])';
 end
 % 
 % figure
