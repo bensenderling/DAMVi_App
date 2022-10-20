@@ -10,10 +10,6 @@ function txt_V3D = load_txt_V3D(file)
 %   for each subject will be stored within that subject's field.
 % - This code is written to work with V3D files that have NaN exported for
 %   frames with no data.
-% - Visual3D does not make it easy to export the sampling frequency
-%   cleanly. This code was written expecting the sampling frequency would
-%   be exported along with the rest of the data. For the analog data it
-%   should have the name ANALOG_RATE.
 % Future Work
 % - None.
 % Oct 2016 - Created by Ben Senderling, bsenderling@unomaha.edu
@@ -104,6 +100,10 @@ end
 
 data = readmatrix(file,'Delimiter','\t','NumHeaderLines',5);
 
+% Get the sampling frequency.
+% freq = inputdlg('Please enter the sampling frequency', 'Sampling');
+freq = 100;%str2double(freq{1});
+
 %% Assign data to fields
 
 nlast = inf;
@@ -116,7 +116,7 @@ for j = 1:length(sources)
     % are also simple to calculate in MATLAB instead of in the Global V3D
     % Workspace. Working with only the original values also enables higher
     % quality data review in the BAR App.
-    if contains(measure{j}, 'Count') || contains(measure{j}, 'Mean') || contains(measure{j}, 'StdDev') || contains(measure{j}, 'ANALOG_RATE')
+    if contains(measure{j}, 'Count') || contains(measure{j}, 'Mean') || contains(measure{j}, 'StdDev')
         continue
     end
     
@@ -149,16 +149,10 @@ for j = 1:length(sources)
     type = strrep(type,' ','_');
     measure = strrep(measure,' ','_');
     dimension = strrep(dimension,' ','_');
-    % num = sum(strcmp(fieldname,fields))+1;
+%     num = sum(strcmp(fieldname,fields))+1;
 
-    % The sampling frequency is expected to be exported with the name
-    % ANALOG_RATE.
-    ind = find(contains(sources, sources{j}) & contains(measure, 'ANALOG_RATE'));
-    if ~isempty(ind)
-        freq = data(1, ind + 1);
-    else
-        freq = [];
-    end
+ind = find(contains(sources, sources{j}) & contains(measure, 'ANALOG_RATE'));
+freq = 
     
     c = 1;
     switch dimension{j}

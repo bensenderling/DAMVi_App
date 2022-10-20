@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
-    <directory>R:\PROJECTS\CalTester\Data</directory>
-    <database>R:\PROJECTS\wesens\Data\Analysis\Senderling\Medoc Data</database>
+    <directory>R:\PROJECTS\wesens\Data\Analysis\Senderling\V3D-APDM Alignment\Data</directory>
+    <database>R:\PROJECTS\wesens\Data\Analysis\Senderling\V3D-APDM Alignment</database>
     <options>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Load</filesload>
         <filetypes>
@@ -21,9 +21,16 @@
         <filesprocess>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Process</filesprocess>
         <process>EMG</process>
         <process>Groupings</process>
+        <process>Merge</process>
         <process>Segment</process>
         <process>Treatment</process>
         <process>quick</process>
+        <filesanalysis>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Analysis</filesanalysis>
+        <analysis>01</analysis>
+        <analysis>FNN</analysis>
+        <analysis>RQA</analysis>
+        <analysis>TimeLag</analysis>
+        <analysis>custom</analysis>
     </options>
     <treatment>General Treatment</treatment>
     <treatment>process_Treatment</treatment>
