@@ -178,11 +178,11 @@ for j = 1:length(sources)
     ind6 = intersect(ind, intersect(ind2, intersect(ind3, intersect(ind4, ind5))));
     n = numel(ind6);
     if n == 1 || (n > 1 && j == ind6(1))
-        txt_V3D.([sources{j}(1:end-4) '_' folder{j} '_' measure{j}]).data.(type{j})(:,c) = temp;
-        txt_V3D.([sources{j}(1:end-4) '_' folder{j} '_' measure{j}]).freq = freq;
+        txt_V3D.([sources{j}(1:end-4) '_' type{j} '_' folder{j}]).data.(measure{j})(:,c) = temp;
+        txt_V3D.([sources{j}(1:end-4) '_' type{j} '_' folder{j}]).freq = freq;
     else
-        txt_V3D.([sources{j}(1:end-4) '_' folder{j} '_' measure{j} '_' num2str(n)]).data.(type{j})(:,c) = temp;
-        txt_V3D.([sources{j}(1:end-4) '_' folder{j} '_' measure{j} '_' num2str(n)]).freq = freq;
+        txt_V3D.([sources{j}(1:end-4) '_' type{j} '_' folder{j} '_' num2str(n)]).data.(measure{j})(:,c) = temp;
+        txt_V3D.([sources{j}(1:end-4) '_' type{j} '_' folder{j} '_' num2str(n)]).freq = freq;
     end
     
     fields{j} = fieldname;

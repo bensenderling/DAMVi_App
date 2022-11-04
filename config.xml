@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
+    <directory>D:\Projects\wesens\Data</directory>
     <directory>R:\PROJECTS\wesens\Data\Analysis\Senderling\V3D-APDM Alignment\Data</directory>
-    <database>R:\PROJECTS\wesens\Data\Analysis\Senderling\V3D-APDM Alignment</database>
+    <database>R:\PROJECTS\iwalqq\Analysis\Yu Gavin</database>
     <options>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Load</filesload>
         <filetypes>
@@ -9,10 +10,12 @@
             <csv>Actigraph</csv>
             <csv>Delsys</csv>
             <csv>Pfizer01</csv>
+            <csv>Pfizer02</csv>
             <gt3x>Actigraph</gt3x>
             <h5>APDM1</h5>
             <h5>APDM2</h5>
             <mat>BAR</mat>
+            <mat>QTM</mat>
             <png>WIN</png>
             <qtm>Qualisys</qtm>
             <txt>V3D</txt>
@@ -30,6 +33,7 @@
         <analysis>FNN</analysis>
         <analysis>RQA</analysis>
         <analysis>TimeLag</analysis>
+        <analysis>V3DAPDMAlignment</analysis>
         <analysis>custom</analysis>
     </options>
     <treatment>General Treatment</treatment>

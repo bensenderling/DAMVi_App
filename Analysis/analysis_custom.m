@@ -5,6 +5,9 @@ for i = 1:length(files)
 
     if isfield(data.raw.(files{i}), 'ORIGINAL_imu_oa_tib_GYRO_X')
 
+%         imuDelsys = sqrt(data.raw.(files{i}).ORIGINAL_imu_oa_tib_GYRO_X.data.ANALOG.^2 + data.raw.(files{i}).ORIGINAL_imu_oa_tib_GYRO_Y.data.ANALOG.^2 + data.raw.(files{i}).ORIGINAL_imu_oa_tib_GYRO_Z.data.ANALOG.^2);
+%         imuDelsys_freq = data.raw.(files{i}).ORIGINAL_imu_oa_tib_GYRO_X.freq;
+
         imuDelsys = sqrt(data.raw.(files{i}).ORIGINAL_imu_oa_tib_GYRO_X.data.ANALOG.^2 + data.raw.(files{i}).ORIGINAL_imu_oa_tib_GYRO_Y.data.ANALOG.^2 + data.raw.(files{i}).ORIGINAL_imu_oa_tib_GYRO_Z.data.ANALOG.^2);
         imuDelsys_freq = data.raw.(files{i}).ORIGINAL_imu_oa_tib_GYRO_X.freq;
 

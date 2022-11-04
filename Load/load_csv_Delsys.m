@@ -8,6 +8,7 @@ function csv_Delsys = load_csv_Delsys(file)
 %   columns of data there are. It will automatically parse the column
 %   headers for the channel names. Those name are then used to create 
 %   structure fields that store the data.
+% - The output format is specific for the BAR App.
 % - While the code is (hopefully) written in a way that allow a time column
 %   to be located only in the first column. It is suggested that the data
 %   be exported with a time column for each column of data. Since the 
@@ -23,7 +24,7 @@ function csv_Delsys = load_csv_Delsys(file)
 %   it is likely they will change the output format.
 % Sept 2022 - Created by Ben Senderling
 %
-% Copyright 2020 Movement and Applied Imaging Lab, Department of Physical
+% Copyright 2022 Movement and Applied Imaging Lab, Department of Physical
 % Therapy and Athletic Training, Sargent College, Boston University
 %
 % Redistribution and use in source and binary forms, with or without 
@@ -94,17 +95,10 @@ headers=headers{1};
 
 %% Count lines
 
-% fprintf('counting lines')
-% fprintf(': 000000000')
 count2=1;
 while ~feof(fid) % load untill end of file is detected
     line=fgetl(fid);
     count2=count2+1;
-%     if rem(count2,10000)==0 % updates command window with the line count
-%         string=repmat('\b',1,length(num2str(count2)));
-%         fprintf(string)
-%         fprintf('%i',count2)
-%     end
 end
 
 frewind(fid) % rewinds line indicator to the top of the file
@@ -112,28 +106,16 @@ for i=1:count % runs for as many lines of headers were detected before
     line=fgetl(fid);
 end
 
-% fprintf('\ntotal lines: %i\n',count2-1)
-
 %% Read data
-
-% fprintf('scanning data, ')
 
 data=zeros(count2-1,length(headers));
 count2=1;
-% fprintf('line: 000000000')
 while ~feof(fid) % load untill end of file is detected
     line=fgetl(fid);
     line=textscan(line,'%f','delimiter',',');
     data(count2,:)=line{1}';
     count2=count2+1;
-%     if rem(count2,10000)==0 % updates command window with the line count
-%         string=repmat('\b',1,length(num2str(count2)));
-%         fprintf(string)
-%         fprintf('%i',count2)
-%     end
 end
-
-% fprintf('\n')
 
 data(isnan(data))=0; % removes nans that may be present if not fully padded with zeros
 
@@ -168,7 +150,6 @@ for i=1:length(headers)
         
         % print out sampling frequency.
         sampfreq=1/mean(diff(csv_Delsys.(channel).time));
-%         fprintf('sampling: %s, %.3f (actual), %.3f (Delsys)\n',channel,sampfreq,dataout.(channel).sampfreq)
         csv_Delsys.(channel).sampfreq=sampfreq;
         ind4=[];
     end
