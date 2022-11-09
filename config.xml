@@ -2,7 +2,8 @@
 <struct>
     <directory>D:\Projects\wesens\Data</directory>
     <directory>R:\PROJECTS\wesens\Data\Analysis\Senderling\V3D-APDM Alignment\Data</directory>
-    <database>R:\PROJECTS\iwalqq\Analysis\Yu Gavin</database>
+    <directory>R:\PROJECTS\iwalqq\Analysis\Yu Gavin\Data</directory>
+    <database>R:\PROJECTS\wesens\Data\Analysis\Senderling\Medoc Data</database>
     <options>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Load</filesload>
         <filetypes>
@@ -31,9 +32,11 @@
         <filesanalysis>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Analysis</filesanalysis>
         <analysis>01</analysis>
         <analysis>FNN</analysis>
+        <analysis>QST</analysis>
         <analysis>RQA</analysis>
         <analysis>TimeLag</analysis>
         <analysis>V3DAPDMAlignment</analysis>
+        <analysis>V3DAPDMAlignment2</analysis>
         <analysis>custom</analysis>
     </options>
     <treatment>General Treatment</treatment>

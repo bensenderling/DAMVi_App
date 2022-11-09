@@ -11,23 +11,19 @@ function app = analysis_custom(app, data, analysis)
 %   iterates through all the data and calculates results. The app is an
 %   input and output to reflect the potential for an analysis module to be
 %   an application itself and not just a script.
-% - Having the BAR App as an input does allow callbacks from the app to be
-%   used within this script. The printLog and analysisComplete methods from
-%   the BAR App are used in this example.
-% - As an example this script is functional but it may not work for all
-%   data sets.
 % Future Work
-% - As an example there is nothing of note.
+% - This function has recently been made more general but has not been
+%   tested on varied h5 files.
 % Nov 2022 - Created by Ben Senderling
 %
 %% Begin Code
-
-% Get all the file names from the data. This uses the raw data.
 files = fieldnames(data.raw);
-
-% This example will only iterate through the files. One could also iterate
-% through the objects and signals.
 for i = 1:length(files)
+
+    if isfield(data.raw.(files{i}), 'ORIGINAL_imu_oa_tib_GYRO_X')
+
+%         imuDelsys = sqrt(data.raw.(files{i}).ORIGINAL_imu_oa_tib_GYRO_X.data.ANALOG.^2 + data.raw.(files{i}).ORIGINAL_imu_oa_tib_GYRO_Y.data.ANALOG.^2 + data.raw.(files{i}).ORIGINAL_imu_oa_tib_GYRO_Z.data.ANALOG.^2);
+%         imuDelsys_freq = data.raw.(files{i}).ORIGINAL_imu_oa_tib_GYRO_X.freq;
 
         imuDelsys = sqrt(data.raw.(files{i}).ORIGINAL_imu_oa_tib_GYRO_X.data.ANALOG.^2 + data.raw.(files{i}).ORIGINAL_imu_oa_tib_GYRO_Y.data.ANALOG.^2 + data.raw.(files{i}).ORIGINAL_imu_oa_tib_GYRO_Z.data.ANALOG.^2);
         imuDelsys_freq = data.raw.(files{i}).ORIGINAL_imu_oa_tib_GYRO_X.freq;
@@ -98,10 +94,6 @@ for i = 1:length(files)
 
         saveas(H, [app.Database.Value '\Figures\Figure01_' files{i} '.jpg'])
 
-    end
-
-    if rem(i, 10) == 0
-        app.printLog('024', [num2str(i) ' of ' num2str(length(files)) ' analyzed']);
     end
 
 end

@@ -8,17 +8,42 @@ function h5_APDM2 = load_h5_APDM2(file)
 %   Python. These files differed notably from other results files processed
 %   with the same code but a different algorithm. Because of this the code 
 %   pulls data out of the h5 file recursively. All of the data is pulled 
-%   out. The files this code was tested on had 'Analysis' in the file name,
-%   and only had results. Files with more raw data may end loading a
-%   significant of data and taking up more RAM.
-% - The h5 results files included both left and right side data together
-%   but in different rows. Left was the top row and right was the bottom
-%   row.
+outThese files typically had 'Analysis'
+%   appended to the file name.
 % Future Work
-% - This function has recently been made more general but has not been
-%   tested on varied h5 files.
+% - With experience working with other APDM h5 analysis files this function
+%   could be made more general.
 % Nov 2022 - Created by Ben Senderling
 %
+% Copyright 2022 Movement and Applied Imaging Lab, Department of Physical
+% Therapy and Athletic Training, Sargent College, Boston University
+%
+% Redistribution and use in source and binary forms, with or without
+% modification, are permitted provided that the following conditions are
+% met:
+%
+% 1. Redistributions of source code must retain the above copyright notice,
+%    this list of conditions and the following disclaimer.
+%
+% 2. Redistributions in binary form must reproduce the above copyright
+%    notice, this list of conditions and the following disclaimer in the
+%    documentation and/or other materials provided with the distribution.
+%
+% 3. Neither the name of the copyright holder nor the names of its
+%    contributors may be used to endorse or promote products derived from
+%    this software without specific prior written permission.
+%
+% THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
+% IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+% THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+% PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+% CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+% EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+% PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+% PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+% LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+% NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+% SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 %% Begin Code
 
 dbstop if error
