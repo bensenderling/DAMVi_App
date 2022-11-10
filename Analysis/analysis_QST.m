@@ -11,9 +11,11 @@ for i = 1:length(files)
     H.Units = 'Normalized';
     H.Position = [0 0 1 1];
 
+    sequenceN = zeros(length(obj), 1);
+    trialN = zeros(length(obj), 1);
     for j = 1:length(obj)
-        sequenceN(j, 1) = str2double(obj{j}(9));
-        trialN(j, 1) = str2double(obj{j}(end));
+        sequenceN(j) = str2double(obj{j}(9));
+        trialN(j) = str2double(obj{j}(end));
     end
 
     for j = 1:length(obj)
@@ -32,13 +34,21 @@ for i = 1:length(files)
         data.res.(files{i}).(obj{j}).data.slope = lm.Coefficients.Estimate(2);
 
         y = 10;
-        x(j) = max(data.raw.(files{i}).(obj{j}).data.Timestamp_msec_(I2)/1000);
+        if ~isempty(I2)
+            x(j) = max(data.raw.(files{i}).(obj{j}).data.Timestamp_msec_(I2)/1000);
+        else
+            x(j) = data.raw.(files{i}).(obj{j}).data.Timestamp_msec_(I)/1000;
+        end
 
         subplot(max(sequenceN), max(trialN), j)
         hold on
+        fill([0.01;1;10;10;9;0.01;0.01], [0.01;0.01;9;10;10;1;0.01], [0.9, 0.9, 0.9], 'EdgeColor', 'none')
+        plot([0;10], [0;10], 'k:')
         plot(data.raw.(files{i}).(obj{j}).data.Timestamp_msec_/1000, data.raw.(files{i}).(obj{j}).data.Pressure_kPa_, 'k')
         plot([0; data.raw.(files{i}).(obj{j}).data.Timestamp_msec_(I)/1000], [m; m], 'k--')
-        plot([data.raw.(files{i}).(obj{j}).data.Timestamp_msec_(I2)/1000; data.raw.(files{i}).(obj{j}).data.Timestamp_msec_(I2)/1000], [0; data.raw.(files{i}).(obj{j}).data.Pressure_kPa_(I2)], 'k-.')
+        if ~isempty(I2)
+            plot([data.raw.(files{i}).(obj{j}).data.Timestamp_msec_(I2)/1000; data.raw.(files{i}).(obj{j}).data.Timestamp_msec_(I2)/1000], [0; data.raw.(files{i}).(obj{j}).data.Pressure_kPa_(I2)], 'k-.')
+        end
         hold off
         xlabel('Time (s)')
         ylabel('Pressure (kPa)')
