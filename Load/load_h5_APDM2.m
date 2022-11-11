@@ -21,34 +21,27 @@ function h5_APDM2 = load_h5_APDM2(file)
 %
 %% Begin Code
 
-dbstop if error
-
 % Pull the information from the h5 file and save it as the meta data.
 h5_APDM2.meta = h5info(file);
+% Get the remaining data recursively.
 h5_APDM2 = getData(file, h5_APDM2.meta.Groups, h5_APDM2);
-
-
-% Much of this commented code was used for other APDM h5 analysis files but
-% was found not to work with these specific files from stairclimbing.
-% for i = 1:length({h5_APDM2.meta.Groups(2).Groups.Name})
-%     name = h5readatt(file,[h5_APDM2.meta.Groups(2).Groups(i).Name '/Configuration'], 'Label 0');
-name = 'measures';%regexprep(name, {' ', char(0)}, {'_', ''});
-%     time = double(h5read(file,[h5_APDM2.meta.Groups(2).Groups(i).Name '/Time']));
-%     h5_APDM2.(name).freq = 1/mean(diff(time - time(1))/1e6);
-h5_APDM2.(name).data.dur = h5read(file, [h5_APDM2.meta.Groups.Name '/Duration'])';
-% end
 
 end
 
 function h5_APDM2 = getData(file, h5_struct, h5_APDM2)
 
+% Iterate through the current group of the h5 file.
 for i = 1:length(h5_struct)
+    % Check if the current group has subgroups and get the data from them.
     if ~isempty(h5_struct(i).Groups)
         h5_APDM2 = getData(file, h5_struct(i).Groups, h5_APDM2);
     end
-    
+    % Check if the current group has data associated with it.
     if ~isempty(h5_struct(i).Datasets)
+        % Group names can have illegal characters that must be removed.
         measure = regexprep(h5_struct(i).Name, {' ', '/'}, {''});
+        % Iterate through the multiple datasets of the current group and
+        % pull out the data.
         for j = 1:length(h5_struct(i).Datasets)
             name = regexprep(h5_struct(i).Datasets(j).Name, {' ', char(0), '+'}, {'', '', 'Plus'});
             h5_APDM2.(measure).data.(name) = h5read(file, [h5_struct(i).Name '/' h5_struct(i).Datasets(j).Name]);
