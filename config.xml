@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
-    <directory>R:\PROJECTS\wesens\Data\Analysis\Senderling\Medoc Data\Data</directory>
-    <directory>R:\PROJECTS\Training\Medoc\Data\Senderling Ben</directory>
-    <database>R:\PROJECTS\Tufts\Analysis\Senderling\APDM-Mocap Comparison</database>
+    <directory>R:\PROJECTS\wesens\Data\Analysis\Yu\Knee Stiffness\Data</directory>
+    <directory>R:\PROJECTS\iwalqq\Analysis\Yu Gavin\Data</directory>
+    <database>R:\PROJECTS\wesens\Data\Analysis\Yu\Knee Stiffness</database>
     <options>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Load</filesload>
         <filetypes>
