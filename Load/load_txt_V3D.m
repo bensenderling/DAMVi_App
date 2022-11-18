@@ -26,36 +26,6 @@ function txt_V3D = load_txt_V3D(file)
 %          - Incorporated into the Biomechanics Analysis and Reporting app
 %            for publishment.
 %          - Reformated output to meet developing BAR App standards.
-%
-% Copyright 2020 Movement and Applied Imaging Lab, Department of Physical
-% Therapy and Athletic Training, Sargent College, Boston University
-%
-% Redistribution and use in source and binary forms, with or without 
-% modification, are permitted provided that the following conditions are 
-% met:
-%
-% 1. Redistributions of source code must retain the above copyright notice,
-%    this list of conditions and the following disclaimer.
-%
-% 2. Redistributions in binary form must reproduce the above copyright 
-%    notice, this list of conditions and the following disclaimer in the 
-%    documentation and/or other materials provided with the distribution.
-%
-% 3. Neither the name of the copyright holder nor the names of its 
-%    contributors may be used to endorse or promote products derived from 
-%    this software without specific prior written permission.
-%
-% THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS 
-% IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
-% THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR 
-% PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR 
-% CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, 
-% EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, 
-% PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR 
-% PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
-% LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING 
-% NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS 
-% SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 %% Begin Code
 
 fid = fopen(file); % opens file
@@ -160,14 +130,14 @@ for j = 1:length(sources)
         freq = [];
     end
     
-    c = 1;
+    c = '1';
     switch dimension{j}
         case 'X'
-            c = 1;
+            c = '1';
         case 'Y'
-            c = 2;
+            c = '2';
         case 'Z'
-            c = 3;
+            c = '3';
     end
 
     ind = find(strcmp(sources, sources{j}));
@@ -178,10 +148,10 @@ for j = 1:length(sources)
     ind6 = intersect(ind, intersect(ind2, intersect(ind3, intersect(ind4, ind5))));
     n = numel(ind6);
     if n == 1 || (n > 1 && j == ind6(1))
-        txt_V3D.([sources{j}(1:end-4) '_' type{j} '_' folder{j}]).data.(measure{j})(:,c) = temp;
+        txt_V3D.([sources{j}(1:end-4) '_' type{j} '_' folder{j}]).data.([measure{j} '_' dimension{j}]) = temp;
         txt_V3D.([sources{j}(1:end-4) '_' type{j} '_' folder{j}]).freq = freq;
     else
-        txt_V3D.([sources{j}(1:end-4) '_' type{j} '_' folder{j} '_' num2str(n)]).data.(measure{j})(:,c) = temp;
+        txt_V3D.([sources{j}(1:end-4) '_' type{j} '_' folder{j} '_' num2str(n)]).data.([measure{j} '_' dimension{j}]) = temp;
         txt_V3D.([sources{j}(1:end-4) '_' type{j} '_' folder{j} '_' num2str(n)]).freq = freq;
     end
     

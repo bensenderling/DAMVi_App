@@ -148,9 +148,9 @@ for i = 1:length(files)
             data.res.(files{i}).(objName).data.XCorr = xcorr(ind_r);
             data.res.(files{i}).(objName).data.AffectedSide = side;
 
-            H = figure('visible', 'off');
+            H = figure('visible', 'off', 'Units', 'Normalized', 'Position', [0 0 1 1]);
 
-            subplot(2,1,1)
+            ax(1) = subplot(3,1,1);
             range_opal = ind_r:ind_r + length(time_Seg) - 1;
             range_opal(length(imuSeg) + 1:end) = [];
             range_opal(range_opal > length(time_Opal)) = [];
@@ -166,8 +166,10 @@ for i = 1:length(files)
                 end
             end
             xlabel('Time (s)')
-            ylabel('Normalized Magnitude')
-            legend('Original', 'XCORR')
+            ylabel({'Normalized';'Magnitude'})
+            yticklabels('')
+            legend('Original', 'XCORR', 'Location', 'northwest')
+            axis tight
             switch signal
                 case 'CGAcc'
                     title('Pelvis CoM matched to APDM Lumbar through acceleration')
@@ -175,13 +177,22 @@ for i = 1:length(files)
                     title('Thigh Angular Velocity matched to APDM Thigh IMU gyration')
             end
 
+            ax(2) = subplot(3,1,2);
+            ax(3) = copyobj(ax(1), H);
+            ax(3).Position = ax(2).Position;
+            delete(ax(2))
+            title('Overlap View')
+            xlim([min(time_Opal(range_opal)), max(time_Opal(range_opal))])
+            yticklabels('');
+
+
 %             subplot(2,2,3)
 %             plot(lag_ami, ami, 'r', [l_ami; l_ami], [min(ami); max(ami)], 'k')
 %             axis tight
 %             xlabel('Lag')
 %             ylabel('Average Mutual Information')
 
-            subplot(2,1,2)
+            subplot(3,1,3)
             plot(l, r, 'b', [l(lag); l(lag)], [min(r); max(r)], 'k')
             axis tight
             xlabel('Lag')

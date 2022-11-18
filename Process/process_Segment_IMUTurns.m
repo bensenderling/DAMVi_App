@@ -1,4 +1,32 @@
 function x_segmented = process_Segment_IMUTurns(x, sel)
+% x_segmented = process_Segment_IMUTurns(x, sel)
+% inputs  - x, the object to segment. It can be a portion or the entirety
+%              of the data structure from the BAR App.
+%         - sel, the type of selection from the BAR App. Can be timeseries,
+%                file or all.
+% outputs - dataout, structure containing file from V3D text file
+% Remarks
+% - This function will segment data passed from the Segment module of the
+%   BAR App. It is partly a template for other segmentation methods. These
+%   may act only on a single signal or time series, an object, or a file
+%   from the BAR App data structure. The switch case will handle this level
+%   of decision making. But the actual segmentation is performed by a
+%   subroutine.
+% - The method used here will use the Lumbar sensor from an APDM Opal
+%   sensor to find turns and segment the data.
+% Future Work
+% - This is known to not work for stairclimbing data.
+% Oct 2016 - Created by Ben Senderling, bsenderling@unomaha.edu
+% Jul 2017 - Modified by Ben Senderling, email bensenderling@gmail.com
+%          - A bug was found where columns with the same names but
+%            different data would be overwritten. The code now checks for
+%            similar files names used previously and adds a number to the
+%            filename to prevent overwrites.
+% Mar 2022 - Updated by Ben Senderling, bsender@bu.edu
+%          - Incorporated into the Biomechanics Analysis and Reporting app
+%            for publishment.
+%          - Reformated output to meet developing BAR App standards.
+%% Begin Code
 
 switch sel
 

@@ -10,11 +10,10 @@ for i = 1:length(files)
         for sig = {'imu_oa_tib_ACC_X', 'imu_oa_tib_GYRO_X', 'EMG_VL_ACC_X', 'EMG_VL_GYRO_X'}
             obj = fieldnames(data.raw.(files{i}));
             
-            if strcmp(crop, 'CR') && any(contains(obj, 'ORIGINAL'))
-                ind = find(contains(obj, 'ORIGINAL'));
+            if strcmp(crop, 'CR') && any(contains(obj, sig))
+                ind = find(contains(obj, sig));
                 sig2 = fieldnames(data.raw.(files{i}).(obj{ind}).data);
-                signal = sig2{contains(sig2, sig)};
-                imuDelsys = sqrt(data.raw.(files{i}).(obj{ind}).data.(signal).^2 + data.raw.(files{i}).(obj{ind}).data.([signal(1:end-1) 'Y']).^2 + data.raw.(files{i}).(obj{ind}).data.([signal(1:end-1) 'Z']).^2);
+                imuDelsys = sqrt(data.raw.(files{i}).(obj{ind}).data.ANALOG.^2 + data.raw.(files{i}).([obj{ind}(1:end-1) 'Y']).data.ANALOG.^2 + data.raw.(files{i}).([obj{ind}(1:end-1) 'Y']).data.ANALOG.^2);
                 imuDelsys_freq = data.raw.(files{i}).(obj{ind}).freq;
             elseif strcmp(crop, 'UC') && isfield(data.raw.(files{i}), 'DelsysTrignoSDK')
                 sig2 = fieldnames(data.raw.(files{i}).DelsysTrignoSDK.data);
@@ -29,7 +28,21 @@ for i = 1:length(files)
                 imuDelsys_freq = 2000;
             end
 
-            ind = find(contains(obj, 'METRIC'));
+            if contains(sig, 'GYR') && contains(sig, 'VL')
+                objName = [crop{1} '_thi_gyr'];
+            elseif contains(sig, 'ACC') && contains(sig, 'tib')
+                objName = [crop{1} '_tib_acc'];
+            elseif contains(sig, 'GYR') && contains(sig, 'tib')
+                objName = [crop{1} '_tib_gyr'];
+            elseif contains(sig, 'ACC') && contains(sig, 'VL')
+                objName = [crop{1} '_thi_acc'];
+            end
+
+            ind = find(contains(obj, 'AffectedSide'));
+            if isempty(ind)
+                ind = find(contains(obj, 'METRIC'));
+            end
+
             if isempty(ind)
                 data.res.(files{i}).(objName).data.AMILag = NaN;
                     data.res.(files{i}).(objName).data.AMILagQ = NaN;
@@ -41,10 +54,18 @@ for i = 1:length(files)
                     continue
             end
 
-            if data.raw.(files{i}).(obj{ind}).data.AffectedSide == 0
-                side = 'L';
-            elseif data.raw.(files{i}).(obj{ind}).data.AffectedSide == 1
-                side = 'R';
+            if contains(obj{ind}, 'AffectedSide')
+                if data.raw.(files{i}).(obj{ind}).data.METRIC == 0
+                    side = 'L';
+                elseif data.raw.(files{i}).(obj{ind}).data.METRIC == 1
+                    side = 'R';
+                end
+            elseif contains(obj{ind}, 'METRIC')
+                if data.raw.(files{i}).(obj{ind}).data.AffectedSide == 0
+                    side = 'L';
+                elseif data.raw.(files{i}).(obj{ind}).data.AffectedSide == 1
+                    side = 'R';
+                end
             end
 
             if contains(sig, 'tib') && side == 'L'
@@ -132,16 +153,6 @@ for i = 1:length(files)
             [~, lag] = max(r);
             ind_r = l(lag);
 
-            if contains(sig, 'GYRO') && contains(sig, 'VL')
-                objName = [crop{1} '_thi_gyr'];
-            elseif contains(sig, 'ACC') && contains(sig, 'tib')
-                objName = [crop{1} '_tib_acc'];
-            elseif contains(sig, 'GYRO') && contains(sig, 'tib')
-                objName = [crop{1} '_tib_gyr'];
-            elseif contains(sig, 'ACC') && contains(sig, 'VL')
-                objName = [crop{1} '_thi_acc'];
-            end
-
             data.res.(files{i}).(objName).data.AMILag = l_ami;
             data.res.(files{i}).(objName).data.AMILagQ = l_ami/N;
             data.res.(files{i}).(objName).data.AMI = max(ami);
@@ -150,9 +161,9 @@ for i = 1:length(files)
             data.res.(files{i}).(objName).data.XCorr = xcorr(ind_r);
             data.res.(files{i}).(objName).data.AffectedSide = side;
 
-            H = figure('visible', 'off');
+            H = figure('visible', 'off', 'Units', 'Normalized', 'Position', [0 0 1 1]);
 
-            subplot(2,2,[1:2])
+            ax(1) = subplot(3,1,1);
             range_opal = ind_r:ind_r + length(time_Delsys) - 1;
             range_opal(length(imuDelsys) + 1:end) = [];
             range_opal(range_opal > length(time_Opal)) = [];
@@ -167,8 +178,9 @@ for i = 1:length(files)
                 end
             end
             xlabel('Time (s)')
-            ylabel('Normalized Magnitude')
-            legend('Original', 'AMI', 'XCORR')
+            ylabel({'Normalized';'Magnitude'})
+            yticklabels('')
+            legend('Original', 'AMI', 'XCORR', 'Location', 'northwest')
             switch sig_opal
                 case 'acc'
                     title('Mocap matched to APDM through IMU acceleration')
@@ -176,13 +188,21 @@ for i = 1:length(files)
                     title('Mocap matched to APDM through IMU gyration')
             end
 
-            subplot(2,2,3)
-            plot(lag_ami, ami, 'r', [l_ami; l_ami], [min(ami); max(ami)], 'k')
-            axis tight
-            xlabel('Lag')
-            ylabel('Average Mutual Information')
+            ax(2) = subplot(3,1,2);
+            ax(3) = copyobj(ax(1), H);
+            ax(3).Position = ax(2).Position;
+            delete(ax(2))
+            title('Overlap View')
+            xlim([min(time_Opal(range_opal)), max(time_Opal(range_opal))])
+            yticklabels('');
 
-            subplot(2,2,4)
+%             subplot(2,2,3)
+%             plot(lag_ami, ami, 'r', [l_ami; l_ami], [min(ami); max(ami)], 'k')
+%             axis tight
+%             xlabel('Lag')
+%             ylabel('Average Mutual Information')
+
+            subplot(3,1,3)
             plot(l, r, 'b', [l(lag); l(lag)], [min(r); max(r)], 'k')
             axis tight
             xlabel('Lag')
