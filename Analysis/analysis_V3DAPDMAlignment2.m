@@ -7,7 +7,8 @@ for i = 1:length(files)
 
     for crop = {'CR'}
 
-        for sig = {'CGAcc', 'AngVel'}
+%         for sig = {'CGAcc', 'AngVel'}
+        for sig = {'CGAcc'}
             obj = fieldnames(data.raw.(files{i}));
             
             if strcmp(crop, 'CR') && (any(contains(obj, 'RPV')) || any(contains(obj, 'RTH')))
@@ -17,7 +18,7 @@ for i = 1:length(files)
                     ind = find(contains(obj, 'RTH'));
                 end
                 signal = sig{1};
-                imuSeg = sqrt(sum(data.raw.(files{i}).(obj{ind}).data.(signal).^2, 2));
+                imuSeg = sqrt(data.raw.(files{i}).(obj{ind}).data.([signal '_X']).^2 + data.raw.(files{i}).(obj{ind}).data.([signal '_Y']).^2 + data.raw.(files{i}).(obj{ind}).data.([signal '_Z']).^2);
                 imuSeg(isnan(imuSeg)) = 0;
                 imuSeg_freq = data.raw.(files{i}).(obj{ind}).freq;
             elseif strcmp(crop, 'UC') && isfield(data.raw.(files{i}), 'DelsysTrignoSDK')
@@ -60,7 +61,7 @@ for i = 1:length(files)
             imuOpal_freq = data.raw.(files{i}).(opal).freq;
 
             if ~isinteger(imuOpal_freq)
-                fprintf('rounding sampliog rate to %i from %f\n', round(imuOpal_freq), imuOpal_freq)
+%                 fprintf('rounding sampliog rate to %i from %f\n', round(imuOpal_freq), imuOpal_freq)
                 imuOpal_freq = round(imuOpal_freq);
             end
 

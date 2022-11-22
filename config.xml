@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
-    <directory>R:\PROJECTS\wesens\Data\Analysis\Yu\Shock Attenuation\Data</directory>
-    <directory>R:\PROJECTS\iwalqq\Analysis\Yu Gavin\Data</directory>
-    <directory>R:\PROJECTS\wesens\Data\W002</directory>
-    <database>R:\PROJECTS\wesens\Data\Analysis\Senderling\013 Nonlinear Variability of Stair Climbing</database>
+    <directory></directory>
+    <directory>R:\PROJECTS\wesens\Data\Analysis\Senderling\V3D-APDM Alignment\Data</directory>
+    <database>R:\PROJECTS\wesens\Data\Analysis\Senderling\V3D-APDM Alignment</database>
     <options>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Load</filesload>
         <filetypes>
             <agd>Actigraph</agd>
             <csv>Actigraph</csv>
+            <csv>BAR</csv>
             <csv>Delsys</csv>
             <csv>Pfizer01</csv>
             <csv>Pfizer02</csv>
             <gt3x>Actigraph</gt3x>
             <h5>APDM1</h5>
+            <h5>APDM1Lumbar</h5>
             <h5>APDM2</h5>
             <mat>BAR</mat>
             <mat>QTM</mat>
@@ -32,6 +33,7 @@
         <filesanalysis>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Analysis</filesanalysis>
         <analysis>01</analysis>
         <analysis>FNN</analysis>
+        <analysis>MocapApdmAlignment</analysis>
         <analysis>QST</analysis>
         <analysis>QSTTraining</analysis>
         <analysis>RQA</analysis>
