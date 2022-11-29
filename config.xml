@@ -16,6 +16,7 @@
             <h5>APDM1</h5>
             <h5>APDM1Lumbar</h5>
             <h5>APDM2</h5>
+            <h5>APDM3Lumbar</h5>
             <mat>BAR</mat>
             <mat>QTM</mat>
             <png>WIN</png>
@@ -40,6 +41,7 @@
         <analysis>TimeLag</analysis>
         <analysis>V3DAPDMAlignment</analysis>
         <analysis>V3DAPDMAlignment2</analysis>
+        <analysis>V3DAPDMAlignment3</analysis>
         <analysis>custom</analysis>
     </options>
     <treatment>General Treatment</treatment>

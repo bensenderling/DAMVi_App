@@ -16,7 +16,7 @@ function app = analysis_MocapApdmAlignment(app, data, analysis)
 % Get all the file names from the data. This uses the raw data.
 files = fieldnames(data.raw);
 
-H = figure('visible', 'off');
+H = figure('visible', 'on');
 
 plot([0; 10], [0; 10], 'k-')
 xlabel('Mocap Heel Strike (s)')
@@ -45,7 +45,7 @@ for i = 1:length(files)
         hsMocapR = hsMocapR + data.raw.(files{i}).CR_CGAcc.XCorrLag/128 - data.raw.(files{i}).(obj{ind_Crop}).data.Crop_Start_Frame_X/255;
     end
 
-    if isfield(data.raw.(files{i}), 'EventsGaitLowerLimb') && isfield(data.raw.(files{i}).EventsGaitLowerLimb.data, 'InitialContact')
+    if isfield(data.raw.(files{i}).EventsGaitLowerLimb.data, 'InitialContact')
         hsApdmL = data.raw.(files{i}).EventsGaitLowerLimb.data.InitialContact(1,:)';
         hsApdmR = data.raw.(files{i}).EventsGaitLowerLimb.data.InitialContact(2,:)';
     else
@@ -53,37 +53,37 @@ for i = 1:length(files)
     end
 
     [~, lag] = min(abs(hsApdmL - hsMocapL(1)));
-    aL = lag;
+    a = lag;
     if lag + length(hsMocapL) - 1 < length(hsApdmL)
-        bL = lag + length(hsMocapL) - 1;
+        b = lag + length(hsMocapL) - 1;
     else
-        bL = length(hsApdmL);
+        b = length(hsApdmL);
     end
-    plot(hsMocapL(1:bL - aL + 1), hsApdmL(aL: bL), '.b')
+    plot(hsMocapL(1:b - a + 1), hsApdmL(a: b), '.b')
 
     [~, lag] = min(abs(hsApdmR - hsMocapR(1)));
-    aR = lag;
+    a = lag;
     if lag + length(hsMocapR) - 1 < length(hsApdmR)
-        bR = lag + length(hsMocapR) - 1;
+        b = lag + length(hsMocapR) - 1;
     else
-        bR = length(hsApdmR);
+        b = length(hsApdmR);
     end
-    plot(hsMocapR(1:bR - aR + 1), hsApdmR(aR: bR), '.r')
+    plot(hsMocapR(1:b - a + 1), hsApdmR(a: b), '.r')
 
     if rem(i, 10) == 0
         app.printLog('024', [num2str(i) ' of ' num2str(length(files)) ' analyzed']);
     end
 
-    rmse = [rmse; hsMocapL(1:bL - aL + 1) - hsApdmL(aL: bL)];
+    rmse = [rmse; hsMocapL(1:b - a + 1) - hsApdmL(a: b)];
 
 end
 
 title(['RMSE = ' num2str(sqrt(mean(rmse.^2)))]);
 
 if isfield(data.raw.(files{i}), 'CR_CGAcc')
-    saveas(H, [app.Database.Value '\Figures\Figure04_HSCorrected.jpg'])
+    saveas(H, [app.Database.Value '\Figures\Figure03_HSCorrected.jpg'])
 else
-    saveas(H, [app.Database.Value '\Figures\Figure04_HSUncorrected.jpg'])
+    saveas(H, [app.Database.Value '\Figures\Figure03_HSUncorrected.jpg'])
 end
 
 
