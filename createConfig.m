@@ -22,7 +22,10 @@ config.database = '';
 % config.options.files.xls = 'XLSX';
 % config.options.files.png = 'Windows';
 
-config.options.filesload = 'C:\Users\QTM\OneDrive - Boston University\BU\Development\001 BAR\Code\BAR_App\Load';
+config.options.filesload = 'C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Load';
+config.options.filetypes = [];
+config.options.filesprocess = 'C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Process';
+config.options.filesanalysis = 'C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Analysis';
 
 % Available treatment modules.
 config.treatment = {...

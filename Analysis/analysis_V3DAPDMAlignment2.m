@@ -206,13 +206,14 @@ for i = 1:length(files)
 %             subplot(413),plot(time_Opal, -data.raw.(files{i}).(opal).data.(sig_opal)(:,1), 'k', time_Opal(range_opal), data.raw.(files{i}).(obj{ind}).data.(signal)(1:length(range_opal),3), 'b')
 %             subplot(414),plot(time_Opal, imuOpal, 'k', time_Opal(range_opal), imuSeg, 'b')
 
-            saveas(H, [app.Database.Value '\Figures\Figure02_' files{i} '_' objName '.jpg'])
+            saveas(H, [app.Database.Value '\Figures\Figure02_' strjoin(data.raw.(files{i}).groups, '_') '_' objName '.jpg'])
             close(H)
 
         end
 
     end
 
+    % Every 10 files print to the BAR App log.
     if rem(i, 10) == 0
         app.printLog('024', [num2str(i) ' of ' num2str(length(files)) ' analyzed']);
     end

@@ -69,6 +69,8 @@ if ~isempty(strfind(sources{1},'\'))
         ind = strfind(sources{i},'\');
         sourcesTrim{i, 1} = sources{i}(ind(end)+1:end); % trims headers
     end
+else
+    sourcesTrim = sources;
 end
 
 %% Inport numeric data
@@ -87,9 +89,9 @@ for j = 1:length(sourcesTrim)
     % are also simple to calculate in MATLAB instead of in the Global V3D
     % Workspace. Working with only the original values also enables higher
     % quality data review in the BAR App.
-    if contains(measure{j}, 'Count') || contains(measure{j}, 'Mean') || contains(measure{j}, 'StdDev') || contains(measure{j}, 'ANALOG_RATE')
-        continue
-    end
+%     if contains(measure{j}, 'Count') || contains(measure{j}, 'Mean') || contains(measure{j}, 'StdDev') || contains(measure{j}, 'ANALOG_RATE')
+%         continue
+%     end
     
     temp = data(:,j+1);
     
@@ -193,6 +195,10 @@ end
 end
 
 function dat = findGroups(dat)
+
+if ~contains(dat,'\')
+    return
+end
 
 % The various folders in the files directory path will
 % be turned into group information. This includes the

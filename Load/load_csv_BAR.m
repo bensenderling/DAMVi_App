@@ -41,7 +41,15 @@ for i = 1:height(data)
     csv_BAR.raw.(data.file{i}).groups = cellfun(@num2str, table2cell(data(i, indGroup))', 'UniformOutput', false);
     % Iterate through the signal indexes and pull them all in.
     for j = 1:length(indSignal)
-        csv_BAR.raw.(data.file{i}).(data.measures{i}).(fields{indSignal(j)}) = data.(fields{indSignal(j)})(i);
+        % This if statement allows multiple values from the same measure to
+        % be re-imported. This is the opposite of the export means option
+        % in the export tab.
+        if isfield(csv_BAR.raw.(data.file{i}), data.measures{i}) && isfield(csv_BAR.raw.(data.file{i}).(data.measures{i}).data, fields{indSignal(j)})
+            n = length(csv_BAR.raw.(data.file{i}).(data.measures{i}).data.(fields{indSignal(j)}));
+            csv_BAR.raw.(data.file{i}).(data.measures{i}).data.(fields{indSignal(j)})(n + 1) = data.(fields{indSignal(j)})(i);
+        else
+            csv_BAR.raw.(data.file{i}).(data.measures{i}).data.(fields{indSignal(j)}) = data.(fields{indSignal(j)})(i);
+        end
     end
 end
 

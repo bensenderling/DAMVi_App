@@ -12,8 +12,6 @@ function xlsx_Medoc = load_xlsx_Medoc(file)
 % Oct 2022 - Created by Ben Senderling, bsender@bu.edu
 %% Begin Code
 
-dbstop if error
-
 % Read in the Description tab with information on the test.
 meta = readcell(file, 'Sheet', 'Description');
 

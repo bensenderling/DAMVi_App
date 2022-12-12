@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
     <directory></directory>
-    <directory>R:\PROJECTS\wesens\Data\Analysis\Senderling\V3D-APDM Alignment\Data</directory>
-    <database>R:\PROJECTS\wesens\Data\Analysis\Senderling\V3D-APDM Alignment</database>
+    <directory>C:\Users\bsender\Documents\Senderling\Test Medoc\Data</directory>
+    <database>C:\Users\bsender\Documents\Senderling\Test Medoc</database>
     <options>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Load</filesload>
+        <filesprocess>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Process</filesprocess>
+        <filesanalysis>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Analysis</filesanalysis>
         <filetypes>
             <agd>Actigraph</agd>
             <csv>Actigraph</csv>
@@ -13,10 +15,12 @@
             <csv>Pfizer01</csv>
             <csv>Pfizer02</csv>
             <gt3x>Actigraph</gt3x>
-            <h5>APDM1</h5>
-            <h5>APDM1Lumbar</h5>
-            <h5>APDM2</h5>
-            <h5>APDM3Lumbar</h5>
+            <h5>APDM0Meta</h5>
+            <h5>APDM1Raw</h5>
+            <h5>APDM1RawLumbar</h5>
+            <h5>APDM2Results</h5>
+            <h5>APDM3Qua</h5>
+            <h5>APDM3QuaLumbar</h5>
             <mat>BAR</mat>
             <mat>QTM</mat>
             <png>WIN</png>
@@ -24,15 +28,16 @@
             <txt>V3D</txt>
             <xlsx>Medoc</xlsx>
         </filetypes>
-        <filesprocess>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Process</filesprocess>
+        <process>APDM</process>
         <process>EMG</process>
         <process>Groupings</process>
         <process>Merge</process>
         <process>Segment</process>
         <process>Treatment</process>
         <process>quick</process>
-        <filesanalysis>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Analysis</filesanalysis>
         <analysis>01</analysis>
+        <analysis>APDM</analysis>
+        <analysis>APDMResultsFigures</analysis>
         <analysis>FNN</analysis>
         <analysis>MocapApdmAlignment</analysis>
         <analysis>QST</analysis>
@@ -81,8 +86,6 @@
     <figures>MD</figures>
     <figures>figure_MD</figures>
     <figures>Image</figures>
-    <figures></figures>
-    <figures>Histogram</figures>
     <figures></figures>
     <export>General</export>
     <export>BU Caltesting</export>
