@@ -17,7 +17,6 @@ function csv_pfizer02 = load_csv_Pfizer02(file)
 % - This load file may be confused with Pfizer01. The distincion should be
 %   made clearer.
 % Oct 2022 - Created by Ben Senderling, bsender@bu.edu
-%
 %% Begin Code
 
 fid = fopen(file);

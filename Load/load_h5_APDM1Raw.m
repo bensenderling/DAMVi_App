@@ -10,7 +10,6 @@ function h5_APDM1 = load_h5_APDM1Raw(file)
 %   once can consume a lot of RAM. There could be an elegant way to load
 %   only what data is needed.
 % Nov 2022 - Created by Ben Senderling
-%
 %% Begin Code
 dbstop if error
 

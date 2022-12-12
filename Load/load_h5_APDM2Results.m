@@ -18,7 +18,6 @@ function h5_APDM2 = load_h5_APDM2Results(file)
 % - This function has recently been made more general but has not been
 %   tested on varied h5 files.
 % Nov 2022 - Created by Ben Senderling
-%
 %% Begin Code
 
 % Pull the information from the h5 file and save it as the meta data.
