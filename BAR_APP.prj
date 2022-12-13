@@ -8,14 +8,12 @@
     <param.icons />
     <param.summary>This app is designed to help streamline data processing, data review and reporting.</param.summary>
     <param.description>The app has a main core that uses modules to perform various tasks. These includes processing, analyzing, reviewing and reporting. They work around data types designed for specific files from specific equipment. Such as TRC files from motion capture systems. Those modules can be added on by other users without needing an in-depth understanding of MATLAB or app design.</param.description>
-    <param.screenshot>C:\Users\bsender\AppData\Local\Temp\tp2ecc72c1_bf4c_411d_a265_9f51c812d912.png</param.screenshot>
+    <param.screenshot>${PROJECT_ROOT}\Logo_122116.png</param.screenshot>
     <param.version>1.0</param.version>
     <param.products.name />
     <param.products.id />
     <param.products.version />
-    <param.platforms>
-      <item>win64</item>
-    </param.platforms>
+    <param.platforms />
     <param.output>${PROJECT_ROOT}</param.output>
     <param.guid>cbc40727-5b95-4b43-b7fc-5c023353c083</param.guid>
     <unset>
@@ -28,6 +26,7 @@
       <param.products.name />
       <param.products.id />
       <param.products.version />
+      <param.platforms />
       <param.output />
     </unset>
     <fileset.main>
@@ -35,12 +34,7 @@
     </fileset.main>
     <fileset.depfun>
       <file>${PROJECT_ROOT}\createConfig.m</file>
-      <file>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\NONANLibrary\matlab\AMI_Stergiou.m</file>
-      <file>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\NONANLibrary\matlab\AMI_Thomas.m</file>
-      <file>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\NONANLibrary\matlab\FNN.m</file>
-      <file>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\NONANLibrary\matlab\linear_depth_mex.mexw64</file>
-      <file>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\NONANLibrary\matlab\RQA.m</file>
-      <file>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Logo_122116.png</file>
+      <file>${PROJECT_ROOT}\Logo_122116.png</file>
     </fileset.depfun>
     <fileset.resources>
       <file>${PROJECT_ROOT}\Analysis</file>

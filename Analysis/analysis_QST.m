@@ -1,51 +1,93 @@
 function app = analysis_QST(app, data, analysis)
+% app = analysis_QST(app, data, analysis)
+% inputs  - app, required mlapp object.
+%         - data, BAR App data structure.
+%         - analysis, string of the analysis type.
+% Remarks
+% - This analysis script will process QST data recorded through Medoc software. The analysis is fairly specific to research methods performed at the
+%   MU MoveLab. It assumes that pressure was applied through an algometer using Medoc software.
+% - The code will calculate a number of results such as:
+%   - sequenceN, the sequence number from the Medoc test.
+%   - trialN, the trial number from the trial test.
+%   - valuePeak, this is the highest pressure delivered.
+%   - valueEvent, this is the instantaneous pressure at a button press.
+%   - rSquaredAdjusted, This the adjusted R squared value of a linear fit to the line of pressure versus time.
+%   - slope, This is the slope of pressure application versus time.
+% Future Work
+% - Potentially if additional tests are performed in Medoc this same analysis method could be updated to analyze them.
+% Nov 2022 - Created by Ben Senderling, bsender@bu.edu
+%% Begin Code
 
-
+% Get the file names.
 files = fieldnames(data.raw);
+% Start iterating through them.
 for i = 1:length(files)
+    % Get the object names.
     obj = fieldnames(data.raw.(files{i}));
+    % Remove the informaitonal fields.
     obj(strcmp(obj, 'meta')) = [];
     obj(strcmp(obj, 'groups')) = [];
 
+    % Create a figure and set the position to the size of the screen.
     H = figure('visible', 'off');
     H.Units = 'Normalized';
     H.Position = [0 0 1 1];
 
+    % Get the sequence and the trial numbers so they can be used in the plots latter.
     sequenceN = zeros(length(obj), 1);
     trialN = zeros(length(obj), 1);
     for j = 1:length(obj)
+        % They'll need to be converted from strings to doubles.
         sequenceN(j) = str2double(obj{j}(9));
         trialN(j) = str2double(obj{j}(end));
     end
 
+    % Iterate through all the objects.
     for j = 1:length(obj)
 
+        % The sequence and the trial number will be put into the results
         data.res.(files{i}).(obj{j}).data.sequenceN = sequenceN(j);
         data.res.(files{i}).(obj{j}).data.trialN = trialN(j);
         
+        % Find the maximum pressure delivered and save it in the results.
         [m, I] = max(data.raw.(files{i}).(obj{j}).data.Pressure_kPa_);
         data.res.(files{i}).(obj{j}).data.valuePeak = m;
-        
+
+        % Find any event registered by the software.
         I2 = find(data.raw.(files{i}).(obj{j}).data.Event);
+        % Use the event index to save the instantaneous pressure to the results.
         data.res.(files{i}).(obj{j}).data.valueEvent = data.raw.(files{i}).(obj{j}).data.Pressure_kPa_(I2);
         
+        % Fit a linear model to the data.
         lm = fitlm(data.raw.(files{i}).(obj{j}).data.Timestamp_msec_/1000,data.raw.(files{i}).(obj{j}).data.Pressure_kPa_);
+        % The Adjusted R Squared is saved.
         data.res.(files{i}).(obj{j}).data.rSquaredAdjusted = lm.Rsquared.Adjusted;
+        % The slope of the linear model is saved.
         data.res.(files{i}).(obj{j}).data.slope = lm.Coefficients.Estimate(2);
 
-        y = 10;
+        % Save the peaks so the y axis of all the plots can be made the same.
+        y(j) = m;
+        % Save the peak of the x axes so they can all be made the same latter.
         if ~isempty(I2)
+            % Use the button event marker if it was found.
             x(j) = max(data.raw.(files{i}).(obj{j}).data.Timestamp_msec_(I2)/1000);
         else
+            % Use the time of the maximum pressure.
             x(j) = data.raw.(files{i}).(obj{j}).data.Timestamp_msec_(I)/1000;
         end
 
+        % The sequences will be used as the rows and the trials as the columns. This was chosen based on the intended use of the software.
         subplot(max(sequenceN), max(trialN), j)
         hold on
-        fill([0.01;1;10;10;9;0.01;0.01], [0.01;0.01;9;10;10;1;0.01], [0.9, 0.9, 0.9], 'EdgeColor', 'none')
+        % Create a fill to highlight the target rate of pressure application and the boundaries.
+        fill([0.01;1;20;20;19;0.01;0.01], [0.01;0.01;19;20;20;1;0.01], [0.9, 0.9, 0.9], 'EdgeColor', 'none')
+        % Create a line to mark the exact intended rate.
         plot([0;10], [0;10], 'k:')
+        % Draw the data.
         plot(data.raw.(files{i}).(obj{j}).data.Timestamp_msec_/1000, data.raw.(files{i}).(obj{j}).data.Pressure_kPa_, 'k')
+        % Draw a vertical line for the maximum.
         plot([0; data.raw.(files{i}).(obj{j}).data.Timestamp_msec_(I)/1000], [m; m], 'k--')
+        % Draw a horizontal line for the event pressure.
         if ~isempty(I2)
             plot([data.raw.(files{i}).(obj{j}).data.Timestamp_msec_(I2)/1000; data.raw.(files{i}).(obj{j}).data.Timestamp_msec_(I2)/1000], [0; data.raw.(files{i}).(obj{j}).data.Pressure_kPa_(I2)], 'k-.')
         end
@@ -56,21 +98,25 @@ for i = 1:length(files)
         
     end
 
+    % Iterate through all the objects again and make the axes the same.
     for j = 1:length(obj)
         subplot(max(sequenceN), max(trialN), j)
         xlim([0, max(x)])
-        ylim([0, y])
+        ylim([0, max(y)])
     end
 
-    saveas(H, [app.Database.Value '\Figures\Figure01_' files{i} '.jpg'])
+    % Save the figure and close it.
+    saveas(H, [app.Database.Value '\Figures\Figure01_QST' files{i} '.jpg'])
     close(H)
 
+    % A message will be printed to the main BAR App every 10 files.
     if rem(i, 10) == 0
         app.printLog('024', [num2str(i) ' of ' num2str(length(files)) ' analyzed']);
     end
 
 end
 
+% Run the public BAR App analysisComplete method to get the data back into the app.
 analysisComplete(app, data, analysis)
 
 end
