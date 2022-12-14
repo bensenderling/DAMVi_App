@@ -3,10 +3,9 @@ function createConfig(filepath)
 % inputs  - filepath, the directory to create the file path in.
 % Remarks
 % - This function creates an initial configuration file for the BAR App. It can also be used outside the app.
-% - Many of the data are initialized as empty or blank objects. These will need to be set within the app and will then be remembered when run the next
-% time.
+% - Many of the data are initialized as empty or blank objects. These will need to be set within the app
 % Future Work
-% - As some of the method choices in the app are made more dynamic these options will need to change.
+% - This may need to update the search path if a new folder is added that is not in the current path.
 % Nov 2022 - Created by Ben Senderling, bsender@bu.edu
 
 % Create the structure that will be the conf file.
@@ -14,16 +13,17 @@ config = struct;
 
 % Create empty arrays for the working directory and the search directories.
 config.directory = '';
+
 config.database = '';
 
-% Create empty arrays the various method directories.
+%When a folder is
+% selected the app will check that all the needed subfolders are present
+% and if they aren't, create them.
 config.options.filesload = '';
+config.options.filetypes = [];
 config.options.filesprocess = '';
 config.options.filesanalysis = '';
 config.options.filesreview = '';
-
-% Create an empty array for the file types.
-config.options.filetypes = [];
 
 % Available treatment modules.
 config.treatment = {...
@@ -38,17 +38,17 @@ config.segmentation_general = {...
     'WESENS Opal 3', 'process_Segment_WESENSOpal3'};
 
 % Available analysis modules.
-% config.analysis = {...
-%     'Time Lag', 'analysis_TimeLag',...
-%     'FNN', 'analysis_FNN',...
-%     'RQA', 'analysis_RQA'};
+config.analysis = {...
+    'Time Lag', 'analysis_TimeLag',...
+    'FNN', 'analysis_FNN',...
+    'RQA', 'analysis_RQA'};
 
 % Available review modules.
-% config.review = {...
-%     'Raw Data', 'review_RAW',...
-%     'Time Lag', 'review_TimeLag',...
-%     'FNN', 'review_FNN',...
-%     'RQA', 'review_RQA'};
+config.review = {...
+    'Raw Data', 'review_RAW',...
+    'Time Lag', 'review_TimeLag',...
+    'FNN', 'review_FNN',...
+    'RQA', 'review_RQA'};
 
 config.figures = {...
     '1D', '',...

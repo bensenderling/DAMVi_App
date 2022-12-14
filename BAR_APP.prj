@@ -8,7 +8,7 @@
     <param.icons />
     <param.summary>This app is designed to help streamline data processing, data review and reporting.</param.summary>
     <param.description>The app has a main core that uses modules to perform various tasks. These includes processing, analyzing, reviewing and reporting. They work around data types designed for specific files from specific equipment. Such as TRC files from motion capture systems. Those modules can be added on by other users without needing an in-depth understanding of MATLAB or app design.</param.description>
-    <param.screenshot>${PROJECT_ROOT}\Logo_122116.png</param.screenshot>
+    <param.screenshot>C:\Users\bsender\AppData\Local\Temp\tpcd1bfe35_1556_4d8b_9642_d73ea82ecd6d.png</param.screenshot>
     <param.version>1.0</param.version>
     <param.products.name />
     <param.products.id />
