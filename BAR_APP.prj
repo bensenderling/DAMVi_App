@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="2157249015" file="C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\BAR_APP.prj" location="C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App" name="BAR_APP" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="526575372" file="C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\BAR_APP.prj" location="C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App" name="BAR_APP" target="target.mlapps" target-name="Package App">
     <param.appname>BAR_APP</param.appname>
     <param.authnamewatermark>Ben Senderling</param.authnamewatermark>
     <param.email>bsender@bu.edu</param.email>
@@ -8,7 +8,7 @@
     <param.icons />
     <param.summary>This app is designed to help streamline data processing, data review and reporting.</param.summary>
     <param.description>The app has a main core that uses modules to perform various tasks. These includes processing, analyzing, reviewing and reporting. They work around data types designed for specific files from specific equipment. Such as TRC files from motion capture systems. Those modules can be added on by other users without needing an in-depth understanding of MATLAB or app design.</param.description>
-    <param.screenshot>C:\Users\bsender\AppData\Local\Temp\tp8902b459_f3e5_4919_b500_327da49a512a.png</param.screenshot>
+    <param.screenshot>C:\Users\bsender\AppData\Local\Temp\tp7d2261d0_774e_4d7c_8ff1_0f9c935b42c4.png</param.screenshot>
     <param.version>1.0</param.version>
     <param.products.name />
     <param.products.id />
