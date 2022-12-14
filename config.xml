@@ -4,16 +4,49 @@
     <database>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR</database>
     <options>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Load</filesload>
+        <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App Beta\Load</filesload>
         <filesprocess>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Process</filesprocess>
         <filesanalysis>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Analysis</filesanalysis>
+        <filesanalysis>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App Beta\Analysis</filesanalysis>
         <filesreview>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Review</filesreview>
         <filetypes>
             <xlsx>Medoc</xlsx>
+            <agd>Actigraph</agd>
+            <csv>Actigraph</csv>
+            <csv>BAR</csv>
+            <csv>Delsys</csv>
+            <csv>Pfizer01</csv>
+            <csv>Pfizer02</csv>
+            <gt3x>Actigraph</gt3x>
+            <h5>APDM0Meta</h5>
+            <h5>APDM1Raw</h5>
+            <h5>APDM1RawLumbar</h5>
+            <h5>APDM2Results</h5>
+            <h5>APDM3Qua</h5>
+            <h5>APDM3QuaLumbar</h5>
+            <m>MATLAB</m>
+            <mat>BAR</mat>
+            <mat>QTM</mat>
+            <png>WIN</png>
+            <qtm>Qualisys</qtm>
+            <txt>V3D</txt>
         </filetypes>
         <process>Groupings</process>
         <process>Merge</process>
         <analysis>QST</analysis>
         <analysis>QSTTraining</analysis>
+        <analysis>01</analysis>
+        <analysis>APDM</analysis>
+        <analysis>APDMResultsFigures</analysis>
+        <analysis>FNN</analysis>
+        <analysis>MATLABDependencies</analysis>
+        <analysis>MocapApdmAlignment</analysis>
+        <analysis>RQA</analysis>
+        <analysis>TimeLag</analysis>
+        <analysis>V3DAPDMAlignment</analysis>
+        <analysis>V3DAPDMAlignment2</analysis>
+        <analysis>V3DAPDMAlignment3</analysis>
+        <analysis>custom</analysis>
         <review>General</review>
     </options>
     <treatment>General Treatment</treatment>
