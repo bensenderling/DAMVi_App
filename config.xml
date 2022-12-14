@@ -27,19 +27,20 @@
             <m>MATLAB</m>
             <mat>BAR</mat>
             <mat>QTM</mat>
+            <mlapp>MATLAB</mlapp>
             <png>WIN</png>
             <qtm>Qualisys</qtm>
             <txt>V3D</txt>
         </filetypes>
         <process>Groupings</process>
         <process>Merge</process>
+        <analysis>MATLABDependencies</analysis>
         <analysis>QST</analysis>
         <analysis>QSTTraining</analysis>
         <analysis>01</analysis>
         <analysis>APDM</analysis>
         <analysis>APDMResultsFigures</analysis>
         <analysis>FNN</analysis>
-        <analysis>MATLABDependencies</analysis>
         <analysis>MocapApdmAlignment</analysis>
         <analysis>RQA</analysis>
         <analysis>TimeLag</analysis>
@@ -89,4 +90,5 @@
     <figures></figures>
     <export>General</export>
     <export>BU Caltesting</export>
+    <export>Tables</export>
 </struct>
