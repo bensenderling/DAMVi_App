@@ -3,29 +3,21 @@ function csv_Delsys = load_csv_Delsys(file)
 % inputs  - file, directory and file name to import
 % outputs - dataout, structure containing data from a Delsys system
 % Remarks
-% - This code is written to load data exported from Delsys as a csv format.
-%   It is writen in a general manner so that it does not matter how many
-%   columns of data there are. It will automatically parse the column
-%   headers for the channel names. Those name are then used to create 
-%   structure fields that store the data.
+% - This code is written to load data exported from Delsys as a csv format. It is writen in a general manner so that it does not matter how many 
+%   columns of data there are. It will automatically parse the column headers for the channel names. Those name are then used to create structure 
+%   fields that store the data.
 % - The output format is specific for the BAR App.
-% - While the code is (hopefully) written in a way that allow a time column
-%   to be located only in the first column. It is suggested that the data
-%   be exported with a time column for each column of data. Since the 
-%   Trigno channels sample at two different frequencies this makes figuring
-%   out the time for each channel much easier.
-% - This code reads in one line at a time. This will be slower than csvread
-%   for shorter files but will be faster and more efficient for longer 
-%   files.
+% - While the code is (hopefully) written in a way that allow a time column to be located only in the first column. It is suggested that the data be 
+%   exported with a time column for each column of data. Since the Trigno channels sample at two different frequencies this makes figuring out the 
+%   time for each channel much easier. There is also a mismatch where IMU channels have longer time columns than they should.
+% - This code reads in one line at a time. This will be slower than csvread for shorter files but will be faster and more efficient for longer files.
 % Future Work
-% - It could be made more complicated and flexible to load older Delsys
-%   files.
-% - This code will need to be updated as Delsys updates their software, as
-%   it is likely they will change the output format.
-% Sept 2022 - Created by Ben Senderling
+% - It could be made more complicated and flexible to load older Delsys files.
+% - This code will need to be updated as Delsys updates their software, as it is likely they will change the output format.
+% Sep 2022 - Created by Ben Senderling, bsender@bu.edu
+% Dec 2022 - Modified by Ben Senderling, bsender@bu.edu
+%          - Added some fixes for variable data lengths.
 %% Begin Code
-
-dbstop if error
 
 % The file will be opened and read line by line. The files can be quite
 % large and this has proven a better option than MATLAB's native functions.
@@ -54,9 +46,22 @@ while strcmp(line(1:5),'Label')
     channel = line(ind1(2) + 2:ind2 - 2);
     % There may be characters pressent that can not be in structure fields.
     channel = regexprep(channel, {' ', '[.]'}, {'_', '_'});
+
+    % This is used to help condense the components of each measurment into single objects. It is assumed the order is X-Y-Z.
+    if contains(channel, 'dEMG')
+        measure = 'dEMG';
+    elseif contains(channel, 'ACC')
+        measure = ['IMU_' channel(7:8)];
+    elseif contains(channel, 'GYRO')
+        measure = ['IMU_' channel(8:9)];
+    else
+        % This will mostly be other EMG channels.
+        measure = channel;
+    end
+
     % Get the sampling frequency.
-    sampfreq = str2num(line(ind2 + 20:ind3 - 2));
-    csv_Delsys.(channel).sampfreq = sampfreq;
+    sampfreq = str2double(line(ind2 + 20:ind3 - 2));
+    csv_Delsys.(measure).freq = sampfreq;
     
     % Get the next line.
     line = fgetl(fid);
@@ -101,13 +106,14 @@ while ~feof(fid)
     count2 = count2 + 1;
 end
 
+% Close the file.
+fclose(fid);
+
 % Replace any NaNs with zeros.
 data(isnan(data)) = 0;
 
 % Assign the data to structure fields.
 for i = 1:length(headers)
-    
-    ind4 = [];
     
     % Time may be stored differently depending on the file.
     if strcmp(headers{i},'X[s]') || strcmp(headers{i},'Time')
@@ -128,18 +134,54 @@ for i = 1:length(headers)
         ind2 = strfind(headers{i}, '"');
         channel = headers{i}(ind1 + 2:ind2(2) - 1);
 
-        % Remove invalid characters from the channel name.
-        channel = regexprep(channel, {' ', '(', ')'}, {''});
-        channel(strfind(channel, '.')) = [];
-        % Put the data into the structure.
-        csv_Delsys.(channel).data = data(:, i);
-        
-        % Remove the zeros found using the previous time column.
-        csv_Delsys.(channel).data(ind4) = [];
+        % Remove invalid characters from the channel name. This line does need to be the same as that above.
+        channel = regexprep(channel, {' ', '[.]'}, {'_', '_'});
 
-        % Calculate the sampling frequency and add it to the structure.
-        sampfreq = 1/mean(diff(time));
-        csv_Delsys.(channel).sampfreq = sampfreq;
+        % This is used to help condense the components of each measurment into single objects. It is assumed the order is X-Y-Z.
+        if contains(channel, 'dEMG')
+            measure = 'dEMG';
+            signal = 'emg';
+        elseif contains(channel, 'ACC')
+            measure = ['IMU_' channel(7:8)];
+            signal = 'acc';
+        elseif contains(channel, 'GYRO')
+            measure = ['IMU_' channel(8:9)];
+            signal = 'gyr';
+        else
+            measure = channel;
+            signal = 'emg';
+        end
+
+        temp = data(:, i);
+
+        % Remove the zeros found using the previous time column.
+        temp(ind4) = [];
+
+        % The EMG signals appear to go the full extent of their time columns but the IMU data stops short. Because there is different sampling between
+        % the different signals
+        if strcmp(measure, 'IMU')
+
+            % First find the indexes where the difference in the signal is 0. Then find the last index of where the difference of these indexes is 1.
+            % Find the last index before the difference of the values is 0.
+            ind5 = find(diff(temp) == 0);
+            % Make sure at least the very last value was found to be a repeated 0. This should help catch signals where there are actual repeated 0s.
+            if ind5(end) + 1 == length(temp)
+                ind6 = ind5(find(diff(ind5) ~= 1, 1, 'last') + 1);
+            else
+                ind6 = [];
+            end
+            % Remove the zeros that were padded for some unknown reason and given time values.
+            temp(ind6:end) = [];
+
+        end
+
+        % Put the data into the structure. If it the measure or signal hasn't been created yet, created newly.
+        if ~isfield(csv_Delsys, measure) || ~isfield(csv_Delsys.(measure), 'data') || ~isfield(csv_Delsys.(measure).data, signal)
+            csv_Delsys.(measure).data.(signal) = temp;
+        else
+            % If it has been created append it. It is assumed the are the same size but this may not always be the case.
+            csv_Delsys.(measure).data.(signal)(:, end + 1) = temp;
+        end
 
         % Reset the end of data index.
         ind4 = [];
