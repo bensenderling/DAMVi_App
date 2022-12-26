@@ -7,7 +7,6 @@ function m_MATLAB = load_m_MATLAB(file)
 % Future Work
 % - None.
 % Dec 2022 - Created by Ben Senderling, bsender@bu.edu
-%% Begin Code
 
 m_MATLAB.file.data.file = file;
 

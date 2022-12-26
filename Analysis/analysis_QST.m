@@ -46,24 +46,24 @@ for i = 1:length(files)
     for j = 1:length(obj)
 
         % The sequence and the trial number will be put into the results
-        data.res.(files{i}).(obj{j}).data.sequenceN = sequenceN(j);
-        data.res.(files{i}).(obj{j}).data.trialN = trialN(j);
+        data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.sequenceN = sequenceN(j);
+        data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.trialN = trialN(j);
         
         % Find the maximum pressure delivered and save it in the results.
         [m, I] = max(data.raw.(files{i}).(obj{j}).data.Pressure_kPa_);
-        data.res.(files{i}).(obj{j}).data.valuePeak = m;
+        data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.valuePeak = m;
 
         % Find any event registered by the software.
         I2 = find(data.raw.(files{i}).(obj{j}).data.Event);
         % Use the event index to save the instantaneous pressure to the results.
-        data.res.(files{i}).(obj{j}).data.valueEvent = data.raw.(files{i}).(obj{j}).data.Pressure_kPa_(I2);
+        data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.valueEvent = data.raw.(files{i}).(obj{j}).data.Pressure_kPa_(I2);
         
         % Fit a linear model to the data.
         lm = fitlm(data.raw.(files{i}).(obj{j}).data.Timestamp_msec_/1000,data.raw.(files{i}).(obj{j}).data.Pressure_kPa_);
         % The Adjusted R Squared is saved.
-        data.res.(files{i}).(obj{j}).data.rSquaredAdjusted = lm.Rsquared.Adjusted;
+        data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.rSquaredAdjusted = lm.Rsquared.Adjusted;
         % The slope of the linear model is saved.
-        data.res.(files{i}).(obj{j}).data.slope = lm.Coefficients.Estimate(2);
+        data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.slope = lm.Coefficients.Estimate(2);
 
         % Save the peaks so the y axis of all the plots can be made the same.
         y(j) = m;

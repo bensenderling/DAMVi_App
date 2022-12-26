@@ -1,17 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
     <directory></directory>
-    <directory>C:\Users\bsender\Documents\Senderling\13 Nonlinear Variability of Stair Climbing\Data</directory>
-    <database>C:\Users\bsender\Documents\Senderling\13 Nonlinear Variability of Stair Climbing</database>
+    <directory>C:\Users\bense\Documents\Projects\013 Nonlinear Variability of Stair Climbing\Data</directory>
+    <database>C:\Users\bense\Documents\Projects\013 Nonlinear Variability of Stair Climbing</database>
     <options>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Load</filesload>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App Beta\Load</filesload>
+        <filesload>C:\Users\bense\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Load</filesload>
+        <filesload>C:\Users\bense\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App Beta\Load</filesload>
         <filesprocess>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Process</filesprocess>
         <filesprocess>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App Beta\Process</filesprocess>
+        <filesprocess>C:\Users\bense\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Process</filesprocess>
+        <filesprocess>C:\Users\bense\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App Beta\Process</filesprocess>
         <filesanalysis>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Analysis</filesanalysis>
         <filesanalysis>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App Beta\Analysis</filesanalysis>
+        <filesanalysis>C:\Users\bense\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Analysis</filesanalysis>
+        <filesanalysis>C:\Users\bense\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App Beta\Analysis</filesanalysis>
         <filesreview>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Review</filesreview>
         <filesreview>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App Beta\Review</filesreview>
+        <filesreview>C:\Users\bense\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Review</filesreview>
+        <filesreview>C:\Users\bense\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App Beta\Review</filesreview>
+        <segment>TurnsAPDM</segment>
+        <segment>TurnsIMU</segment>
+        <segment>WESENSOpal3</segment>
+        <figure>1D</figure>
+        <figure>2D</figure>
+        <figure>3D</figure>
+        <figure>FNN</figure>
+        <figure>Histogram</figure>
+        <figure>Image</figure>
+        <figure>RQA</figure>
+        <figure>TimeLag</figure>
         <filetypes>
             <agd>Actigraph</agd>
             <csv>Delsys</csv>
@@ -40,6 +59,7 @@
         <process>Merge</process>
         <process>Segment</process>
         <process>Treatment</process>
+        <analysis>Custom</analysis>
         <analysis>MATLABDependencies</analysis>
         <analysis>QST</analysis>
         <analysis>QSTTraining</analysis>
@@ -54,21 +74,11 @@
         <analysis>V3DAPDMAlignment</analysis>
         <analysis>V3DAPDMAlignment2</analysis>
         <analysis>V3DAPDMAlignment3</analysis>
-        <analysis>custom</analysis>
         <review>General</review>
         <review>APDMTurns</review>
+        <review>APDMTurns2</review>
         <review>FNN</review>
         <review>RQA</review>
-        <review>TimeLag</review>
-        <segment>TurnsAPDM</segment>
-        <segment>TurnsIMU</segment>
-        <segment>WESENSOpal3</segment>
-        <figure>1D</figure>
-        <figure>2D</figure>
-        <figure>3D</figure>
-        <figure>Histogram</figure>
-        <figure>Image</figure>
-        <figure>TimeLag</figure>
     </options>
     <treatment>General Treatment</treatment>
     <treatment>process_Treatment</treatment>

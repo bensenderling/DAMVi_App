@@ -1,4 +1,4 @@
-function app = analysis_custom(app, data, analysis)
+function app = analysis_Custom(app, data, analysis)
 % app = analysis_custom(app, data, analysis)
 % inputs  - app, the BAR App object.
 %         - data, the data structure loaded into the BAR App.
@@ -42,13 +42,13 @@ for i = 1:length(files)
         accelerationMagnitude = sqrt(sum(data.raw.(files{i}).(objs{j}).data.acc.^2, 2));
         % Calculate a metric and store it as a result. This calculation
         % would produce a single number as a result.
-        data.res.(files{i}).(objs{j}).data.peakAcceleration = max(accelerationMagnitude);
+        data.res.Custom.(files{i}).(objs{j}).data.acc.peakAcceleration = max(accelerationMagnitude);
 
         % Perform another operation on the data.
         heelStrikes = findHeelStrikes(data.raw.(files{i}).(objs{j}).data.heelMarker);
         % Calculate a metric using the sampling frequency and store it as a
         % result. This example would likely produce an array of results.
-        data.res.(files{i}).(objs{j}).data.heelStrikes = heelStrikes/data.res.(files{i}).(objs{j}).freq;
+        data.res.Custom.(files{i}).(objs{j}).data.heelMarker.heelStrikes = heelStrikes/data.res.(files{i}).(objs{j}).freq;
 
         % In some cases the signals will be iterated through. The following
         % code is an example of how that would be handelled.
@@ -69,10 +69,8 @@ for i = 1:length(files)
             % how they are exported. During the export signal names appear
             % in the column headers while the object names appear in each
             % row.
-            data.res.(files{i}).(objs{j}).data.([sigs{k} '_peakAcceleration']) = max(accelerationMagnitude);
-            % Example of changing the object name.
-            data.res.(files{i}).([objs{j} '_peakAcceleration']).data.(sigs{k}) = max(accelerationMagnitude);
-
+            data.res.Custom.(files{i}).(objs{j}).data.(sigs{k}).peakAcceleration = max(accelerationMagnitude);
+            
         end
     end
 

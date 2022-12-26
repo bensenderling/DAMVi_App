@@ -19,19 +19,29 @@ for i = 1:length(files)
 
     % Identify the required functions and programs.
     [fList, pList] = matlab.codetools.requiredFilesAndProducts(data.raw.(files{i}).file.data.file);
+    % If there is only one requirement the output will have character arrays. But if there are more they will be cells. Convert the single
+    % requirements to cells so they can be appended to each other.
+    if length({pList.Name}) == 1
+        pList.Name = cellstr({pList.Name});
+        pList.Version = cellstr({pList.Version});
+    end
 
+    % For the first iteration initialize the list.
     if i == 1
         pListAll = struct2table(pList);
         fListAll = fList';
     else
+        % For all other iterations append to the existing list.
         pListAll = [pListAll; struct2table(pList)];
         fListAll = [fListAll; fList'];
     end
 
 end
 
-data.res.file.file.data.fListAll = unique(fListAll);
-data.res.file.file.data.pListAll = unique(pListAll);
+% Set the results data. This looks odd because there is very little information specifying the data but it needs to fit the generalized BAR App
+% results type.
+data.res.MATLABDependencies.file.file.data.file.fListAll = unique(fListAll);
+data.res.MATLABDependencies.file.file.data.file.pListAll = unique(pListAll);
 
 % Run the public BAR App analysisComplete method to get the data back into the app.
 analysisComplete(app, data, analysis)
