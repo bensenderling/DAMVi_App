@@ -20,6 +20,7 @@
         <filesreview>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App Beta\Review</filesreview>
         <filesreview>C:\Users\bense\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Review</filesreview>
         <filesreview>C:\Users\bense\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App Beta\Review</filesreview>
+        <segment>Custom</segment>
         <segment>TurnsAPDM</segment>
         <segment>TurnsIMU</segment>
         <segment>WESENSOpal3</segment>
@@ -28,9 +29,9 @@
         <figure>3D</figure>
         <figure>FNN</figure>
         <figure>Histogram</figure>
-        <figure>Image</figure>
         <figure>RQA</figure>
         <figure>TimeLag</figure>
+        <figure>Image</figure>
         <filetypes>
             <agd>Actigraph</agd>
             <csv>Delsys</csv>
@@ -79,6 +80,8 @@
         <review>APDMTurns2</review>
         <review>FNN</review>
         <review>RQA</review>
+        <treatment>LowPass</treatment>
+        <treatment>Resample</treatment>
     </options>
     <treatment>General Treatment</treatment>
     <treatment>process_Treatment</treatment>

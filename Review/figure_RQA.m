@@ -55,8 +55,8 @@ for i = 1:length(files)
                                     recurrencePlot = data.ana.RQA.(files{i}).(obj{j}).data.(sigs{k}).recurrencePlot;
                                     % The type and data are required to
                                     % make portions of the plot.
-                                    type = data.res.RQA.(files{i}).(obj{j}).data.(sigs{k}).RQA_TYPE;
-                                    dataRQA = data.ana.RQA.(files{i}).(obj{j}).data.(sigs{k}).RQA_DATA;
+                                    type = data.res.RQA.(files{i}).(obj{j}).data.(sigs{k}).TYPE;
+                                    dataRQA = data.ana.RQA.(files{i}).(obj{j}).data.(sigs{k}).DATA;
                                 end
                                 % Get the measures from the RQA analysis.
                                 meas = fieldnames(data.res.RQA.(files{i}).(obj{j}).data.(sigs{k}));
@@ -103,7 +103,7 @@ a0 = subplot(n, m, [2, 3, 8, 9]);
 ax(1) = axes('Parent',H,'Position', a0.Position, 'FontSize', 8);
 % Display the binary plot in the temporary axis.
 imagesc(ax(1), recurrencePlot.rp);
-colormap(gray);
+colormap(ax(1), gray);
 xlabel('X(i)','Interpreter','none', 'FontSize', 10);
 ylabel('Y(j)','Interpreter','none', 'FontSize', 10);
 title('Binary')
@@ -146,7 +146,7 @@ end
 a3 = subplot(n, m, [5, 6, 11, 12]);
 ax(4) = axes('Parent',H,'Position', a3.Position, 'FontSize', 8);
 % Display the binary plot in the temporary axis.
-imagesc(ax(4), imrotate(-1*recurrencePlot.wrp,90));
+imagesc(ax(4), -recurrencePlot.wrp);
 xlabel('X(i)','Interpreter','none', 'FontSize', 10);
 ylabel('Y(j)','Interpreter','none', 'FontSize', 10);
 title('Weighted')
@@ -197,7 +197,7 @@ delete([a0, a1, a2, a3, a4, a5])
 for i = 1:length(titleMeas)
     % If only one result was selected create one large subplot.
     if n == 4
-        subplot(n, m, [i + 18:i + 24])
+        subplot(n, m, [i + 18:i + 23])
     else
         % If there were multiple selections create two columns of subplots.
         subplot(n, m, [(i - 1)*3 + 1 + 18:(i - 1)*3 + 3 + 18])
