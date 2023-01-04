@@ -16,7 +16,7 @@ ax = axes('Parent', H);
 % If multiple dimensions were selected they will be plotted separately.
 for i = 1:length(plotData)
     % Display the histogram.
-    histogram(ax, plotData{i});
+    histogram(ax, plotData{i}, 'FaceColor', 'k');
     % For the first plot hold on.
     if i == 1
         hold('on')

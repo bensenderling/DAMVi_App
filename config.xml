@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
     <directory></directory>
-    <directory>C:\Users\bense\Documents\Projects\013 Nonlinear Variability of Stair Climbing\Data</directory>
-    <database>C:\Users\bense\Documents\Projects\013 Nonlinear Variability of Stair Climbing</database>
+    <directory>C:\Users\bsender\Documents\Senderling\13 Nonlinear Variability of Stair Climbing\Data</directory>
+    <database>C:\Users\bsender\Documents\Senderling\13 Nonlinear Variability of Stair Climbing</database>
     <options>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Load</filesload>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App Beta\Load</filesload>
