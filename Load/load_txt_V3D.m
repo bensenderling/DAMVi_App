@@ -1,7 +1,7 @@
 function txt_V3D = load_txt_V3D(file)
-% [dataout] = load_txt_V3D(file)
+% txt_V3D = load_txt_V3D(file)
 % inputs  - file, file path and name of a V3D text file
-% outputs - dataout, structure containing file from V3D text file
+% outputs - txt_V3D, structure containing file from V3D text file
 % Remarks
 % - This function takes a text file from V3D and creates a structure. The
 %   headers (data source, types, folders, components, signal names) are
@@ -78,7 +78,7 @@ else
 end
 
 % Read in the numeric data.
-data = readmatrix(file,'Delimiter','\t','NumHeaderLines',5);
+data = readmatrix(file, 'Delimiter', '\t', 'NumHeaderLines', 5);
 
 % Initialize a variable to help track the longest data length.
 nlast = inf;

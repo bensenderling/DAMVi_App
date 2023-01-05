@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
     <directory></directory>
-    <directory>C:\Users\bsender\Documents\Senderling\13 Nonlinear Variability of Stair Climbing\Data</directory>
-    <database>C:\Users\bsender\Documents\Senderling\13 Nonlinear Variability of Stair Climbing</database>
+    <directory>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Data\txtExample</directory>
+    <database>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR</database>
     <options>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\Load</filesload>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App Beta\Load</filesload>
@@ -34,9 +34,9 @@
         <figure>Image</figure>
         <filetypes>
             <agd>Actigraph</agd>
+            <csv>BAR</csv>
             <csv>Delsys</csv>
             <csv>Actigraph</csv>
-            <csv>BAR</csv>
             <csv>Pfizer01</csv>
             <csv>Pfizer02</csv>
             <gt3x>Actigraph</gt3x>
@@ -51,7 +51,8 @@
             <mat>QTM</mat>
             <mlapp>MATLAB</mlapp>
             <png>WIN</png>
-            <qtm>Qualisys</qtm>
+            <qtm>QTM</qtm>
+            <txt>Example</txt>
             <txt>V3D</txt>
             <xlsx>Medoc</xlsx>
         </filetypes>
@@ -61,25 +62,24 @@
         <process>Segment</process>
         <process>Treatment</process>
         <analysis>Custom</analysis>
+        <analysis>CustomApp</analysis>
+        <analysis>FNN</analysis>
         <analysis>MATLABDependencies</analysis>
         <analysis>QST</analysis>
         <analysis>QSTTraining</analysis>
+        <analysis>RQA</analysis>
+        <analysis>TimeLag</analysis>
         <analysis>01</analysis>
         <analysis>APDM</analysis>
         <analysis>APDMResultsFigures</analysis>
         <analysis>DelsysApdmSynch</analysis>
-        <analysis>FNN</analysis>
         <analysis>MocapApdmAlignment</analysis>
-        <analysis>RQA</analysis>
-        <analysis>TimeLag</analysis>
         <analysis>V3DAPDMAlignment</analysis>
         <analysis>V3DAPDMAlignment2</analysis>
         <analysis>V3DAPDMAlignment3</analysis>
         <review>General</review>
         <review>APDMTurns</review>
         <review>APDMTurns2</review>
-        <review>FNN</review>
-        <review>RQA</review>
         <treatment>LowPass</treatment>
         <treatment>Resample</treatment>
     </options>

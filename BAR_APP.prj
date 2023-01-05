@@ -8,8 +8,8 @@
     <param.icons />
     <param.summary>This app is designed to help streamline data processing, data review and reporting.</param.summary>
     <param.description>The app has a main core that uses modules to perform various tasks. These includes processing, analyzing, reviewing and reporting. They work around data types designed for specific files from specific equipment. Such as TRC files from motion capture systems. Those modules can be added on by other users without needing an in-depth understanding of MATLAB or app design.</param.description>
-    <param.screenshot>C:\Users\bsender\AppData\Local\Temp\tpc5e1b088_9d4d_4a47_a176_50981d8e104f.png</param.screenshot>
-    <param.version>1.1</param.version>
+    <param.screenshot>C:\Users\bsender\AppData\Local\Temp\tp4279763f_8460_4d08_ac70_08de4fc92858.png</param.screenshot>
+    <param.version>1.0</param.version>
     <param.products.name>
       <item>MATLAB</item>
       <item>Signal Processing Toolbox</item>
@@ -34,6 +34,7 @@
       <param.company />
       <param.icon />
       <param.icons />
+      <param.version />
       <param.platforms />
       <param.output />
     </unset>
