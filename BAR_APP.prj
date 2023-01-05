@@ -1,18 +1,30 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="526575372" file="C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\BAR_APP.prj" location="C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App" name="BAR_APP" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="469199835" file="C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App\BAR_APP.prj" location="C:\Users\bsender\OneDrive - Boston University\BU\Projects\001 BAR\Code\BAR_App" name="BAR_APP" target="target.mlapps" target-name="Package App">
     <param.appname>BAR_APP</param.appname>
     <param.authnamewatermark>Ben Senderling</param.authnamewatermark>
     <param.email>bsender@bu.edu</param.email>
     <param.company>Boston University</param.company>
     <param.icon />
     <param.icons />
-    <param.summary>This app is designed to help streamline data processing, data review and reporting.</param.summary>
-    <param.description>The app has a main core that uses modules to perform various tasks. These includes processing, analyzing, reviewing and reporting. They work around data types designed for specific files from specific equipment. Such as TRC files from motion capture systems. Those modules can be added on by other users without needing an in-depth understanding of MATLAB or app design.</param.description>
-    <param.screenshot>C:\Users\bsender\AppData\Local\Temp\tp7d2261d0_774e_4d7c_8ff1_0f9c935b42c4.png</param.screenshot>
-    <param.version>1.0</param.version>
-    <param.products.name />
-    <param.products.id />
-    <param.products.version />
+    <param.summary>This app is designed to help streamline data processing, data review and reporting in biomechanics.</param.summary>
+    <param.description>The app has a main core that uses modules and mini-modules to perform various tasks. These includes processing, analyzing, reviewing and reporting. They work around data types designed for specific files from specific equipment. Such as TRC files from motion capture systems. Those modules can be added on by other users without needing an in-depth understanding of MATLAB or app design.</param.description>
+    <param.screenshot>C:\Users\bsender\AppData\Local\Temp\tp0913026a_5b6a_4eba_a1f1_040b38dc74ca.png</param.screenshot>
+    <param.version>1.1</param.version>
+    <param.products.name>
+      <item>MATLAB</item>
+      <item>Signal Processing Toolbox</item>
+      <item>Statistics and Machine Learning Toolbox</item>
+    </param.products.name>
+    <param.products.id>
+      <item>1</item>
+      <item>8</item>
+      <item>19</item>
+    </param.products.id>
+    <param.products.version>
+      <item>9.11</item>
+      <item>8.7</item>
+      <item>12.2</item>
+    </param.products.version>
     <param.platforms />
     <param.output>${PROJECT_ROOT}</param.output>
     <param.guid>cbc40727-5b95-4b43-b7fc-5c023353c083</param.guid>
@@ -22,10 +34,6 @@
       <param.company />
       <param.icon />
       <param.icons />
-      <param.version />
-      <param.products.name />
-      <param.products.id />
-      <param.products.version />
       <param.platforms />
       <param.output />
     </unset>
@@ -35,6 +43,7 @@
     <fileset.depfun>
       <file>${PROJECT_ROOT}\createConfig.m</file>
       <file>${PROJECT_ROOT}\Logo_122116.png</file>
+      <file>${PROJECT_ROOT}\Subroutines\FilterM_20Jul2011\FiltFiltM.m</file>
     </fileset.depfun>
     <fileset.resources>
       <file>${PROJECT_ROOT}\Analysis</file>
