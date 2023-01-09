@@ -37,7 +37,7 @@ for i = 1:length(object)
     % Remove the NaNs so the data has different lengths.
     txt_Example.(object{i}).data.(signal{i})(isnan(txt_Example.(object{i}).data.(signal{i}))) = [];
     % Create a sampling frequency.
-    txt_Example.(object{i}).freq = 1;
+    txt_Example.(object{i}).freq = 2;
 end
 
 

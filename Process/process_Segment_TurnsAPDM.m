@@ -1,4 +1,4 @@
-function x = process_Segment_TurnsAPDM(app, x, sel)
+function x_segmented = process_Segment_TurnsAPDM(app, x, sel)
 % x_segmented = process_Segment_TurnsAPDM(x, sel)
 % inputs  - x, the object to segment. It can be a portion or the entirety of the data structure from the BAR App.
 %         - sel, the type of selection from the BAR App. Can be timeseries, file or all.
@@ -19,8 +19,16 @@ switch sel
 
         % This is an error code for the BAR App that indicates the selected
         % item can't be processed with the selected segmentation method.
-        x = '004';
+        x_segmented = '004';
 
+    % For object selections.
+    case 'object'
+
+        % This is an error code for the BAR App that indicates the selected
+        % item can't be processed with the selected segmentation method.
+        x_segmented = '004';
+
+    % For the file level selections.
     % For the file level selections.
     case 'file'
 
@@ -29,8 +37,8 @@ switch sel
         ind_Turn = segment(x);
 
         % If no segments were found send an error code back to the BAR App and exit the script.
-        if isnan(ind_Turn)
-            x = '004';
+        if any(isnan(ind_Turn))
+            x_segmented = '004';
             return
         end
 
@@ -45,7 +53,7 @@ switch sel
 
                 % Data from the Lumbar magnetomiter will be segmented out
                 % and used to plot in the Segmentation Module.
-                x.raw = x.(objs{j}).data.eul(:,1);
+                x_segmented.raw.(objs{j}).data.eul = x.(objs{j}).data.eul;
 
                 % Iterate through the segment indexes.
                 for k = 1:size(ind_Turn,1) + 1
@@ -71,7 +79,7 @@ switch sel
                         % the data.
                     elseif k == size(ind_Turn,1) + 1
                         frame_start = ind_Turn(k - 1, 2);
-                        frame_end = length(x.raw);
+                        frame_end = length(x.(objs{j}).data.eul);
                         % The middle segments are from the end index of the
                         % previous turn to the start index of the current turn.
                     else
@@ -80,15 +88,11 @@ switch sel
                     end
                     % Set the segment to the processed level of the BAR App
                     % data structure.
-                    x.pro{k} = x.(objs{j}).data.eul(frame_start:frame_end, 1);
+                    x_segmented.pro.(objs{j}).data.(['eul_' k_string]) = x.(objs{j}).data.eul(frame_start:frame_end, :);
 
                     % Create results from the turn information.
-                    x.res.(['Segment']).(['turn' k_string]).data.startFrame = frame_start;
-                    x.res.(['Segment']).(['turn' k_string]).data.startTime = frame_start/x.(objs{j}).freq;
-                    x.res.(['Segment']).(['turn' k_string]).data.endFrame = frame_end;
-                    x.res.(['Segment']).(['turn' k_string]).data.endTime = frame_end/x.(objs{j}).freq;
-                    x.res.(['Segment']).(['turn' k_string]).data.duration_frame = frame_end - frame_start;
-                    x.res.(['Segment']).(['turn' k_string]).data.duration_time = (frame_end - frame_start)/x.(objs{j}).freq;
+                    x_segmented.res.(objs{j}).data.(['eul_' k_string]).startFrame = frame_start;
+                    x_segmented.res.(objs{j}).data.(['eul_' k_string]).endFrame = frame_end;
                 end
 
             end
@@ -144,7 +148,7 @@ switch sel
                     if strcmp(objs{j}, 'Lumbar')
                         % If the sampling frequency is present it is carried over.
                         if isfield(x.(type).(files{i}).(objs{j}), 'freq')
-                            x.pro.(files{i}).(objs{j}).freq = x.(type).(files{i}).(objs{j}).freq;
+                            x_segmented.pro.(files{i}).(objs{j}).freq = x.(type).(files{i}).(objs{j}).freq;
                         end
                         % Iterate through all of the signals and segment them.
                         sigs = {'eul'};
@@ -164,14 +168,14 @@ switch sel
                             end
 
                             % Create the segment.
-                            x.pro.(files{i}).(objs{j}).data.([sigs{ii} '_' k_string]) = x.(type).(files{i}).(objs{j}).data.(sigs{ii})(frame_start:frame_end, :);
+                            x_segmented.pro.(files{i}).(objs{j}).data.([sigs{ii} '_' k_string]) = x.(type).(files{i}).(objs{j}).data.(sigs{ii})(frame_start:frame_end, :);
                             % Create the turn analysis results.
-                            x.res.Segment.(files{i}).(objs{j}).data.([sigs{ii} '_turn' k_string]).startFrame = frame_start;
-                            x.res.Segment.(files{i}).(objs{j}).data.([sigs{ii} '_turn' k_string]).startTime = frame_start/x.(type).(files{i}).(objs{j}).freq;
-                            x.res.Segment.(files{i}).(objs{j}).data.([sigs{ii} '_turn' k_string]).endFrame = frame_end;
-                            x.res.Segment.(files{i}).(objs{j}).data.([sigs{ii} '_turn' k_string]).endTime = frame_end/x.(type).(files{i}).(objs{j}).freq;
-                            x.res.Segment.(files{i}).(objs{j}).data.([sigs{ii} '_turn' k_string]).duration_frame = frame_end - frame_start;
-                            x.res.Segment.(files{i}).(objs{j}).data.([sigs{ii} '_turn' k_string]).duration_time = (frame_end - frame_start)/x.(type).(files{i}).(objs{j}).freq;
+                            x_segmented.res.Segment.(files{i}).(objs{j}).data.([sigs{ii} '_turn' k_string]).startFrame = frame_start;
+                            x_segmented.res.Segment.(files{i}).(objs{j}).data.([sigs{ii} '_turn' k_string]).startTime = frame_start/x.(type).(files{i}).(objs{j}).freq;
+                            x_segmented.res.Segment.(files{i}).(objs{j}).data.([sigs{ii} '_turn' k_string]).endFrame = frame_end;
+                            x_segmented.res.Segment.(files{i}).(objs{j}).data.([sigs{ii} '_turn' k_string]).endTime = frame_end/x.(type).(files{i}).(objs{j}).freq;
+                            x_segmented.res.Segment.(files{i}).(objs{j}).data.([sigs{ii} '_turn' k_string]).duration_frame = frame_end - frame_start;
+                            x_segmented.res.Segment.(files{i}).(objs{j}).data.([sigs{ii} '_turn' k_string]).duration_time = (frame_end - frame_start)/x.(type).(files{i}).(objs{j}).freq;
                         end
                     end
                 end
