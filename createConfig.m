@@ -8,9 +8,15 @@ function createConfig(filepath)
 % Future Work
 % - As some of the method choices in the app are made more dynamic these options will need to change.
 % Nov 2022 - Created by Ben Senderling, bsender@bu.edu
+% Dec 2022 - Modified by Ben Senderling, bsender@bu.edu
+%          - Made a number of the fields dynamically created by the app so here they only need to be initiallized.
+% Jan 2023 - Modified by Ben Senderling, bsender@bu.edu
+%          - Added a field point to the location of this configuration file.
 
 % Create the structure that will be the conf file.
 config = struct;
+
+config.configuration = [filepath '\config.xml'];
 
 % Create empty arrays for the working directory and the search directories.
 config.directory = '';
