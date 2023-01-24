@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
-    <configuration>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\BAR_App\\config.xml</configuration>
+    <configuration>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\\config.xml</configuration>
     <directory>R:\PROJECTS\iwalqq\Analysis\Yu Gavin\Data</directory>
     <directory>R:\PROJECTS\wesens\Data\Analysis\Yu\Export</directory>
-    <database>R:\PROJECTS\iwalqq\Analysis\Yu Gavin</database>
+    <database>C:\Users\bsender\Documents\Senderling\V3D-APDM Alignment</database>
     <options>
-        <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\BAR_App\Load</filesload>
-        <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\BAR_App Beta\Load</filesload>
-        <filesprocess>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\BAR_App\Process</filesprocess>
-        <filesprocess>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\BAR_App Beta\Process</filesprocess>
-        <filesanalysis>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\BAR_App\Analysis</filesanalysis>
-        <filesanalysis>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\BAR_App Beta\Analysis</filesanalysis>
-        <filesreview>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\BAR_App\Review</filesreview>
-        <filesreview>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\BAR_App Beta\Review</filesreview>
+        <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\Load</filesload>
+        <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App Beta\Load</filesload>
+        <filesprocess>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\Process</filesprocess>
+        <filesprocess>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App Beta\Process</filesprocess>
+        <filesanalysis>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\Analysis</filesanalysis>
+        <filesanalysis>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App Beta\Analysis</filesanalysis>
+        <filesreview>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\Review</filesreview>
+        <filesreview>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App Beta\Review</filesreview>
         <filetypes>
             <agd>Actigraph</agd>
-            <csv>BAR</csv>
+            <csv>DAMVi</csv>
             <csv>Delsys</csv>
             <csv>Actigraph</csv>
             <csv>Pfizer01</csv>
@@ -29,7 +29,7 @@
             <h5>APDM3QuaLumbar</h5>
             <h5>APDM3QuaRightFoot</h5>
             <m>MATLAB</m>
-            <mat>BAR</mat>
+            <mat>DAMVi</mat>
             <mat>QTM</mat>
             <mlapp>MATLAB</mlapp>
             <png>WIN</png>
@@ -38,6 +38,14 @@
             <txt>V3D</txt>
             <xlsx>Medoc</xlsx>
         </filetypes>
+        <figure>1D</figure>
+        <figure>2D</figure>
+        <figure>3D</figure>
+        <figure>FNN</figure>
+        <figure>Histogram</figure>
+        <figure>RQA</figure>
+        <figure>TimeLag</figure>
+        <figure>Image</figure>
         <process>APDM</process>
         <process>Groupings</process>
         <process>Merge</process>
@@ -57,20 +65,15 @@
         <analysis>DelsysApdmSynch</analysis>
         <analysis>MocapApdmAlignment</analysis>
         <analysis>V3DAPDMAlignment</analysis>
-        <analysis>V3DAPDMAlignment2</analysis>
+        <analysis>V3DAPDMAlignment1k</analysis>
+        <analysis>V3DAPDMAlignment2PelvisAcc</analysis>
         <analysis>V3DAPDMAlignment3</analysis>
         <analysis>V3DAPDMAlignment4RightFoot</analysis>
+        <analysis>V3DAPDMAlignment5aRightFoot</analysis>
+        <analysis>V3DAPDMAlignment5bRightFoot</analysis>
         <review>General</review>
         <review>APDMTurns</review>
         <review>APDMTurns2</review>
-        <figure>1D</figure>
-        <figure>2D</figure>
-        <figure>3D</figure>
-        <figure>FNN</figure>
-        <figure>Histogram</figure>
-        <figure>RQA</figure>
-        <figure>TimeLag</figure>
-        <figure>Image</figure>
     </options>
     <treatment_general>Low-pass Filter</treatment_general>
     <treatment_general>process_Treatment_LowPass</treatment_general>
