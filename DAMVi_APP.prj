@@ -1,18 +1,30 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="2953068934" file="C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\DAMVi_APP.prj" location="C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App" name="DAMVi_APP" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="1088243614" file="C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\DAMVi_APP.prj" location="C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App" name="DAMVi_APP" target="target.mlapps" target-name="Package App">
     <param.appname>DAMVi_APP</param.appname>
     <param.authnamewatermark>Ben Senderling</param.authnamewatermark>
     <param.email>bsender@bu.edu</param.email>
     <param.company>Boston University</param.company>
     <param.icon />
     <param.icons />
-    <param.summary>This app is designed to help streamline data processing, data review and reporting.</param.summary>
+    <param.summary>This app is designed to help streamline data analysis, management, visualization, review and reporting.</param.summary>
     <param.description>The app has a main core that uses modules to perform various tasks. These includes processing, analyzing, reviewing and reporting. They work around data types designed for specific files from specific equipment. Such as TRC files from motion capture systems. Those modules can be added on by other users without needing an in-depth understanding of MATLAB or app design.</param.description>
-    <param.screenshot>C:\Users\bsender\AppData\Local\Temp\tpf7d6505b_dfff_4555_93ea_55627877d051.png</param.screenshot>
+    <param.screenshot>C:\Users\bsender\AppData\Local\Temp\tp6450229e_fbaa_4c5c_84d4_3ffad87a478f.png</param.screenshot>
     <param.version>1.3</param.version>
-    <param.products.name />
-    <param.products.id />
-    <param.products.version />
+    <param.products.name>
+      <item>Signal Processing Toolbox</item>
+      <item>Statistics and Machine Learning Toolbox</item>
+      <item>System Identification Toolbox</item>
+    </param.products.name>
+    <param.products.id>
+      <item>8</item>
+      <item>19</item>
+      <item>4</item>
+    </param.products.id>
+    <param.products.version>
+      <item>8.7</item>
+      <item>12.2</item>
+      <item>9.15</item>
+    </param.products.version>
     <param.platforms />
     <param.output>${PROJECT_ROOT}</param.output>
     <param.guid>d8c6d4a7-89a1-4d83-991a-e819617cb4a9</param.guid>
@@ -22,9 +34,6 @@
       <param.company />
       <param.icon />
       <param.icons />
-      <param.products.name />
-      <param.products.id />
-      <param.products.version />
       <param.platforms />
       <param.output />
     </unset>
