@@ -3,28 +3,21 @@ function txt_V3D = load_txt_V3D(file)
 % inputs  - file, file path and name of a V3D text file
 % outputs - txt_V3D, structure containing file from V3D text file
 % Remarks
-% - This function takes a text file from V3D and creates a structure. The
-%   headers (data source, types, folders, components, signal names) are
-%   used to name the fields in the structure. The frames are not imported.
-% - If more than one subject's data is contained in the text file the data
-%   for each subject will be stored within that subject's field.
-% - This code is written to work with V3D files that have NaN exported for
-%   frames with no data.
-% - Visual3D does not make it easy to export the sampling frequency
-%   cleanly. This code was written expecting the sampling frequency would
-%   be exported along with the rest of the data. For the analog data it
-%   should have the name ANALOG_RATE. For marker data it should have the
-%   name MARKER_RATE. This does require that exports do not have both of
-%   these variables. The analog and marker data should be exported
-%   separately.
+% - This function takes a text file from V3D and creates a structure. The headers (data source, types, folders, components, signal names) are used to 
+%   name the fields in the structure. The frames are not imported.
+% - If more than one subject's data is contained in the text file the data for each subject will be stored within that subject's field.
+% - This code is written to work with V3D files that have NaN exported for frames with no data.
+% - Visual3D does not make it easy to export the sampling frequency cleanly. This code was written expecting the sampling frequency would be exported 
+%   along with the rest of the data. For the analog data it should have the name ANALOG_RATE. For marker data it should have the name MARKER_RATE. 
+%   This does require that exports do not have both of these variables. The analog and marker data should be exported separately.
 % Future Work
 % - None.
 % Mar 2022 - Created by Ben Senderling, bsender@bu.edu
 % Nov 2022 - Modified by Ben Senderling, bsender@bu.edu
-%          - Tweaked the format of the data to work better with other BAR
-%            App data structures.
-%          - Added modifications for long files names and group
-%            information.
+%          - Tweaked the format of the data to work better with other BAR App data structures.
+%          - Added modifications for long files names and group information.
+% Jan 2023 - Modified by Ben Senderling, bsender@bu.edu
+%          - Replaced use of strrep with regexprep and added '-' to the replaced characters.
 
 % Open the file.
 fid = fopen(file);
@@ -129,8 +122,12 @@ for j = 1:length(sourcesTrim)
     % This might not be used anymore.
     %     fieldname = [sourcesTrim{j}(1:end-4) '_' type{j} '_' measure{j} '_' dimension{j}];
 
-    % Replace spaces in the sources string with underscores.
-    sourcesTrim = strrep(sourcesTrim,' ','_');
+    % Replace illegal characters with underscores.
+    sourcesTrim = regexprep(sourcesTrim, {' ', '-'}, '_');
+    type = regexprep(type, {' ', '-'}, '_');
+    type = regexprep(type, {' ', '-'}, '_');
+    measure = regexprep(measure, {' ', '-'}, '_');
+    dimension = regexprep(dimension, {' ', '-'}, '_');
 
     % This statement was added in to catch backup files created by QTM that
     % were then imported into Visual3D. The "Backup..." appended to the
@@ -139,11 +136,7 @@ for j = 1:length(sourcesTrim)
     if contains(sourcesTrim{j}, 'Backup')
         sourcesTrim{j}(strfind(sourcesTrim{j}, 'Backup') - 1:end - 4) = [];
     end
-
-    % Replace spaces in the other strings with underscores.
-    type = strrep(type,' ','_');
-    measure = strrep(measure,' ','_');
-    dimension = strrep(dimension,' ','_');
+    
     % num = sum(strcmp(fieldname,fields))+1;
 
     % The sampling frequency is expected to be exported with the name

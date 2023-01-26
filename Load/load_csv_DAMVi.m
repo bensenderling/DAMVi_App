@@ -1,4 +1,4 @@
-function csv_BAR = load_csv_BAR(file)
+function csv_BAR = load_csv_DAMVi(file)
 % xlsx_BAR = load_csv_BAR(file)
 % inputs  - file, the csv file to load.
 % outputs - csv_BAR, the BAR App data structure recreated from the csv file.
@@ -50,10 +50,30 @@ for i = 1:height(data)
         % be re-imported. This is the opposite of the export means option
         % in the export tab.
         if isfield(csv_BAR.raw.(data.file{i}), data.object{i}) && isfield(csv_BAR.raw.(data.file{i}).(data.object{i}), 'data') && isfield(csv_BAR.raw.(data.file{i}).(data.object{i}).data, fields{indSignal(j)})
-            n = length(csv_BAR.raw.(data.file{i}).(data.object{i}).data.(fields{indSignal(j)}));
-            csv_BAR.raw.(data.file{i}).(data.object{i}).data.(fields{indSignal(j)})(n + 1) = data.(fields{indSignal(j)})(i);
+            if isfield(data, 'dimension')
+                d = data.dimension{i};
+            else
+                d = 1;
+            end
+            if isfield(data, 'number')
+                n = data.number{i};
+            else
+                n = 1;
+%                 n = length(csv_BAR.raw.(data.file{i}).(data.object{i}).data.(fields{indSignal(j)})) + 1;
+            end
+            csv_BAR.raw.(data.file{i}).(data.object{i}).data.(fields{indSignal(j)})(n, d) = data.(fields{indSignal(j)})(i);
         else
-            csv_BAR.raw.(data.file{i}).(data.object{i}).data.(fields{indSignal(j)}) = data.(fields{indSignal(j)})(i);
+            if isfield(data, 'dimension')
+                d = data.dimension{i};
+            else
+                d = 1;
+            end
+            if isfield(data, 'number')
+                n = data.number{i};
+            else
+                n = 1;
+            end
+            csv_BAR.raw.(data.file{i}).(data.object{i}).data.(fields{indSignal(j)})(n, d) = data.(fields{indSignal(j)})(i);
         end
     end
 end

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
     <configuration>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\\config.xml</configuration>
-    <directory>R:\PROJECTS\iwalqq\Analysis\Yu Gavin\Data</directory>
-    <directory>R:\PROJECTS\wesens\Data\Analysis\Yu\Export</directory>
-    <database>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR</database>
+    <directory>R:\PROJECTS\wesens\Data</directory>
+    <database>R:\PROJECTS\bu_ud_ucsf\mocap\UD_Output\gavin_shock</database>
     <options>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\Load</filesload>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App Beta\Load</filesload>
@@ -24,6 +23,8 @@
             <h5>APDM0Meta</h5>
             <h5>APDM1Raw</h5>
             <h5>APDM1RawLumbar</h5>
+            <h5>APDM1RawRightFoot</h5>
+            <h5>APDM1RawUpperLeg</h5>
             <h5>APDM2Results</h5>
             <h5>APDM3Qua</h5>
             <h5>APDM3QuaLumbar</h5>

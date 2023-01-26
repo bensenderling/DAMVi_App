@@ -14,7 +14,6 @@ function h5_APDM1 = load_h5_APDM1RawRightFoot(file)
 % - Potentially APDM1 and APDM2 could be combined. APDM2 was intended to
 %   load everything from a h5 file regardless of contents.
 % Nov 2022 - Created by Ben Senderling
-%% Begin Code
 
 % The info fields for the h5 file will be read as meta data.
 h5_APDM1.meta = h5info(file);
@@ -37,9 +36,11 @@ for i = 1:length({h5_APDM1.meta.Groups(2).Groups.Name})
         % Pull the accelerometer, gyroscope and magnetometer data.
         h5_APDM1.(name).data.acc = h5read(file, [h5_APDM1.meta.Groups(2).Groups(i).Name '/Accelerometer'])';
 %         h5_APDM1.(name).data.mag = h5read(file, [h5_APDM1.meta.Groups(2).Groups(i).Name '/Magnetometer'])';
-        h5_APDM1.(name).data.gyr = h5read(file, [h5_APDM1.meta.Groups(2).Groups(i).Name '/Gyroscope'])';
+%         h5_APDM1.(name).data.gyr = h5read(file, [h5_APDM1.meta.Groups(2).Groups(i).Name '/Gyroscope'])';
     end
 end
+
+h5_APDM1 = rmfield(h5_APDM1, 'meta');
 
 
 
