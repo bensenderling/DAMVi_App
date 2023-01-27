@@ -2,7 +2,7 @@
 <struct>
     <configuration>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\\config.xml</configuration>
     <directory>R:\PROJECTS\wesens\Data</directory>
-    <database>R:\PROJECTS\bu_ud_ucsf\mocap\UD_Output\gavin_shock</database>
+    <database>R:\PROJECTS\vrt\Data\V3D\Output\01_25_23_gavin_shock</database>
     <options>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\Load</filesload>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App Beta\Load</filesload>
