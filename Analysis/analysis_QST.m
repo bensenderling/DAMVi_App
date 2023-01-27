@@ -117,6 +117,6 @@ for i = 1:length(files)
 end
 
 % Run the public BAR App analysisComplete method to get the data back into the app.
-analysisComplete(app, data, analysis)
+analysisComplete(app, data, analysis, 0)
 
 end

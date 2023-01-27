@@ -170,6 +170,6 @@ saveas(H, [app.Database.Value '\Figures\Figure01_Summary.jpg'])
 close(H)
 
 % Run the public BAR App analysisComplete method to get the data back into the app.
-analysisComplete(app, data, analysis)
+analysisComplete(app, data, analysis, 0)
 
 end

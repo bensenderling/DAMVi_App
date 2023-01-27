@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
     <configuration>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\\config.xml</configuration>
-    <directory>R:\PROJECTS\wesens\Data</directory>
-    <database>R:\PROJECTS\vrt\Data\V3D\Output\01_25_23_gavin_shock</database>
+    <directory>R:\PROJECTS\TEMPO\Data</directory>
+    <database>R:\PROJECTS\TEMPO\Analysis\QST</database>
     <options>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\Load</filesload>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App Beta\Load</filesload>
