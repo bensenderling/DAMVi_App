@@ -65,6 +65,9 @@ for i = 1:length(files)
         % The slope of the linear model is saved.
         data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.slope = lm.Coefficients.Estimate(2);
 
+        % Add the comments to the results so they are exported.
+        data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.comments = data.raw.(files{i}).meta.Comments;
+
         % Save the peaks so the y axis of all the plots can be made the same.
         y(j) = m;
         % Save the peak of the x axes so they can all be made the same latter.
@@ -106,7 +109,7 @@ for i = 1:length(files)
     end
 
     % Save the figure and close it.
-    saveas(H, [app.Database.Value '\Figures\Figure01_QST' files{i} '.jpg'])
+    saveas(H, [app.Database.Value '\Figures\Figure01_QST_' files{i} '.jpg'])
     close(H)
 
     % A message will be printed to the main BAR App every 10 files.
