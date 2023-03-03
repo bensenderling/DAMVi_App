@@ -32,6 +32,6 @@ for i = 1:length({h5_APDM1.meta.Groups(2).Groups.Name})
     h5_APDM1.(name).data.gyr = h5read(file, [h5_APDM1.meta.Groups(2).Groups(i).Name '/Gyroscope'])';
 end
 
-
+h5_APDM1 = rmfield(h5_APDM1, 'meta');
 
 

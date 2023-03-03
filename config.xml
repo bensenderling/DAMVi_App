@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
     <configuration>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\\config.xml</configuration>
-    <directory>R:\PROJECTS\TEMPO\Data</directory>
-    <database>R:\PROJECTS\TEMPO\Analysis\QST</database>
+    <directory>C:\Users\bsender\Documents\Senderling\V3D-APDM Alignment\Data</directory>
+    <directory>R:\PROJECTS\wesens\Data</directory>
+    <database>C:\Users\bsender\Documents\Senderling\013 Nonlinear Variability of Stair Climbing</database>
     <options>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\Load</filesload>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App Beta\Load</filesload>
@@ -32,6 +33,7 @@
             <m>MATLAB</m>
             <mat>DAMVi</mat>
             <mat>QTM</mat>
+            <mat>QTMDelsysVL</mat>
             <mlapp>MATLAB</mlapp>
             <png>WIN</png>
             <qtm>QTM</qtm>
@@ -48,10 +50,12 @@
         <figure>TimeLag</figure>
         <figure>Image</figure>
         <process>APDM</process>
+        <process>APDMSpatiotemporalTurns</process>
         <process>Groupings</process>
         <process>Merge</process>
         <process>Segment</process>
         <process>Treatment</process>
+        <analysis>Entropy</analysis>
         <analysis>Example</analysis>
         <analysis>ExampleApp</analysis>
         <analysis>FNN</analysis>
@@ -65,6 +69,7 @@
         <analysis>APDMResultsFigures</analysis>
         <analysis>DelsysApdmSynch</analysis>
         <analysis>MocapApdmAlignment</analysis>
+        <analysis>MocapApdmAlignment2</analysis>
         <analysis>V3DAPDMAlignment</analysis>
         <analysis>V3DAPDMAlignment1k</analysis>
         <analysis>V3DAPDMAlignment2PelvisAcc</analysis>
@@ -75,6 +80,10 @@
         <review>General</review>
         <review>APDMTurns</review>
         <review>APDMTurns2</review>
+        <segment>Example</segment>
+        <segment>TurnsAPDM</segment>
+        <segment>TurnsIMU</segment>
+        <segment>WESENSOpal3</segment>
     </options>
     <treatment_general>Low-pass Filter</treatment_general>
     <treatment_general>process_Treatment_LowPass</treatment_general>

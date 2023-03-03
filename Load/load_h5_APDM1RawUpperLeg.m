@@ -38,12 +38,12 @@ for i = 1:length({h5_APDM1.meta.Groups(2).Groups.Name})
         h5_APDM1.(name).freq = 1/mean(diff(time - time(1))/1e6);
         % Pull the accelerometer, gyroscope and magnetometer data.
         h5_APDM1.(name).data.acc = h5read(file, [h5_APDM1.meta.Groups(2).Groups(i).Name '/Accelerometer'])';
-        h5_APDM1.(name).data.mag = h5read(file, [h5_APDM1.meta.Groups(2).Groups(i).Name '/Magnetometer'])';
-        h5_APDM1.(name).data.gyr = h5read(file, [h5_APDM1.meta.Groups(2).Groups(i).Name '/Gyroscope'])';
+%         h5_APDM1.(name).data.mag = h5read(file, [h5_APDM1.meta.Groups(2).Groups(i).Name '/Magnetometer'])';
+%         h5_APDM1.(name).data.gyr = h5read(file, [h5_APDM1.meta.Groups(2).Groups(i).Name '/Gyroscope'])';
     end
 end
 
-
+h5_APDM1 = rmfield(h5_APDM1, 'meta');
 
 
 

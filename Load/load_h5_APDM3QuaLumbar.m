@@ -42,6 +42,7 @@ for i = 1:length({h5_APDM3.meta.Groups(1).Groups.Name})
     end
 end
 
+h5_APDM3 = rmfield(h5_APDM3, 'meta');
 
 
 

@@ -1,4 +1,4 @@
-function x_segmented = process_Segment_Example(app, x, sel)
+function x_segmented = process_Segment_Example(x, sel)
 % x_segmented = process_Segment_Example(x, sel)
 % inputs  - x, the object to segment. It can be a portion or the entirety of the data structure from the BAR App.
 %         - sel, the type of selection from the BAR App. Can be timeseries, file or all.
@@ -28,12 +28,9 @@ switch sel
         % a failure to segment. For example segmenting IMU data may require accelerometer, gyroscope and magnetometer data. Selecting an individual
         % signal/time series would allow it to be segmented.
         if any(isnan(ind), 'all')
-            x = '004';
+            x_segmented = '004';
             return
         end
-
-        % The raw data will be plotted in the Segmentation Module.
-        x_segmented.raw = x;
 
         % Iterate through the segment indexes.
         for k = 1:size(ind,1) + 1
@@ -197,20 +194,13 @@ switch sel
             end
         end
 
-    case 'all'
+    case {'pro', 'res'}
 
-        % We need to know if it's raw or processed data being segmented.
-        switch app.Switch.Value
-            case 'Raw'
-                type = 'raw';
-            case 'Processed'
-                type = 'pro';
-        end
-
+        % Create a duplicate of the BAR App data structure.
         x_segmented = x;
 
         % Get the file names so they can be iterated through.
-        files = fieldnames(x.(type));
+        files = fieldnames(x.(sel));
         for i = 1:length(files)
 
             % The segmentation in this example if for a particular object and signal within each file.
@@ -225,15 +215,15 @@ switch sel
             % Each of the objects/IMU data will be segmented.
             for j = 1:length(objs)
                 % If the sampling frequency is present it is carried over.
-                if isfield(x.(type).(files{i}).(objs{j}), 'freq')
-                    x_segmented.pro.(files{i}).(objs{j}).freq = x.(type).(files{i}).(objs{j}).freq;
+                if isfield(x.(sel).(files{i}).(objs{j}), 'freq')
+                    x_segmented.pro.(files{i}).(objs{j}).freq = x.(sel).(files{i}).(objs{j}).freq;
                 end
                 % Iterate through all of the signals and segment them.
-                sigs = fieldnames(x.(type).(files{i}).(objs{j}).data);
+                sigs = fieldnames(x.(sel).(files{i}).(objs{j}).data);
                 for ii = 1:length(sigs)
 
                     % Run the segmentation code.
-                    ind = segment(x.(type).(files{i}).(objs{j}).data.(sigs{ii}));
+                    ind = segment(x.(sel).(files{i}).(objs{j}).data.(sigs{ii}));
 
                     % Create NaN results if no turns were found.
                     if any(isnan(ind))
@@ -262,7 +252,7 @@ switch sel
                             % The last turn is from the last index to the end of the data.
                         elseif k == size(ind, 1)
                             frame_start = ind(k, 2);
-                            frame_end = length(x.(type).(files{i}).(objs{j}).data.(sigs{ii}));
+                            frame_end = length(x.(sel).(files{i}).(objs{j}).data.(sigs{ii}));
                         else
                             frame_start = ind(k, 2);
                             frame_end = ind(k + 1, 1);

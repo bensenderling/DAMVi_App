@@ -48,11 +48,6 @@ for i = 1:length(files)
         % The sequence and the trial number will be put into the results
         data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.sequenceN = sequenceN(j);
         data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.trialN = trialN(j);
-        if isfield(data.raw.(files{i}).meta, 'Program')
-            data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.Program = data.raw.(files{i}).meta.Program;
-        else
-            data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.Program = 'Undefined';
-        end
         if isfield(data.raw.(files{i}).meta, 'Body_Site_Main')
             data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.Body_Site_Main = data.raw.(files{i}).meta.Body_Site_Main;
         else
@@ -61,12 +56,10 @@ for i = 1:length(files)
         if isfield(data.raw.(files{i}).meta, 'Body_Site_Side')
             data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.Body_Site_Side = data.raw.(files{i}).meta.Body_Site_Side;
         else
-            data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.Body_Site_Side = 'Undefined';
         end
         if isfield(data.raw.(files{i}).meta, 'Body_Site_Specific')
             data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.Body_Site_Specific = data.raw.(files{i}).meta.Body_Site_Specific;
         else
-            data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.Body_Site_Specific = 'Undefined';
         end
         
         % Find the maximum pressure delivered and save it in the results.

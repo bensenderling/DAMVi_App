@@ -25,6 +25,8 @@ h5_APDM2.meta = h5info(file);
 % Get the remaining data recursively.
 h5_APDM2 = getData(file, h5_APDM2.meta.Groups, h5_APDM2);
 
+h5_APDM2 = rmfield(h5_APDM2, 'meta');
+
 end
 
 function h5_APDM2 = getData(file, h5_struct, h5_APDM2)

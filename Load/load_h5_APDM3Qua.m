@@ -35,6 +35,7 @@ for i = 1:length({h5_APDM3.meta.Groups(1).Groups.Name})
     h5_APDM3.(name).data.qua = h5read(file, [h5_APDM3.meta.Groups(1).Groups(i).Name '/Orientation'])';
 end
 
+h5_APDM3 = rmfield(h5_APDM3, 'meta');
 
 
 
