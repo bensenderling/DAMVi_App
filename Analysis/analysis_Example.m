@@ -1,4 +1,4 @@
-function app = analysis_Custom(app, data, analysis)
+function app = analysis_Example(app, data, analysis)
 % app = analysis_custom(app, data, analysis)
 % inputs  - app, the BAR App object.
 %         - data, the data structure loaded into the BAR App.

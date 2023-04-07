@@ -162,15 +162,24 @@ switch sel
                                 frame_end = ind_Turn(k + 1, 1);
                             end
 
+                            freq = x.(sel).(files{i}).(objs{j}).freq;
+
                             % Create the segment.
                             x_segmented.pro.(files{i}).(objs{j}).data.([sigs{ii} '_' k_string]) = x.(sel).(files{i}).(objs{j}).data.(sigs{ii})(frame_start:frame_end, :);
                             % Create the turn analysis results.
-                            x_segmented.res.Segment.(files{i}).(objs{j}).data.([sigs{ii} '_turn' k_string]).startFrame = frame_start;
-                            x_segmented.res.Segment.(files{i}).(objs{j}).data.([sigs{ii} '_turn' k_string]).startTime = frame_start/x.(sel).(files{i}).(objs{j}).freq;
-                            x_segmented.res.Segment.(files{i}).(objs{j}).data.([sigs{ii} '_turn' k_string]).endFrame = frame_end;
-                            x_segmented.res.Segment.(files{i}).(objs{j}).data.([sigs{ii} '_turn' k_string]).endTime = frame_end/x.(sel).(files{i}).(objs{j}).freq;
-                            x_segmented.res.Segment.(files{i}).(objs{j}).data.([sigs{ii} '_turn' k_string]).duration_frame = frame_end - frame_start;
-                            x_segmented.res.Segment.(files{i}).(objs{j}).data.([sigs{ii} '_turn' k_string]).duration_time = (frame_end - frame_start)/x.(sel).(files{i}).(objs{j}).freq;
+                            x_segmented.res.Segment.(files{i}).(objs{j}).data.([sigs{ii} '_' k_string]).StartFrame = frame_start;
+                            x_segmented.res.Segment.(files{i}).(objs{j}).data.([sigs{ii} '_' k_string]).StartTime = (frame_start - 1)/freq;
+                            x_segmented.res.Segment.(files{i}).(objs{j}).data.([sigs{ii} '_' k_string]).EndFrame = frame_end;
+                            x_segmented.res.Segment.(files{i}).(objs{j}).data.([sigs{ii} '_' k_string]).EndTime = (frame_end - 1)/freq;
+                            x_segmented.res.Segment.(files{i}).(objs{j}).data.([sigs{ii} '_' k_string]).Duration_frame = frame_end - frame_start;
+                            x_segmented.res.Segment.(files{i}).(objs{j}).data.([sigs{ii} '_' k_string]).Duration_time = (frame_end - frame_start)/freq;
+
+                            x_segmented.res.Turn.(files{i}).(objs{j}).data.(sigs{ii}).StartFrame = ind_Turn(:, 1);
+                            x_segmented.res.Turn.(files{i}).(objs{j}).data.(sigs{ii}).EndFrame = ind_Turn(:, 2);
+                            x_segmented.res.Turn.(files{i}).(objs{j}).data.(sigs{ii}).DurationFrame = ind_Turn(:, 2) - ind_Turn(:, 1);
+                            x_segmented.res.Turn.(files{i}).(objs{j}).data.(sigs{ii}).StartTime = ind_Turn(:, 1)/freq;
+                            x_segmented.res.Turn.(files{i}).(objs{j}).data.(sigs{ii}).EndTime = ind_Turn(:, 2)/freq;
+                            x_segmented.res.Turn.(files{i}).(objs{j}).data.(sigs{ii}).DurationTime = (ind_Turn(:, 2) - ind_Turn(:, 1))/freq;
                         end
                     end
                 end

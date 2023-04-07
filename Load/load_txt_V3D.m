@@ -24,21 +24,26 @@ fid = fopen(file);
 
 % Get the first five header lines. These will be used to name the different
 % levels of the data structure.
-data{1,:} = fgetl(fid);
-data{2,:} = fgetl(fid);
-data{3,:} = fgetl(fid);
-data{4,:} = fgetl(fid);
-data{5,:} = fgetl(fid);
+data{1, :} = fgetl(fid);
+data{2, :} = fgetl(fid);
+data{3, :} = fgetl(fid);
+data{4, :} = fgetl(fid);
+data{5, :} = fgetl(fid);
 
 % Nothing more is needed to be read line-by-line so close the file.
 fclose(fid);
 
+if isempty(data{1, :})
+    txt_V3D = [];
+    return
+end
+
 % Separate the lines of headers by finding the tab delimiters.
-sources = textscan(data{1,:},'%s','delimiter','\t');
-measure = textscan(data{2,:},'%s','delimiter','\t');
-type = textscan(data{3,:},'%s','delimiter','\t');
-folder = textscan(data{4,:},'%s','delimiter','\t');
-dimension = textscan(data{5,:},'%s','delimiter','\t');
+sources = textscan(data{1, :}, '%s', 'delimiter', '\t');
+measure = textscan(data{2, :}, '%s', 'delimiter', '\t');
+type = textscan(data{3, :}, '%s', 'delimiter', '\t');
+folder = textscan(data{4, :}, '%s', 'delimiter', '\t');
+dimension = textscan(data{5, :}, '%s', 'delimiter', '\t');
 
 % Make the data in the first cell the actual data and remove the first
 % dummy value.
@@ -57,12 +62,12 @@ dimension(1) = [];
 % retained to be split into group information later.
 % sourcesTrim and sources are created separately because sources will be
 % used to find group information for the BAR App.
-if ~isempty(strfind(sources{1},'\')) 
+if ~isempty(strfind(sources{1}, '\')) 
     for i = 1:length(sources)
         % Long filename headers will have a '\'.
-        ind = strfind(sources{i},'\');
+        ind = strfind(sources{i}, '\');
         % Trim the headers using the last '\'.
-        sourcesTrim{i, 1} = sources{i}(ind(end)+1:end);
+        sourcesTrim{i, 1} = sources{i}(ind(end) + 1:end);
     end
 else
     % If there are no long file names the string used to find group
@@ -80,23 +85,41 @@ nlast = inf;
 lasttype = 'boom';
 % Iterate through the columns of data, which is the same length as the
 % sources.
+
+% Standard statistics should not be calculated in Visual3D. This has had a tendency to elongate field names past what MATLAB allows. It also greatly 
+% extends the processing time of this code when means and standard deviation measures are present. They are simple to calculate in MATLAB instead of 
+% in the Global V3D Workspace. Working with only the original values also enables higher quality data review in the BAR App.
+% ind_remove = contains(measure, 'Count') | contains(measure, 'MEAN') | contains(measure, 'STDDEV') | contains(measure, 'ANALOG_RATE');
+% sources(ind_remove) = [];
+% sourcesTrim(ind_remove) = [];
+% measure(ind_remove) = [];
+% type(ind_remove) = [];
+% folder(ind_remove) = [];
+% dimension(ind_remove) = [];
+
+% data(:, ind_remove) = [];
+
+if length(sourcesTrim) == 0
+    txt_V3D = [];
+    return
+end
+
+% Replace illegal characters with underscores.
+illegalCharacters = {'!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '[', ']', '{', '}', ';', ':', ',', '\.', '<', '>', '/', '?', ' '};
+sourcesTrim = regexprep(sourcesTrim, illegalCharacters, '_');
+type = regexprep(type, illegalCharacters, '_');
+type = regexprep(type, illegalCharacters, '_');
+measure = regexprep(measure, illegalCharacters, '_');
+dimension = regexprep(dimension, illegalCharacters, '_');
+
 for j = 1:length(sourcesTrim)
 
-    % Standard statistics should not be calculated in Visual3D. This has
-    % had a tendency to elongate field names past what MATLAB allows. They
-    % are also simple to calculate in MATLAB instead of in the Global V3D
-    % Workspace. Working with only the original values also enables higher
-    % quality data review in the BAR App.
-%     if contains(measure{j}, 'Count') || contains(measure{j}, 'Mean') || contains(measure{j}, 'StdDev') || contains(measure{j}, 'ANALOG_RATE')
-%         continue
-%     end
-    
     % Create a separate temporary variable so the length can be adjusted.
-    temp = data(:,j+1);
+    temp = data(:, j+1);
     
     % Find the last number to not be a NaN. This does mean that NaNs
     % located within the time series are retained.
-    ind = find(~isnan(temp),1,'last');
+    ind = find(~isnan(temp), 1, 'last');
     if isempty(ind)
         continue
     end
@@ -106,12 +129,12 @@ for j = 1:length(sourcesTrim)
     % Data of certain types should have the same length. This helps make
     % sure columns of X-Y-Z components of data like kinetic or kinematic
     % time series have the same length.
-    if ismember(type(j),{'LINK_MODEL_BASED' 'FORCE' 'COFP'})
+    if ismember(type(j), {'LINK_MODEL_BASED' 'FORCE' 'COFP'})
         % If the current length is within 10 of the last columns length and
         % the types are the same.
-        if abs(length(temp)-nlast)<10 && strcmp(lasttype,type(j))
+        if abs(length(temp) - nlast) < 10 && strcmp(lasttype, type(j))
             % Use the previous data length to pull the data.
-            temp = data(1:nlast,j+1);
+            temp = data(1:nlast, j+1);
         end
         % Set the new length to the current temporary data.
         nlast = length(temp);
@@ -119,16 +142,6 @@ for j = 1:length(sourcesTrim)
         lasttype = type{j};
     end
     
-    % This might not be used anymore.
-    %     fieldname = [sourcesTrim{j}(1:end-4) '_' type{j} '_' measure{j} '_' dimension{j}];
-
-    % Replace illegal characters with underscores.
-    sourcesTrim = regexprep(sourcesTrim, {' ', '-'}, '_');
-    type = regexprep(type, {' ', '-'}, '_');
-    type = regexprep(type, {' ', '-'}, '_');
-    measure = regexprep(measure, {' ', '-'}, '_');
-    dimension = regexprep(dimension, {' ', '-'}, '_');
-
     % This statement was added in to catch backup files created by QTM that
     % were then imported into Visual3D. The "Backup..." appended to the
     % filename is not a valid field name. It also is very long and if the
@@ -153,19 +166,6 @@ for j = 1:length(sourcesTrim)
         freq = [];
     end
     
-    % This was previously used so components of the same signal could be
-    % placed into the same array. This worked for forces and joint angles
-    % but does not for METRICS. Now they are created as separate signals.
-%     c = '1';
-%     switch dimension{j}
-%         case 'X'
-%             c = '1';
-%         case 'Y'
-%             c = '2';
-%         case 'Z'
-%             c = '3';
-%     end
-
     % These indexes and intersections were a solution for multiple sections
     % of the same signal being present in the same file. This could be if the same
     % signal was exported for multiple sequences of events that occur
@@ -237,6 +237,8 @@ end
 % Remove the file extension so it is not used as a
 % group.
 ind = strfind(dat{end}, '.');
-dat{end}(ind(end):end) = [];
+if ~isempty(ind)
+    dat{end}(ind(end):end) = [];
+end
 
 end

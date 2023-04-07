@@ -1,0 +1,79 @@
+29-Mar-2023 11:15:37 -0400 | DMV-000 DAMVi App v1.3
+29-Mar-2023 11:16:24 -0400 | DMV-001 file search started
+29-Mar-2023 11:22:15 -0400 | DMV-001 file search started
+29-Mar-2023 11:29:04 -0400 | DMV-001 file search started
+29-Mar-2023 11:43:45 -0400 | DMV-002 file search complete, 246 files found, 79.1 MB total
+29-Mar-2023 11:53:56 -0400 | DMV-004 loading files started for: h5APDM2Results
+29-Mar-2023 11:54:06 -0400 | DMV-027 loaded 10 of 246 files
+29-Mar-2023 11:54:16 -0400 | DMV-027 loaded 20 of 246 files
+29-Mar-2023 11:54:28 -0400 | DMV-027 loaded 30 of 246 files
+29-Mar-2023 11:54:40 -0400 | DMV-027 loaded 40 of 246 files
+29-Mar-2023 11:54:52 -0400 | DMV-027 loaded 50 of 246 files
+29-Mar-2023 11:55:03 -0400 | DMV-027 loaded 60 of 246 files
+29-Mar-2023 11:55:14 -0400 | DMV-027 loaded 70 of 246 files
+29-Mar-2023 11:55:24 -0400 | DMV-027 loaded 80 of 246 files
+29-Mar-2023 11:55:36 -0400 | DMV-027 loaded 90 of 246 files
+29-Mar-2023 11:55:47 -0400 | DMV-027 loaded 100 of 246 files
+29-Mar-2023 11:55:57 -0400 | DMV-027 loaded 110 of 246 files
+29-Mar-2023 11:56:08 -0400 | DMV-027 loaded 120 of 246 files
+29-Mar-2023 11:56:18 -0400 | DMV-027 loaded 130 of 246 files
+29-Mar-2023 11:56:28 -0400 | DMV-027 loaded 140 of 246 files
+29-Mar-2023 11:56:38 -0400 | DMV-027 loaded 150 of 246 files
+29-Mar-2023 11:56:50 -0400 | DMV-027 loaded 160 of 246 files
+29-Mar-2023 11:57:01 -0400 | DMV-027 loaded 170 of 246 files
+29-Mar-2023 11:57:12 -0400 | DMV-027 loaded 180 of 246 files
+29-Mar-2023 11:57:22 -0400 | DMV-027 loaded 190 of 246 files
+29-Mar-2023 11:57:32 -0400 | DMV-027 loaded 200 of 246 files
+29-Mar-2023 11:57:43 -0400 | DMV-027 loaded 210 of 246 files
+29-Mar-2023 11:57:53 -0400 | DMV-027 loaded 220 of 246 files
+29-Mar-2023 11:58:03 -0400 | DMV-027 loaded 230 of 246 files
+29-Mar-2023 11:58:13 -0400 | DMV-027 loaded 240 of 246 files
+29-Mar-2023 11:58:17 -0400 | DMV-005 loading files complete for: h5APDM2Results
+29-Mar-2023 12:06:43 -0400 | DMV-025 saving data from Groupings
+29-Mar-2023 12:14:05 -0400 | DMV-024 10 of 246 analyzed
+29-Mar-2023 12:14:05 -0400 | DMV-024 20 of 246 analyzed
+29-Mar-2023 12:14:05 -0400 | DMV-024 30 of 246 analyzed
+29-Mar-2023 12:14:05 -0400 | DMV-024 40 of 246 analyzed
+29-Mar-2023 12:14:05 -0400 | DMV-024 50 of 246 analyzed
+29-Mar-2023 12:14:05 -0400 | DMV-024 60 of 246 analyzed
+29-Mar-2023 12:14:05 -0400 | DMV-024 70 of 246 analyzed
+29-Mar-2023 12:14:05 -0400 | DMV-024 80 of 246 analyzed
+29-Mar-2023 12:14:05 -0400 | DMV-024 90 of 246 analyzed
+29-Mar-2023 12:14:05 -0400 | DMV-024 100 of 246 analyzed
+29-Mar-2023 12:14:05 -0400 | DMV-024 110 of 246 analyzed
+29-Mar-2023 12:14:05 -0400 | DMV-024 120 of 246 analyzed
+29-Mar-2023 12:14:05 -0400 | DMV-024 130 of 246 analyzed
+29-Mar-2023 12:14:05 -0400 | DMV-024 140 of 246 analyzed
+29-Mar-2023 12:14:05 -0400 | DMV-024 150 of 246 analyzed
+29-Mar-2023 12:14:05 -0400 | DMV-024 160 of 246 analyzed
+29-Mar-2023 12:14:05 -0400 | DMV-024 170 of 246 analyzed
+29-Mar-2023 12:14:05 -0400 | DMV-024 180 of 246 analyzed
+29-Mar-2023 12:14:05 -0400 | DMV-024 190 of 246 analyzed
+29-Mar-2023 12:14:05 -0400 | DMV-024 200 of 246 analyzed
+29-Mar-2023 12:14:05 -0400 | DMV-024 210 of 246 analyzed
+29-Mar-2023 12:14:05 -0400 | DMV-024 220 of 246 analyzed
+29-Mar-2023 12:14:05 -0400 | DMV-024 230 of 246 analyzed
+29-Mar-2023 12:14:05 -0400 | DMV-024 240 of 246 analyzed
+29-Mar-2023 12:14:05 -0400 | DMV-025 saving data from APDMSpatiotemporalTurns
+29-Mar-2023 12:14:17 -0400 | DMV-022 starting analysis:Entropy
+29-Mar-2023 12:21:19 -0400 | DMV-025 saving data from TimeLag
+29-Mar-2023 12:21:37 -0400 | DMV-026 data saved from TimeLag
+29-Mar-2023 16:10:04 -0400 | DMV-001 file search started
+29-Mar-2023 16:10:06 -0400 | DMV-002 file search complete, 426 files found, 105.4 MB total
+29-Mar-2023 16:10:16 -0400 | DMV-004 loading files started for: txtV3D
+29-Mar-2023 16:30:39 -0400 | DMV-027 loaded 10 of 426 files
+29-Mar-2023 17:06:03 -0400 | DMV-027 loaded 20 of 426 files
+29-Mar-2023 17:29:17 -0400 | DMV-027 loaded 30 of 426 files
+29-Mar-2023 18:00:03 -0400 | DMV-027 loaded 40 of 426 files
+29-Mar-2023 18:30:24 -0400 | DMV-027 loaded 50 of 426 files
+29-Mar-2023 19:06:00 -0400 | DMV-027 loaded 60 of 426 files
+29-Mar-2023 19:31:31 -0400 | DMV-027 loaded 70 of 426 files
+29-Mar-2023 19:48:26 -0400 | DMV-027 loaded 80 of 426 files
+29-Mar-2023 20:12:34 -0400 | DMV-027 loaded 90 of 426 files
+29-Mar-2023 20:26:46 -0400 | DMV-027 loaded 100 of 426 files
+29-Mar-2023 20:50:39 -0400 | DMV-027 loaded 110 of 426 files
+29-Mar-2023 21:10:30 -0400 | DMV-027 loaded 120 of 426 files
+29-Mar-2023 21:36:01 -0400 | DMV-027 loaded 130 of 426 files
+29-Mar-2023 22:06:01 -0400 | DMV-027 loaded 140 of 426 files
+29-Mar-2023 22:47:57 -0400 | DMV-027 loaded 150 of 426 files
+30-Mar-2023 03:52:57 -0400 | DMV-027 loaded 160 of 426 files

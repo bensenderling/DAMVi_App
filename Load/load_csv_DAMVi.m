@@ -47,6 +47,10 @@ for i = 1:height(data)
     end
     % Iterate through the signal indexes and pull them all in.
     for j = 1:length(indSignal)
+
+        if isnan(data.(fields{indSignal(j)})(i))
+            continue
+        end
         % This if statement allows multiple values from the same object to
         % be re-imported. This is the opposite of the export means option
         % in the export tab.
@@ -82,6 +86,10 @@ for i = 1:height(data)
             % Save the data into the structure using all the fields from the csv file to reconstruct the DAMVi data structure.
             csv_BAR.raw.(data.file{i}).(data.object{i}).data.(fields{indSignal(j)})(n, d) = data.(fields{indSignal(j)})(i);
         end
+    end
+
+    if sum(~contains(fieldnames(csv_BAR.raw.(data.file{i}).(data.object{i})), 'groups')) == 0
+        csv_BAR.raw.(data.file{i}) = rmfield(csv_BAR.raw.(data.file{i}), data.object{i});
     end
 end
 

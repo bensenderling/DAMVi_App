@@ -41,11 +41,13 @@ for i = 1:length(h5_struct)
     if ~isempty(h5_struct(i).Datasets)
         % Group names can have illegal characters that must be removed.
         measure = removeIllegalCharacters(h5_struct(i).Name);
-        % Iterate through the multiple datasets of the current group and
-        % pull out the data.
+        % Iterate through the multiple datasets of the current group and pull out the data.
         for j = 1:length(h5_struct(i).Datasets)
             name = removeIllegalCharacters(h5_struct(i).Datasets(j).Name);
             h5_APDM2.(measure).data.(name) = h5read(file, [h5_struct(i).Name '/' h5_struct(i).Datasets(j).Name]);
+            if size(h5_APDM2.(measure).data.(name), 2) > size(h5_APDM2.(measure).data.(name), 1)
+                h5_APDM2.(measure).data.(name) = h5_APDM2.(measure).data.(name)';
+            end
         end
     end
 end
