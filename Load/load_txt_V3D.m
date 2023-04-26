@@ -112,6 +112,11 @@ type = regexprep(type, illegalCharacters, '_');
 measure = regexprep(measure, illegalCharacters, '_');
 dimension = regexprep(dimension, illegalCharacters, '_');
 
+% There is an inconsistency where letters or numbers are used to indicate the dimension. Here, all of the letters are changed into numbers.
+dimension(strcmp(dimension, 'X')) = {'0'};
+dimension(strcmp(dimension, 'Y')) = {'1'};
+dimension(strcmp(dimension, 'Z')) = {'2'};
+
 for j = 1:length(sourcesTrim)
 
     % Create a separate temporary variable so the length can be adjusted.

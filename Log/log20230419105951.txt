@@ -1,0 +1,67 @@
+19-Apr-2023 10:59:51 -0400 | DMV-000 DAMVi App v1.3
+19-Apr-2023 11:01:59 -0400 | DMV-010 created Results folder at R:19-Apr-2023 11:01:59 -0400 | DMV-011 created Figure folder at R:19-Apr-2023 11:01:59 -0400 | DMV-011 created Figure folder at R:19-Apr-2023 11:02:35 -0400 | DMV-001 file search started
+19-Apr-2023 11:02:59 -0400 | DMV-002 file search complete, 8 files found, 20.8 KB total
+19-Apr-2023 11:03:06 -0400 | DMV-004 loading files started for: txtV3D
+19-Apr-2023 11:03:08 -0400 | DMV-005 loading files complete for: txtV3D
+19-Apr-2023 11:06:25 -0400 | DMV-025 saving data from Groupings
+19-Apr-2023 11:06:34 -0400 | DMV-008 results formated for export and displayed in table
+19-Apr-2023 11:08:25 -0400 | DMV-001 file search started
+19-Apr-2023 11:08:46 -0400 | DMV-002 file search complete, 8 files found, 20.8 KB total
+19-Apr-2023 11:09:29 -0400 | DMV-004 loading files started for: txtV3D
+19-Apr-2023 11:09:30 -0400 | DMV-005 loading files complete for: txtV3D
+19-Apr-2023 11:09:37 -0400 | DMV-025 saving data from Groupings
+19-Apr-2023 11:09:55 -0400 | DMV-008 results formated for export and displayed in table
+19-Apr-2023 11:13:57 -0400 | DMV-004 loading files started for: txtV3D
+19-Apr-2023 11:18:04 -0400 | DMV-004 loading files started for: txtV3D
+19-Apr-2023 11:18:05 -0400 | DMV-005 loading files complete for: txtV3D
+19-Apr-2023 11:19:34 -0400 | DMV-025 saving data from Groupings
+19-Apr-2023 11:19:44 -0400 | DMV-008 results formated for export and displayed in table
+19-Apr-2023 11:20:09 -0400 | DMV-007 results exported
+19-Apr-2023 11:23:15 -0400 | DMV-001 file search started
+19-Apr-2023 11:23:19 -0400 | DMV-002 file search complete, 11 files found, 42.3 KB total
+19-Apr-2023 11:23:36 -0400 | DMV-001 file search started
+19-Apr-2023 11:23:36 -0400 | DMV-002 file search complete, 0 files found, 0 B total
+19-Apr-2023 11:23:43 -0400 | DMV-001 file search started
+19-Apr-2023 11:23:47 -0400 | DMV-002 file search complete, 8 files found, 31.6 KB total
+19-Apr-2023 11:23:50 -0400 | DMV-004 loading files started for: txtV3D
+19-Apr-2023 11:23:50 -0400 | DMV-005 loading files complete for: txtV3D
+19-Apr-2023 11:24:37 -0400 | DMV-025 saving data from Groupings
+19-Apr-2023 11:24:46 -0400 | DMV-008 results formated for export and displayed in table
+19-Apr-2023 11:25:03 -0400 | DMV-007 results exported
+19-Apr-2023 11:44:29 -0400 | DMV-001 file search started
+19-Apr-2023 11:44:37 -0400 | DMV-001 file search started
+19-Apr-2023 11:44:41 -0400 | DMV-002 file search complete, 58 files found, 703.1 MB total
+19-Apr-2023 11:44:48 -0400 | DMV-002 file search complete, 66 files found, 756 MB total
+19-Apr-2023 11:45:52 -0400 | DMV-001 file search started
+19-Apr-2023 11:45:57 -0400 | DMV-002 file search complete, 54 files found, 570.8 MB total
+19-Apr-2023 11:46:59 -0400 | DMV-001 file search started
+19-Apr-2023 11:47:12 -0400 | DMV-001 file search started
+19-Apr-2023 11:47:24 -0400 | DMV-002 file search complete, 32 files found, 275.2 MB total
+19-Apr-2023 11:47:26 -0400 | DMV-002 file search complete, 51 files found, 438.6 MB total
+19-Apr-2023 11:48:22 -0400 | DMV-001 file search started
+19-Apr-2023 11:48:34 -0400 | DMV-002 file search complete, 32 files found, 275.2 MB total
+19-Apr-2023 11:48:39 -0400 | DMV-004 loading files started for: h5APDM0Meta
+19-Apr-2023 11:48:42 -0400 | DMV-027 loaded 10 of 32 files
+19-Apr-2023 11:48:45 -0400 | DMV-027 loaded 20 of 32 files
+19-Apr-2023 11:48:48 -0400 | DMV-027 loaded 30 of 32 files
+19-Apr-2023 11:48:48 -0400 | DMV-005 loading files complete for: h5APDM0Meta
+19-Apr-2023 11:49:00 -0400 | DMV-022 starting analysis:APDM
+19-Apr-2023 11:49:00 -0400 | DMV-029 unhandled exception in analysis: Group information cannot contain file paths.
+19-Apr-2023 11:49:15 -0400 | DMV-025 saving data from Groupings
+19-Apr-2023 11:49:24 -0400 | DMV-004 loading files started for: h5APDM0Meta
+19-Apr-2023 11:49:26 -0400 | DMV-027 loaded 10 of 32 files
+19-Apr-2023 11:49:28 -0400 | DMV-027 loaded 20 of 32 files
+19-Apr-2023 11:49:30 -0400 | DMV-027 loaded 30 of 32 files
+19-Apr-2023 11:49:30 -0400 | DMV-005 loading files complete for: h5APDM0Meta
+19-Apr-2023 11:50:00 -0400 | DMV-025 saving data from Groupings
+19-Apr-2023 11:50:10 -0400 | DMV-022 starting analysis:APDM
+19-Apr-2023 11:50:56 -0400 | DMV-024 10 of 32 analyzed
+19-Apr-2023 11:51:36 -0400 | DMV-024 20 of 32 analyzed
+19-Apr-2023 11:52:17 -0400 | DMV-024 30 of 32 analyzed
+19-Apr-2023 11:52:25 -0400 | DMV-025 saving data from APDM
+19-Apr-2023 12:03:01 -0400 | DMV-025 saving data from Groupings
+19-Apr-2023 12:03:33 -0400 | DMV-022 starting analysis:APDM
+19-Apr-2023 12:04:17 -0400 | DMV-024 10 of 32 analyzed
+19-Apr-2023 12:04:55 -0400 | DMV-024 20 of 32 analyzed
+19-Apr-2023 12:05:35 -0400 | DMV-024 30 of 32 analyzed
+19-Apr-2023 12:05:42 -0400 | DMV-025 saving data from APDM

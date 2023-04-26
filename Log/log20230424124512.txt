@@ -1,0 +1,13 @@
+24-Apr-2023 12:45:12 -0400 | DMV-000 DAMVi App v1.3
+24-Apr-2023 12:45:55 -0400 | DMV-001 file search started
+24-Apr-2023 12:46:03 -0400 | DMV-002 file search complete, 8 files found, 56.7 KB total
+24-Apr-2023 12:46:29 -0400 | DMV-001 file search started
+24-Apr-2023 12:46:37 -0400 | DMV-002 file search complete, 6 files found, 50.6 KB total
+24-Apr-2023 12:46:41 -0400 | DMV-004 loading files started for: xlsxMedoc
+24-Apr-2023 12:46:43 -0400 | DMV-005 loading files complete for: xlsxMedoc
+24-Apr-2023 12:47:12 -0400 | DMV-025 saving data from Groupings
+24-Apr-2023 12:47:19 -0400 | DMV-022 starting analysis:QST
+24-Apr-2023 12:47:28 -0400 | DMV-025 saving data from QST
+24-Apr-2023 12:47:45 -0400 | DMV-021 formated analysis 1 of 1
+24-Apr-2023 12:47:45 -0400 | DMV-008 results formated for export and displayed in table
+24-Apr-2023 12:47:56 -0400 | DMV-007 results exported

@@ -1,0 +1,307 @@
+28-Mar-2023 14:43:15 -0400 DMV-000 DAMVi App v1.328-Mar-2023 14:47:32 -0400 DMV-001 file search started28-Mar-2023 14:47:32 -0400 DMV-002 file search complete, 53 files found, 38.2 GB total28-Mar-2023 14:48:04 -0400 DMV-001 file search started28-Mar-2023 14:48:04 -0400 DMV-002 file search complete, 1 files found, 148.6 MB total28-Mar-2023 14:48:07 -0400 DMV-004 loading files started for: matDAMVi28-Mar-2023 14:48:10 -0400 DMV-005 loading files complete for: matDAMVi28-Mar-2023 14:48:32 -0400 | DMV-022 starting analysis:RQA28-Mar-2023 15:05:33 -0400 | DMV-001 file search started28-Mar-2023 15:05:34 -0400 | DMV-002 file search complete, 1 files found, 153.8 MB total28-Mar-2023 15:05:37 -0400 | DMV-004 loading files started for: matDAMVi28-Mar-2023 15:05:40 -0400 | DMV-005 loading files complete for: matDAMVi28-Mar-2023 15:05:44 -0400 | DMV-022 starting analysis:RQA28-Mar-2023 15:09:21 -0400 | DMV-022 starting analysis:FNN
+28-Mar-2023 15:12:47 -0400 | DMV-022 starting analysis:TimeLag
+28-Mar-2023 15:13:37 -0400 | DMV-025 saving data from TimeLag
+28-Mar-2023 15:13:53 -0400 | DMV-026 data saved from TimeLag
+28-Mar-2023 15:13:59 -0400 | DMV-022 starting analysis:FNN
+28-Mar-2023 15:34:39 -0400 | DMV-025 saving data from FNN
+28-Mar-2023 15:34:54 -0400 | DMV-026 data saved from FNN
+28-Mar-2023 15:35:09 -0400 | DMV-008 results formated for export and displayed in table
+28-Mar-2023 16:07:45 -0400 | DMV-001 file search started
+28-Mar-2023 16:07:45 -0400 | DMV-002 file search complete, 1 files found, 153.8 MB total
+28-Mar-2023 16:07:47 -0400 | DMV-004 loading files started for: matDAMVi
+28-Mar-2023 16:07:51 -0400 | DMV-005 loading files complete for: matDAMVi
+28-Mar-2023 16:14:45 -0400 | DMV-001 file search started
+28-Mar-2023 16:14:46 -0400 | DMV-002 file search complete, 1 files found, 39 MB total
+28-Mar-2023 16:14:47 -0400 | DMV-004 loading files started for: matDAMVi
+28-Mar-2023 16:14:47 -0400 | DMV-005 loading files complete for: matDAMVi
+28-Mar-2023 16:15:11 -0400 | DMV-025 saving data from TurnsAPDM
+28-Mar-2023 16:15:24 -0400 | DMV-026 data saved from TurnsAPDM
+28-Mar-2023 16:15:59 -0400 | DMV-008 results formated for export and displayed in table
+28-Mar-2023 16:16:08 -0400 | DMV-008 results formated for export and displayed in table
+28-Mar-2023 16:19:05 -0400 | DMV-008 results formated for export and displayed in table
+28-Mar-2023 16:22:02 -0400 | DMV-008 results formated for export and displayed in table
+28-Mar-2023 16:22:16 -0400 | DMV-008 results formated for export and displayed in table
+28-Mar-2023 16:23:05 -0400 | DMV-001 file search started
+28-Mar-2023 16:23:05 -0400 | DMV-002 file search complete, 1 files found, 153.8 MB total
+28-Mar-2023 16:23:06 -0400 | DMV-004 loading files started for: matDAMVi
+28-Mar-2023 16:23:10 -0400 | DMV-005 loading files complete for: matDAMVi
+28-Mar-2023 16:23:26 -0400 | DMV-008 results formated for export and displayed in table
+28-Mar-2023 16:25:38 -0400 | DMV-008 results formated for export and displayed in table
+28-Mar-2023 16:30:17 -0400 | DMV-008 results formated for export and displayed in table
+28-Mar-2023 16:35:20 -0400 | DMV-001 file search started
+28-Mar-2023 16:35:20 -0400 | DMV-002 file search complete, 1 files found, 153.8 MB total
+28-Mar-2023 16:35:22 -0400 | DMV-004 loading files started for: matDAMVi
+28-Mar-2023 16:35:26 -0400 | DMV-005 loading files complete for: matDAMVi
+28-Mar-2023 16:35:29 -0400 | DMV-001 file search started
+28-Mar-2023 16:35:29 -0400 | DMV-002 file search complete, 1 files found, 96.6 MB total
+28-Mar-2023 16:35:30 -0400 | DMV-004 loading files started for: matDAMVi
+28-Mar-2023 16:35:32 -0400 | DMV-005 loading files complete for: matDAMVi
+28-Mar-2023 16:35:39 -0400 | DMV-022 starting analysis:TimeLag
+28-Mar-2023 16:35:54 -0400 | AMI-001 finished 10 of 449 files
+28-Mar-2023 16:35:54 -0400 | AMI-001 finished 20 of 449 files
+28-Mar-2023 16:35:55 -0400 | AMI-001 finished 30 of 449 files
+28-Mar-2023 16:35:56 -0400 | AMI-001 finished 40 of 449 files
+28-Mar-2023 16:35:56 -0400 | AMI-001 finished 50 of 449 files
+28-Mar-2023 16:35:57 -0400 | AMI-001 finished 60 of 449 files
+28-Mar-2023 16:35:58 -0400 | AMI-001 finished 70 of 449 files
+28-Mar-2023 16:35:59 -0400 | AMI-001 finished 80 of 449 files
+28-Mar-2023 16:35:59 -0400 | AMI-001 finished 90 of 449 files
+28-Mar-2023 16:36:00 -0400 | AMI-001 finished 100 of 449 files
+28-Mar-2023 16:36:01 -0400 | AMI-001 finished 110 of 449 files
+28-Mar-2023 16:36:01 -0400 | AMI-001 finished 120 of 449 files
+28-Mar-2023 16:36:02 -0400 | AMI-001 finished 130 of 449 files
+28-Mar-2023 16:36:03 -0400 | AMI-001 finished 140 of 449 files
+28-Mar-2023 16:36:04 -0400 | AMI-001 finished 150 of 449 files
+28-Mar-2023 16:36:04 -0400 | AMI-001 finished 160 of 449 files
+28-Mar-2023 16:36:05 -0400 | AMI-001 finished 170 of 449 files
+28-Mar-2023 16:36:06 -0400 | AMI-001 finished 180 of 449 files
+28-Mar-2023 16:36:07 -0400 | AMI-001 finished 190 of 449 files
+28-Mar-2023 16:36:08 -0400 | AMI-001 finished 200 of 449 files
+28-Mar-2023 16:36:08 -0400 | AMI-001 finished 210 of 449 files
+28-Mar-2023 16:36:09 -0400 | AMI-003 analysis failed on: files0213 Lumbar eul_1
+28-Mar-2023 16:36:09 -0400 | AMI-004 Unable to perform assignment because the size of the left side is 1-by-1 and the size of the right side is 1-by-7.
+28-Mar-2023 16:36:09 -0400 | AMI-003 analysis failed on: files0213 Lumbar eul_1
+28-Mar-2023 16:36:09 -0400 | AMI-004 Unable to perform assignment because the size of the left side is 1-by-1 and the size of the right side is 1-by-7.
+28-Mar-2023 16:36:09 -0400 | AMI-001 finished 220 of 449 files
+28-Mar-2023 16:36:10 -0400 | AMI-001 finished 230 of 449 files
+28-Mar-2023 16:36:10 -0400 | AMI-001 finished 240 of 449 files
+28-Mar-2023 16:36:11 -0400 | AMI-001 finished 250 of 449 files
+28-Mar-2023 16:36:12 -0400 | AMI-001 finished 260 of 449 files
+28-Mar-2023 16:36:12 -0400 | AMI-001 finished 270 of 449 files
+28-Mar-2023 16:36:13 -0400 | AMI-001 finished 280 of 449 files
+28-Mar-2023 16:36:13 -0400 | AMI-001 finished 290 of 449 files
+28-Mar-2023 16:36:14 -0400 | AMI-001 finished 300 of 449 files
+28-Mar-2023 16:36:15 -0400 | AMI-001 finished 310 of 449 files
+28-Mar-2023 16:36:15 -0400 | AMI-001 finished 320 of 449 files
+28-Mar-2023 16:36:16 -0400 | AMI-001 finished 330 of 449 files
+28-Mar-2023 16:36:17 -0400 | AMI-001 finished 340 of 449 files
+28-Mar-2023 16:36:17 -0400 | AMI-001 finished 350 of 449 files
+28-Mar-2023 16:36:18 -0400 | AMI-001 finished 360 of 449 files
+28-Mar-2023 16:36:18 -0400 | AMI-001 finished 370 of 449 files
+28-Mar-2023 16:36:19 -0400 | AMI-001 finished 380 of 449 files
+28-Mar-2023 16:36:20 -0400 | AMI-001 finished 390 of 449 files
+28-Mar-2023 16:36:20 -0400 | AMI-001 finished 400 of 449 files
+28-Mar-2023 16:36:21 -0400 | AMI-001 finished 410 of 449 files
+28-Mar-2023 16:36:22 -0400 | AMI-001 finished 420 of 449 files
+28-Mar-2023 16:36:22 -0400 | AMI-001 finished 430 of 449 files
+28-Mar-2023 16:36:23 -0400 | AMI-001 finished 440 of 449 files
+28-Mar-2023 16:36:23 -0400 | AMI-002 analysis complete
+28-Mar-2023 16:37:36 -0400 | DMV-022 starting analysis:TimeLag
+28-Mar-2023 16:37:54 -0400 | AMI-001 finished 10 of 449 files
+28-Mar-2023 16:37:55 -0400 | AMI-001 finished 20 of 449 files
+28-Mar-2023 16:37:55 -0400 | AMI-001 finished 30 of 449 files
+28-Mar-2023 16:37:56 -0400 | AMI-001 finished 40 of 449 files
+28-Mar-2023 16:37:57 -0400 | AMI-001 finished 50 of 449 files
+28-Mar-2023 16:37:57 -0400 | AMI-001 finished 60 of 449 files
+28-Mar-2023 16:37:58 -0400 | AMI-001 finished 70 of 449 files
+28-Mar-2023 16:37:59 -0400 | AMI-001 finished 80 of 449 files
+28-Mar-2023 16:38:00 -0400 | AMI-001 finished 90 of 449 files
+28-Mar-2023 16:38:00 -0400 | AMI-001 finished 100 of 449 files
+28-Mar-2023 16:38:01 -0400 | AMI-001 finished 110 of 449 files
+28-Mar-2023 16:38:02 -0400 | AMI-001 finished 120 of 449 files
+28-Mar-2023 16:38:03 -0400 | AMI-001 finished 130 of 449 files
+28-Mar-2023 16:38:03 -0400 | AMI-001 finished 140 of 449 files
+28-Mar-2023 16:38:04 -0400 | AMI-001 finished 150 of 449 files
+28-Mar-2023 16:38:05 -0400 | AMI-001 finished 160 of 449 files
+28-Mar-2023 16:38:06 -0400 | AMI-001 finished 170 of 449 files
+28-Mar-2023 16:38:06 -0400 | AMI-001 finished 180 of 449 files
+28-Mar-2023 16:38:07 -0400 | AMI-001 finished 190 of 449 files
+28-Mar-2023 16:38:08 -0400 | AMI-001 finished 200 of 449 files
+28-Mar-2023 16:38:09 -0400 | AMI-001 finished 210 of 449 files
+28-Mar-2023 16:38:24 -0400 | AMI-003 analysis failed on: files0213 Lumbar eul_1
+28-Mar-2023 16:38:24 -0400 | AMI-004 Unable to perform assignment because the size of the left side is 1-by-1 and the size of the right side is 1-by-7.
+28-Mar-2023 16:38:24 -0400 | AMI-003 analysis failed on: files0213 Lumbar eul_1
+28-Mar-2023 16:38:24 -0400 | AMI-004 Unable to perform assignment because the size of the left side is 1-by-1 and the size of the right side is 1-by-7.
+28-Mar-2023 16:39:56 -0400 | AMI-003 analysis failed on: files0213 Lumbar eul_1
+28-Mar-2023 16:39:56 -0400 | AMI-004 Unable to perform assignment because the size of the left side is 1-by-1 and the size of the right side is 1-by-7.
+28-Mar-2023 16:39:56 -0400 | AMI-003 analysis failed on: files0213 Lumbar eul_1
+28-Mar-2023 16:39:56 -0400 | AMI-004 Unable to perform assignment because the size of the left side is 1-by-1 and the size of the right side is 1-by-7.
+28-Mar-2023 16:42:54 -0400 | AMI-003 analysis failed on: files0213 Lumbar eul_1
+28-Mar-2023 16:42:54 -0400 | AMI-004 Unable to perform assignment because the size of the left side is 1-by-1 and the size of the right side is 1-by-7.
+28-Mar-2023 16:42:54 -0400 | AMI-003 analysis failed on: files0213 Lumbar eul_1
+28-Mar-2023 16:42:54 -0400 | AMI-004 Unable to perform assignment because the size of the left side is 1-by-1 and the size of the right side is 1-by-7.
+28-Mar-2023 16:47:12 -0400 | AMI-001 finished 10 of 449 files
+28-Mar-2023 16:47:12 -0400 | AMI-001 finished 20 of 449 files
+28-Mar-2023 16:47:13 -0400 | AMI-001 finished 30 of 449 files
+28-Mar-2023 16:47:14 -0400 | AMI-001 finished 40 of 449 files
+28-Mar-2023 16:47:14 -0400 | AMI-001 finished 50 of 449 files
+28-Mar-2023 16:47:15 -0400 | AMI-001 finished 60 of 449 files
+28-Mar-2023 16:47:16 -0400 | AMI-001 finished 70 of 449 files
+28-Mar-2023 16:47:17 -0400 | AMI-001 finished 80 of 449 files
+28-Mar-2023 16:47:18 -0400 | AMI-001 finished 90 of 449 files
+28-Mar-2023 16:47:18 -0400 | AMI-001 finished 100 of 449 files
+28-Mar-2023 16:47:19 -0400 | AMI-001 finished 110 of 449 files
+28-Mar-2023 16:47:20 -0400 | AMI-001 finished 120 of 449 files
+28-Mar-2023 16:47:21 -0400 | AMI-001 finished 130 of 449 files
+28-Mar-2023 16:47:21 -0400 | AMI-001 finished 140 of 449 files
+28-Mar-2023 16:47:22 -0400 | AMI-001 finished 150 of 449 files
+28-Mar-2023 16:47:23 -0400 | AMI-001 finished 160 of 449 files
+28-Mar-2023 16:47:23 -0400 | AMI-001 finished 170 of 449 files
+28-Mar-2023 16:47:24 -0400 | AMI-001 finished 180 of 449 files
+28-Mar-2023 16:47:25 -0400 | AMI-001 finished 190 of 449 files
+28-Mar-2023 16:47:26 -0400 | AMI-001 finished 200 of 449 files
+28-Mar-2023 16:47:27 -0400 | AMI-001 finished 210 of 449 files
+28-Mar-2023 16:48:22 -0400 | DMV-004 loading files started for: matDAMVi
+28-Mar-2023 16:48:24 -0400 | DMV-005 loading files complete for: matDAMVi
+28-Mar-2023 16:48:31 -0400 | DMV-022 starting analysis:TimeLag
+28-Mar-2023 16:48:56 -0400 | AMI-001 finished 10 of 449 files
+28-Mar-2023 16:48:56 -0400 | AMI-001 finished 20 of 449 files
+28-Mar-2023 16:48:57 -0400 | AMI-001 finished 30 of 449 files
+28-Mar-2023 16:48:58 -0400 | AMI-001 finished 40 of 449 files
+28-Mar-2023 16:48:58 -0400 | AMI-001 finished 50 of 449 files
+28-Mar-2023 16:48:59 -0400 | AMI-001 finished 60 of 449 files
+28-Mar-2023 16:49:00 -0400 | AMI-001 finished 70 of 449 files
+28-Mar-2023 16:49:01 -0400 | AMI-001 finished 80 of 449 files
+28-Mar-2023 16:49:01 -0400 | AMI-001 finished 90 of 449 files
+28-Mar-2023 16:49:02 -0400 | AMI-001 finished 100 of 449 files
+28-Mar-2023 16:49:03 -0400 | AMI-001 finished 110 of 449 files
+28-Mar-2023 16:49:03 -0400 | AMI-001 finished 120 of 449 files
+28-Mar-2023 16:49:04 -0400 | AMI-001 finished 130 of 449 files
+28-Mar-2023 16:49:05 -0400 | AMI-001 finished 140 of 449 files
+28-Mar-2023 16:49:06 -0400 | AMI-001 finished 150 of 449 files
+28-Mar-2023 16:49:07 -0400 | AMI-001 finished 160 of 449 files
+28-Mar-2023 16:49:07 -0400 | AMI-001 finished 170 of 449 files
+28-Mar-2023 16:49:08 -0400 | AMI-001 finished 180 of 449 files
+28-Mar-2023 16:49:09 -0400 | AMI-001 finished 190 of 449 files
+28-Mar-2023 16:49:10 -0400 | AMI-001 finished 200 of 449 files
+28-Mar-2023 16:49:10 -0400 | AMI-001 finished 210 of 449 files
+28-Mar-2023 16:49:43 -0400 | DMV-004 loading files started for: matDAMVi
+28-Mar-2023 16:49:45 -0400 | DMV-005 loading files complete for: matDAMVi
+28-Mar-2023 16:49:50 -0400 | DMV-022 starting analysis:TimeLag
+28-Mar-2023 16:50:02 -0400 | AMI-001 finished 10 of 449 files
+28-Mar-2023 16:50:03 -0400 | AMI-001 finished 20 of 449 files
+28-Mar-2023 16:50:04 -0400 | AMI-001 finished 30 of 449 files
+28-Mar-2023 16:50:04 -0400 | AMI-001 finished 40 of 449 files
+28-Mar-2023 16:50:05 -0400 | AMI-001 finished 50 of 449 files
+28-Mar-2023 16:50:06 -0400 | AMI-001 finished 60 of 449 files
+28-Mar-2023 16:50:06 -0400 | AMI-001 finished 70 of 449 files
+28-Mar-2023 16:50:07 -0400 | AMI-001 finished 80 of 449 files
+28-Mar-2023 16:50:08 -0400 | AMI-001 finished 90 of 449 files
+28-Mar-2023 16:50:09 -0400 | AMI-001 finished 100 of 449 files
+28-Mar-2023 16:50:09 -0400 | AMI-001 finished 110 of 449 files
+28-Mar-2023 16:50:10 -0400 | AMI-001 finished 120 of 449 files
+28-Mar-2023 16:50:11 -0400 | AMI-001 finished 130 of 449 files
+28-Mar-2023 16:50:12 -0400 | AMI-001 finished 140 of 449 files
+28-Mar-2023 16:50:12 -0400 | AMI-001 finished 150 of 449 files
+28-Mar-2023 16:50:13 -0400 | AMI-001 finished 160 of 449 files
+28-Mar-2023 16:50:14 -0400 | AMI-001 finished 170 of 449 files
+28-Mar-2023 16:50:14 -0400 | AMI-001 finished 180 of 449 files
+28-Mar-2023 16:50:15 -0400 | AMI-001 finished 190 of 449 files
+28-Mar-2023 16:50:16 -0400 | AMI-001 finished 200 of 449 files
+28-Mar-2023 16:50:17 -0400 | AMI-001 finished 210 of 449 files
+28-Mar-2023 16:50:17 -0400 | AMI-003 analysis failed on: files0213 Lumbar eul_1
+28-Mar-2023 16:50:17 -0400 | AMI-004 Unable to perform assignment because the size of the left side is 1-by-1 and the size of the right side is 1-by-7.
+28-Mar-2023 16:50:17 -0400 | AMI-003 analysis failed on: files0213 Lumbar eul_1
+28-Mar-2023 16:50:17 -0400 | AMI-004 Unable to perform assignment because the size of the left side is 1-by-1 and the size of the right side is 1-by-7.
+28-Mar-2023 16:50:18 -0400 | AMI-001 finished 220 of 449 files
+28-Mar-2023 16:50:18 -0400 | AMI-001 finished 230 of 449 files
+28-Mar-2023 16:50:19 -0400 | AMI-001 finished 240 of 449 files
+28-Mar-2023 16:50:20 -0400 | AMI-001 finished 250 of 449 files
+28-Mar-2023 16:50:20 -0400 | AMI-001 finished 260 of 449 files
+28-Mar-2023 16:50:21 -0400 | AMI-001 finished 270 of 449 files
+28-Mar-2023 16:50:21 -0400 | AMI-001 finished 280 of 449 files
+28-Mar-2023 16:50:22 -0400 | AMI-001 finished 290 of 449 files
+28-Mar-2023 16:50:23 -0400 | AMI-001 finished 300 of 449 files
+28-Mar-2023 16:50:23 -0400 | AMI-001 finished 310 of 449 files
+28-Mar-2023 16:50:24 -0400 | AMI-001 finished 320 of 449 files
+28-Mar-2023 16:50:25 -0400 | AMI-001 finished 330 of 449 files
+28-Mar-2023 16:50:25 -0400 | AMI-001 finished 340 of 449 files
+28-Mar-2023 16:50:26 -0400 | AMI-001 finished 350 of 449 files
+28-Mar-2023 16:50:27 -0400 | AMI-001 finished 360 of 449 files
+28-Mar-2023 16:50:27 -0400 | AMI-001 finished 370 of 449 files
+28-Mar-2023 16:50:28 -0400 | AMI-001 finished 380 of 449 files
+28-Mar-2023 16:50:28 -0400 | AMI-001 finished 390 of 449 files
+28-Mar-2023 16:50:29 -0400 | AMI-001 finished 400 of 449 files
+28-Mar-2023 16:50:30 -0400 | AMI-001 finished 410 of 449 files
+28-Mar-2023 16:50:30 -0400 | AMI-001 finished 420 of 449 files
+28-Mar-2023 16:50:31 -0400 | AMI-001 finished 430 of 449 files
+28-Mar-2023 16:50:31 -0400 | AMI-001 finished 440 of 449 files
+28-Mar-2023 16:50:32 -0400 | AMI-002 analysis complete
+28-Mar-2023 16:51:28 -0400 | DMV-004 loading files started for: matDAMVi
+28-Mar-2023 16:51:30 -0400 | DMV-005 loading files complete for: matDAMVi
+28-Mar-2023 16:51:35 -0400 | DMV-022 starting analysis:TimeLag
+28-Mar-2023 16:51:47 -0400 | AMI-001 finished 10 of 449 files
+28-Mar-2023 16:51:48 -0400 | AMI-001 finished 20 of 449 files
+28-Mar-2023 16:51:49 -0400 | AMI-001 finished 30 of 449 files
+28-Mar-2023 16:51:50 -0400 | AMI-001 finished 40 of 449 files
+28-Mar-2023 16:51:50 -0400 | AMI-001 finished 50 of 449 files
+28-Mar-2023 16:51:51 -0400 | AMI-001 finished 60 of 449 files
+28-Mar-2023 16:51:52 -0400 | AMI-001 finished 70 of 449 files
+28-Mar-2023 16:51:53 -0400 | AMI-001 finished 80 of 449 files
+28-Mar-2023 16:51:53 -0400 | AMI-001 finished 90 of 449 files
+28-Mar-2023 16:51:54 -0400 | AMI-001 finished 100 of 449 files
+28-Mar-2023 16:51:55 -0400 | AMI-001 finished 110 of 449 files
+28-Mar-2023 16:51:55 -0400 | AMI-001 finished 120 of 449 files
+28-Mar-2023 16:51:56 -0400 | AMI-001 finished 130 of 449 files
+28-Mar-2023 16:51:57 -0400 | AMI-001 finished 140 of 449 files
+28-Mar-2023 16:51:58 -0400 | AMI-001 finished 150 of 449 files
+28-Mar-2023 16:51:58 -0400 | AMI-001 finished 160 of 449 files
+28-Mar-2023 16:51:59 -0400 | AMI-001 finished 170 of 449 files
+28-Mar-2023 16:52:00 -0400 | AMI-001 finished 180 of 449 files
+28-Mar-2023 16:52:01 -0400 | AMI-001 finished 190 of 449 files
+28-Mar-2023 16:52:01 -0400 | AMI-001 finished 200 of 449 files
+28-Mar-2023 16:52:02 -0400 | AMI-001 finished 210 of 449 files
+28-Mar-2023 16:55:30 -0400 | AMI-001 finished 10 of 449 files
+28-Mar-2023 16:55:31 -0400 | AMI-001 finished 20 of 449 files
+28-Mar-2023 16:55:32 -0400 | AMI-001 finished 30 of 449 files
+28-Mar-2023 16:55:32 -0400 | AMI-001 finished 40 of 449 files
+28-Mar-2023 16:55:33 -0400 | AMI-001 finished 50 of 449 files
+28-Mar-2023 16:55:34 -0400 | AMI-001 finished 60 of 449 files
+28-Mar-2023 16:55:34 -0400 | AMI-001 finished 70 of 449 files
+28-Mar-2023 16:55:35 -0400 | AMI-001 finished 80 of 449 files
+28-Mar-2023 16:55:36 -0400 | AMI-001 finished 90 of 449 files
+28-Mar-2023 16:55:37 -0400 | AMI-001 finished 100 of 449 files
+28-Mar-2023 16:55:37 -0400 | AMI-001 finished 110 of 449 files
+28-Mar-2023 16:55:38 -0400 | AMI-001 finished 120 of 449 files
+28-Mar-2023 16:55:39 -0400 | AMI-001 finished 130 of 449 files
+28-Mar-2023 16:55:39 -0400 | AMI-001 finished 140 of 449 files
+28-Mar-2023 16:55:40 -0400 | AMI-001 finished 150 of 449 files
+28-Mar-2023 16:55:41 -0400 | AMI-001 finished 160 of 449 files
+28-Mar-2023 16:55:42 -0400 | AMI-001 finished 170 of 449 files
+28-Mar-2023 16:55:42 -0400 | AMI-001 finished 180 of 449 files
+28-Mar-2023 16:55:43 -0400 | AMI-001 finished 190 of 449 files
+28-Mar-2023 16:55:44 -0400 | AMI-001 finished 200 of 449 files
+28-Mar-2023 16:55:45 -0400 | AMI-001 finished 210 of 449 files
+28-Mar-2023 16:55:45 -0400 | AMI-003 analysis failed on: files0213 Lumbar eul_1
+28-Mar-2023 16:55:45 -0400 | AMI-004 Unable to perform assignment because the size of the left side is 1-by-1 and the size of the right side is 1-by-7.
+28-Mar-2023 16:55:45 -0400 | AMI-003 analysis failed on: files0213 Lumbar eul_1
+28-Mar-2023 16:55:45 -0400 | AMI-004 Unable to perform assignment because the size of the left side is 1-by-1 and the size of the right side is 1-by-7.
+28-Mar-2023 16:55:45 -0400 | AMI-001 finished 220 of 449 files
+28-Mar-2023 16:55:46 -0400 | AMI-001 finished 230 of 449 files
+28-Mar-2023 16:55:47 -0400 | AMI-001 finished 240 of 449 files
+28-Mar-2023 16:55:47 -0400 | AMI-001 finished 250 of 449 files
+28-Mar-2023 16:55:48 -0400 | AMI-001 finished 260 of 449 files
+28-Mar-2023 16:55:49 -0400 | AMI-001 finished 270 of 449 files
+28-Mar-2023 16:55:49 -0400 | AMI-001 finished 280 of 449 files
+28-Mar-2023 16:55:50 -0400 | AMI-001 finished 290 of 449 files
+28-Mar-2023 16:55:51 -0400 | AMI-001 finished 300 of 449 files
+28-Mar-2023 16:55:51 -0400 | AMI-001 finished 310 of 449 files
+28-Mar-2023 16:55:52 -0400 | AMI-001 finished 320 of 449 files
+28-Mar-2023 16:55:52 -0400 | AMI-001 finished 330 of 449 files
+28-Mar-2023 16:55:53 -0400 | AMI-001 finished 340 of 449 files
+28-Mar-2023 16:55:54 -0400 | AMI-001 finished 350 of 449 files
+28-Mar-2023 16:55:54 -0400 | AMI-001 finished 360 of 449 files
+28-Mar-2023 16:55:55 -0400 | AMI-001 finished 370 of 449 files
+28-Mar-2023 16:55:56 -0400 | AMI-001 finished 380 of 449 files
+28-Mar-2023 16:55:56 -0400 | AMI-001 finished 390 of 449 files
+28-Mar-2023 16:55:57 -0400 | AMI-001 finished 400 of 449 files
+28-Mar-2023 16:55:57 -0400 | AMI-001 finished 410 of 449 files
+28-Mar-2023 16:55:58 -0400 | AMI-001 finished 420 of 449 files
+28-Mar-2023 16:55:59 -0400 | AMI-001 finished 430 of 449 files
+28-Mar-2023 16:55:59 -0400 | AMI-001 finished 440 of 449 files
+28-Mar-2023 16:56:00 -0400 | AMI-002 analysis complete
+28-Mar-2023 16:56:03 -0400 | DMV-025 saving data from TimeLag
+28-Mar-2023 16:56:18 -0400 | DMV-026 data saved from TimeLag
+28-Mar-2023 16:56:32 -0400 | DMV-008 results formated for export and displayed in table
+28-Mar-2023 17:20:46 -0400 | DMV-008 results formated for export and displayed in table
+28-Mar-2023 17:21:23 -0400 | DMV-008 results formated for export and displayed in table
+28-Mar-2023 17:22:40 -0400 | DMV-008 results formated for export and displayed in table
+28-Mar-2023 17:24:04 -0400 | DMV-008 results formated for export and displayed in table
+28-Mar-2023 17:27:38 -0400 | DMV-008 results formated for export and displayed in table
+28-Mar-2023 17:28:07 -0400 | DMV-008 results formated for export and displayed in table
+28-Mar-2023 17:33:32 -0400 | DMV-008 results formated for export and displayed in table
+28-Mar-2023 17:36:36 -0400 | DMV-008 results formated for export and displayed in table
+28-Mar-2023 17:49:06 -0400 | DMV-008 results formated for export and displayed in table
+28-Mar-2023 17:50:26 -0400 | DMV-008 results formated for export and displayed in table
+28-Mar-2023 17:53:05 -0400 | DMV-008 results formated for export and displayed in table
+29-Mar-2023 11:05:58 -0400 | DMV-001 file search started

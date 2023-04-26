@@ -1,0 +1,112 @@
+6-Apr-2023 09:11:06 -0400 | DMV-000 DAMVi App v1.3
+6-Apr-2023 09:12:26 -0400 | DMV-010 created Results folder at R:6-Apr-2023 09:12:26 -0400 | DMV-011 created Figure folder at R:6-Apr-2023 09:12:26 -0400 | DMV-011 created Figure folder at R:6-Apr-2023 09:12:42 -0400 | DMV-001 file search started
+6-Apr-2023 09:12:44 -0400 | DMV-002 file search complete, 0 files found, 0 B total
+6-Apr-2023 09:12:59 -0400 | DMV-001 file search started
+6-Apr-2023 09:16:31 -0400 | DMV-001 file search started
+6-Apr-2023 09:19:27 -0400 | DMV-002 file search complete, 95 files found, 17.3 MB total
+6-Apr-2023 09:20:08 -0400 | DMV-004 loading files started for: h5APDM2Results
+6-Apr-2023 09:20:17 -0400 | DMV-027 loaded 10 of 95 files
+6-Apr-2023 09:20:26 -0400 | DMV-027 loaded 20 of 95 files
+6-Apr-2023 09:20:33 -0400 | DMV-027 loaded 30 of 95 files
+6-Apr-2023 09:20:37 -0400 | DMV-027 loaded 40 of 95 files
+6-Apr-2023 09:20:42 -0400 | DMV-027 loaded 50 of 95 files
+6-Apr-2023 09:20:48 -0400 | DMV-027 loaded 60 of 95 files
+6-Apr-2023 09:20:52 -0400 | DMV-027 loaded 70 of 95 files
+6-Apr-2023 09:20:57 -0400 | DMV-027 loaded 80 of 95 files
+6-Apr-2023 09:21:05 -0400 | DMV-027 loaded 90 of 95 files
+6-Apr-2023 09:21:07 -0400 | DMV-005 loading files complete for: h5APDM2Results
+6-Apr-2023 09:21:22 -0400 | DMV-024 10 of 95 analyzed
+6-Apr-2023 09:21:22 -0400 | DMV-024 20 of 95 analyzed
+6-Apr-2023 09:21:22 -0400 | DMV-024 30 of 95 analyzed
+6-Apr-2023 09:21:22 -0400 | DMV-024 50 of 95 analyzed
+6-Apr-2023 09:21:22 -0400 | DMV-024 80 of 95 analyzed
+6-Apr-2023 09:21:22 -0400 | DMV-025 saving data from APDMSpatiotemporalTurns
+6-Apr-2023 09:21:53 -0400 | DMV-026 data saved from APDMSpatiotemporalTurns
+6-Apr-2023 09:22:00 -0400 | DMV-022 starting analysis:Entropy
+6-Apr-2023 09:28:58 -0400 | DMV-021 formated 10 of 95
+6-Apr-2023 09:29:14 -0400 | DMV-021 formated 20 of 95
+6-Apr-2023 09:29:31 -0400 | DMV-021 formated 30 of 95
+6-Apr-2023 09:29:45 -0400 | DMV-021 formated 40 of 95
+6-Apr-2023 09:30:02 -0400 | DMV-021 formated 50 of 95
+6-Apr-2023 09:30:18 -0400 | DMV-021 formated 60 of 95
+6-Apr-2023 09:30:29 -0400 | DMV-021 formated 70 of 95
+6-Apr-2023 09:30:46 -0400 | DMV-021 formated 80 of 95
+6-Apr-2023 09:31:01 -0400 | DMV-021 formated 90 of 95
+6-Apr-2023 09:31:04 -0400 | DMV-008 results formated for export and displayed in table
+6-Apr-2023 09:49:14 -0400 | DMV-004 loading files started for: h5APDM2Results
+6-Apr-2023 09:49:23 -0400 | DMV-027 loaded 10 of 95 files
+6-Apr-2023 09:49:32 -0400 | DMV-027 loaded 20 of 95 files
+6-Apr-2023 09:49:38 -0400 | DMV-027 loaded 30 of 95 files
+6-Apr-2023 09:49:43 -0400 | DMV-027 loaded 40 of 95 files
+6-Apr-2023 09:49:48 -0400 | DMV-027 loaded 50 of 95 files
+6-Apr-2023 09:49:54 -0400 | DMV-027 loaded 60 of 95 files
+6-Apr-2023 09:49:58 -0400 | DMV-027 loaded 70 of 95 files
+6-Apr-2023 09:50:03 -0400 | DMV-027 loaded 80 of 95 files
+6-Apr-2023 09:50:11 -0400 | DMV-027 loaded 90 of 95 files
+6-Apr-2023 09:50:13 -0400 | DMV-005 loading files complete for: h5APDM2Results
+6-Apr-2023 09:51:10 -0400 | DMV-021 formated 10 of 95
+6-Apr-2023 09:51:11 -0400 | DMV-021 formated 20 of 95
+6-Apr-2023 09:51:11 -0400 | DMV-021 formated 30 of 95
+6-Apr-2023 09:51:11 -0400 | DMV-021 formated 40 of 95
+6-Apr-2023 09:51:11 -0400 | DMV-021 formated 50 of 95
+6-Apr-2023 09:51:12 -0400 | DMV-021 formated 60 of 95
+6-Apr-2023 09:51:12 -0400 | DMV-021 formated 70 of 95
+6-Apr-2023 09:51:12 -0400 | DMV-021 formated 80 of 95
+6-Apr-2023 09:51:13 -0400 | DMV-021 formated 90 of 95
+6-Apr-2023 09:51:13 -0400 | DMV-008 results formated for export and displayed in table
+6-Apr-2023 09:59:05 -0400 | DMV-004 loading files started for: h5APDM2Results
+6-Apr-2023 09:59:26 -0400 | DMV-027 loaded 10 of 95 files
+6-Apr-2023 09:59:46 -0400 | DMV-027 loaded 20 of 95 files
+6-Apr-2023 10:00:03 -0400 | DMV-027 loaded 30 of 95 files
+6-Apr-2023 10:00:15 -0400 | DMV-027 loaded 40 of 95 files
+6-Apr-2023 10:00:20 -0400 | DMV-027 loaded 50 of 95 files
+6-Apr-2023 10:00:26 -0400 | DMV-027 loaded 60 of 95 files
+6-Apr-2023 10:00:31 -0400 | DMV-027 loaded 70 of 95 files
+6-Apr-2023 10:00:37 -0400 | DMV-027 loaded 80 of 95 files
+6-Apr-2023 10:00:46 -0400 | DMV-027 loaded 90 of 95 files
+6-Apr-2023 10:00:48 -0400 | DMV-005 loading files complete for: h5APDM2Results
+6-Apr-2023 10:07:43 -0400 | DMV-004 loading files started for: h5APDM2Results
+6-Apr-2023 10:07:51 -0400 | DMV-027 loaded 10 of 95 files
+6-Apr-2023 10:08:00 -0400 | DMV-027 loaded 20 of 95 files
+6-Apr-2023 10:08:07 -0400 | DMV-027 loaded 30 of 95 files
+6-Apr-2023 10:08:11 -0400 | DMV-027 loaded 40 of 95 files
+6-Apr-2023 10:08:16 -0400 | DMV-027 loaded 50 of 95 files
+6-Apr-2023 10:08:22 -0400 | DMV-027 loaded 60 of 95 files
+6-Apr-2023 10:08:26 -0400 | DMV-027 loaded 70 of 95 files
+6-Apr-2023 10:08:32 -0400 | DMV-027 loaded 80 of 95 files
+6-Apr-2023 10:08:40 -0400 | DMV-027 loaded 90 of 95 files
+6-Apr-2023 10:08:42 -0400 | DMV-005 loading files complete for: h5APDM2Results
+6-Apr-2023 10:12:04 -0400 | DMV-004 loading files started for: h5APDM2Results
+6-Apr-2023 10:12:04 -0400 | DMV-003 error reading file: R:6-Apr-2023 10:12:05 -0400 | DMV-031 Unrecognized field name "EventsGaitLowerLimb".
+6-Apr-2023 10:12:05 -0400 | DMV-003 error reading file: R:6-Apr-2023 10:12:05 -0400 | DMV-031 Unrecognized field name "EventsGaitLowerLimb".
+6-Apr-2023 10:12:05 -0400 | DMV-003 error reading file: R:6-Apr-2023 10:12:05 -0400 | DMV-031 Unrecognized field name "EventsGaitLowerLimb".
+6-Apr-2023 10:12:05 -0400 | DMV-003 error reading file: R:6-Apr-2023 10:12:05 -0400 | DMV-031 Unrecognized field name "EventsGaitLowerLimb".
+6-Apr-2023 10:12:05 -0400 | DMV-003 error reading file: R:6-Apr-2023 10:12:05 -0400 | DMV-031 Unrecognized field name "EventsGaitLowerLimb".
+6-Apr-2023 10:12:05 -0400 | DMV-003 error reading file: R:6-Apr-2023 10:12:05 -0400 | DMV-031 Unrecognized field name "EventsGaitLowerLimb".
+6-Apr-2023 10:12:05 -0400 | DMV-003 error reading file: R:6-Apr-2023 10:12:05 -0400 | DMV-031 Unrecognized field name "EventsGaitLowerLimb".
+6-Apr-2023 10:12:05 -0400 | DMV-003 error reading file: R:6-Apr-2023 10:12:05 -0400 | DMV-031 Unrecognized field name "EventsGaitLowerLimb".
+6-Apr-2023 10:12:06 -0400 | DMV-003 error reading file: R:6-Apr-2023 10:12:06 -0400 | DMV-031 Unrecognized field name "EventsGaitLowerLimb".
+6-Apr-2023 10:12:06 -0400 | DMV-003 error reading file: R:6-Apr-2023 10:12:06 -0400 | DMV-031 Unrecognized field name "EventsGaitLowerLimb".
+6-Apr-2023 10:12:06 -0400 | DMV-034 stopping data load, over 106-Apr-2023 10:13:28 -0400 | DMV-004 loading files started for: h5APDM2Results
+6-Apr-2023 10:13:38 -0400 | DMV-027 loaded 10 of 95 files
+6-Apr-2023 10:13:47 -0400 | DMV-027 loaded 20 of 95 files
+6-Apr-2023 10:13:55 -0400 | DMV-027 loaded 30 of 95 files
+6-Apr-2023 10:13:59 -0400 | DMV-027 loaded 40 of 95 files
+6-Apr-2023 10:14:04 -0400 | DMV-027 loaded 50 of 95 files
+6-Apr-2023 10:14:12 -0400 | DMV-027 loaded 60 of 95 files
+6-Apr-2023 10:14:17 -0400 | DMV-027 loaded 70 of 95 files
+6-Apr-2023 10:14:23 -0400 | DMV-027 loaded 80 of 95 files
+6-Apr-2023 10:14:33 -0400 | DMV-027 loaded 90 of 95 files
+6-Apr-2023 10:14:36 -0400 | DMV-005 loading files complete for: h5APDM2Results
+6-Apr-2023 10:32:05 -0400 | DMV-025 saving data from Groupings
+6-Apr-2023 10:32:15 -0400 | DMV-021 formated 10 of 95
+6-Apr-2023 10:32:15 -0400 | DMV-021 formated 20 of 95
+6-Apr-2023 10:32:15 -0400 | DMV-021 formated 30 of 95
+6-Apr-2023 10:32:15 -0400 | DMV-021 formated 40 of 95
+6-Apr-2023 10:32:16 -0400 | DMV-021 formated 50 of 95
+6-Apr-2023 10:32:16 -0400 | DMV-021 formated 60 of 95
+6-Apr-2023 10:32:16 -0400 | DMV-021 formated 70 of 95
+6-Apr-2023 10:32:16 -0400 | DMV-021 formated 80 of 95
+6-Apr-2023 10:32:16 -0400 | DMV-021 formated 90 of 95
+6-Apr-2023 10:32:16 -0400 | DMV-008 results formated for export and displayed in table
+6-Apr-2023 10:33:07 -0400 | DMV-007 results exported

@@ -1,0 +1,301 @@
+3-Apr-2023 09:14:39 -0400 | DMV-000 DAMVi App v1.3
+3-Apr-2023 09:14:54 -0400 | DMV-010 created Results folder at C:3-Apr-2023 09:14:54 -0400 | DMV-011 created Figure folder at C:3-Apr-2023 09:14:54 -0400 | DMV-011 created Figure folder at C:3-Apr-2023 09:15:06 -0400 | DMV-001 file search started
+3-Apr-2023 09:15:08 -0400 | DMV-002 file search complete, 426 files found, 105.4 MB total
+3-Apr-2023 09:15:15 -0400 | DMV-004 loading files started for: txtV3D
+3-Apr-2023 12:04:35 -0400 | DMV-004 loading files started for: txtV3D
+3-Apr-2023 12:04:36 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:36 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:36 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:36 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:36 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:36 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:37 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:37 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:37 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:37 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:37 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:37 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:37 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:37 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:38 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:38 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:38 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:38 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:38 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:38 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:38 -0400 | DMV-027 loaded 10 of 426 files
+3-Apr-2023 12:04:38 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:38 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:39 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:39 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:39 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:39 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:39 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:39 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:40 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:40 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:40 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:40 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:40 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:40 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:41 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:41 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:41 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:41 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:41 -0400 | DMV-027 loaded 20 of 426 files
+3-Apr-2023 12:04:41 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:41 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:41 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:41 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:42 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:42 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:42 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:42 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:42 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:42 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:43 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:43 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:43 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:43 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:43 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:43 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:43 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:43 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:43 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:43 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:43 -0400 | DMV-027 loaded 30 of 426 files
+3-Apr-2023 12:04:44 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:44 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:44 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:44 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:44 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:44 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:45 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:45 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:45 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:45 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:45 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:45 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:46 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:46 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:46 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:46 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:46 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:46 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:46 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:46 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:46 -0400 | DMV-027 loaded 40 of 426 files
+3-Apr-2023 12:04:47 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:47 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:47 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:47 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:47 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:47 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:48 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:04:48 -0400 | DMV-031 Unrecognized function or variable 'j'.
+3-Apr-2023 12:04:48 -0400 | DMV-034 stopping data load, over 103-Apr-2023 12:05:03 -0400 | DMV-004 loading files started for: txtV3D
+3-Apr-2023 12:07:26 -0400 | DMV-004 loading files started for: txtV3D
+3-Apr-2023 12:11:21 -0400 | DMV-004 loading files started for: txtV3D
+3-Apr-2023 12:14:27 -0400 | DMV-004 loading files started for: txtV3D
+3-Apr-2023 12:14:53 -0400 | DMV-027 loaded 10 of 426 files
+3-Apr-2023 12:15:22 -0400 | DMV-027 loaded 20 of 426 files
+3-Apr-2023 12:15:49 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:15:49 -0400 | DMV-031 Output argument "txt_V3D" (and possibly others) not assigned a value in the execution with "load_txt_V3D" function.
+3-Apr-2023 12:15:50 -0400 | DMV-027 loaded 30 of 426 files
+3-Apr-2023 12:16:25 -0400 | DMV-027 loaded 40 of 426 files
+3-Apr-2023 12:16:57 -0400 | DMV-027 loaded 50 of 426 files
+3-Apr-2023 12:17:24 -0400 | DMV-027 loaded 60 of 426 files
+3-Apr-2023 12:18:00 -0400 | DMV-027 loaded 70 of 426 files
+3-Apr-2023 12:18:28 -0400 | DMV-027 loaded 80 of 426 files
+3-Apr-2023 12:18:36 -0400 | DMV-027 loaded 90 of 426 files
+3-Apr-2023 12:18:44 -0400 | DMV-027 loaded 100 of 426 files
+3-Apr-2023 12:21:46 -0400 | DMV-004 loading files started for: txtV3D
+3-Apr-2023 12:22:17 -0400 | DMV-027 loaded 10 of 426 files
+3-Apr-2023 12:22:48 -0400 | DMV-027 loaded 20 of 426 files
+3-Apr-2023 12:23:18 -0400 | DMV-003 error reading file: C:3-Apr-2023 12:23:18 -0400 | DMV-031 Invalid file identifier. Use fopen to generate a valid file identifier.
+3-Apr-2023 12:23:18 -0400 | DMV-027 loaded 30 of 426 files
+3-Apr-2023 12:23:55 -0400 | DMV-027 loaded 40 of 426 files
+3-Apr-2023 12:24:29 -0400 | DMV-027 loaded 50 of 426 files
+3-Apr-2023 12:24:57 -0400 | DMV-027 loaded 60 of 426 files
+3-Apr-2023 12:25:35 -0400 | DMV-027 loaded 70 of 426 files
+3-Apr-2023 12:26:04 -0400 | DMV-027 loaded 80 of 426 files
+3-Apr-2023 12:26:13 -0400 | DMV-027 loaded 90 of 426 files
+3-Apr-2023 12:26:21 -0400 | DMV-027 loaded 100 of 426 files
+3-Apr-2023 12:26:28 -0400 | DMV-027 loaded 110 of 426 files
+3-Apr-2023 12:26:36 -0400 | DMV-027 loaded 120 of 426 files
+3-Apr-2023 12:26:45 -0400 | DMV-027 loaded 130 of 426 files
+3-Apr-2023 12:26:53 -0400 | DMV-027 loaded 140 of 426 files
+3-Apr-2023 12:27:03 -0400 | DMV-027 loaded 150 of 426 files
+3-Apr-2023 12:27:11 -0400 | DMV-027 loaded 160 of 426 files
+3-Apr-2023 12:27:20 -0400 | DMV-027 loaded 170 of 426 files
+3-Apr-2023 12:27:29 -0400 | DMV-027 loaded 180 of 426 files
+3-Apr-2023 12:27:38 -0400 | DMV-027 loaded 190 of 426 files
+3-Apr-2023 12:27:44 -0400 | DMV-027 loaded 200 of 426 files
+3-Apr-2023 12:27:49 -0400 | DMV-027 loaded 210 of 426 files
+3-Apr-2023 12:27:54 -0400 | DMV-027 loaded 220 of 426 files
+3-Apr-2023 12:27:59 -0400 | DMV-027 loaded 230 of 426 files
+3-Apr-2023 12:28:04 -0400 | DMV-027 loaded 240 of 426 files
+3-Apr-2023 12:28:09 -0400 | DMV-027 loaded 250 of 426 files
+3-Apr-2023 12:28:18 -0400 | DMV-027 loaded 260 of 426 files
+3-Apr-2023 12:28:29 -0400 | DMV-027 loaded 270 of 426 files
+3-Apr-2023 12:28:36 -0400 | DMV-027 loaded 280 of 426 files
+3-Apr-2023 12:28:45 -0400 | DMV-027 loaded 290 of 426 files
+3-Apr-2023 12:28:52 -0400 | DMV-027 loaded 300 of 426 files
+3-Apr-2023 12:29:01 -0400 | DMV-027 loaded 310 of 426 files
+3-Apr-2023 12:29:09 -0400 | DMV-027 loaded 320 of 426 files
+3-Apr-2023 12:29:19 -0400 | DMV-027 loaded 330 of 426 files
+3-Apr-2023 12:29:26 -0400 | DMV-027 loaded 340 of 426 files
+3-Apr-2023 12:29:32 -0400 | DMV-027 loaded 350 of 426 files
+3-Apr-2023 12:29:39 -0400 | DMV-027 loaded 360 of 426 files
+3-Apr-2023 12:29:44 -0400 | DMV-027 loaded 370 of 426 files
+3-Apr-2023 12:29:52 -0400 | DMV-027 loaded 380 of 426 files
+3-Apr-2023 12:29:57 -0400 | DMV-027 loaded 390 of 426 files
+3-Apr-2023 12:30:05 -0400 | DMV-027 loaded 400 of 426 files
+3-Apr-2023 12:30:13 -0400 | DMV-027 loaded 410 of 426 files
+3-Apr-2023 12:30:24 -0400 | DMV-027 loaded 420 of 426 files
+3-Apr-2023 12:30:31 -0400 | DMV-005 loading files complete for: txtV3D
+3-Apr-2023 12:35:29 -0400 | DMV-025 saving data from Groupings
+3-Apr-2023 12:36:06 -0400 | DMV-026 data saved from Groupings
+3-Apr-2023 12:38:31 -0400 | DMV-021 formated 10 of 425
+3-Apr-2023 12:38:41 -0400 | DMV-021 formated 20 of 425
+3-Apr-2023 12:38:52 -0400 | DMV-021 formated 30 of 425
+3-Apr-2023 12:39:04 -0400 | DMV-021 formated 40 of 425
+3-Apr-2023 12:39:14 -0400 | DMV-021 formated 50 of 425
+3-Apr-2023 12:39:25 -0400 | DMV-021 formated 60 of 425
+3-Apr-2023 12:39:36 -0400 | DMV-021 formated 70 of 425
+3-Apr-2023 12:39:46 -0400 | DMV-021 formated 80 of 425
+3-Apr-2023 12:39:50 -0400 | DMV-021 formated 90 of 425
+3-Apr-2023 12:39:53 -0400 | DMV-021 formated 100 of 425
+3-Apr-2023 12:39:57 -0400 | DMV-021 formated 110 of 425
+3-Apr-2023 12:40:01 -0400 | DMV-021 formated 120 of 425
+3-Apr-2023 12:40:05 -0400 | DMV-021 formated 130 of 425
+3-Apr-2023 12:40:09 -0400 | DMV-021 formated 140 of 425
+3-Apr-2023 12:40:13 -0400 | DMV-021 formated 150 of 425
+3-Apr-2023 12:40:17 -0400 | DMV-021 formated 160 of 425
+3-Apr-2023 12:40:21 -0400 | DMV-021 formated 170 of 425
+3-Apr-2023 12:40:26 -0400 | DMV-021 formated 180 of 425
+3-Apr-2023 12:40:30 -0400 | DMV-021 formated 190 of 425
+3-Apr-2023 12:40:33 -0400 | DMV-021 formated 200 of 425
+3-Apr-2023 12:40:35 -0400 | DMV-021 formated 210 of 425
+3-Apr-2023 12:40:38 -0400 | DMV-021 formated 220 of 425
+3-Apr-2023 12:40:40 -0400 | DMV-021 formated 230 of 425
+3-Apr-2023 12:40:43 -0400 | DMV-021 formated 240 of 425
+3-Apr-2023 12:40:46 -0400 | DMV-021 formated 250 of 425
+3-Apr-2023 12:40:50 -0400 | DMV-021 formated 260 of 425
+3-Apr-2023 12:40:55 -0400 | DMV-021 formated 270 of 425
+3-Apr-2023 12:40:59 -0400 | DMV-021 formated 280 of 425
+3-Apr-2023 12:41:03 -0400 | DMV-021 formated 290 of 425
+3-Apr-2023 12:41:07 -0400 | DMV-021 formated 300 of 425
+3-Apr-2023 12:41:12 -0400 | DMV-021 formated 310 of 425
+3-Apr-2023 12:41:17 -0400 | DMV-021 formated 320 of 425
+3-Apr-2023 12:41:22 -0400 | DMV-021 formated 330 of 425
+3-Apr-2023 12:41:25 -0400 | DMV-021 formated 340 of 425
+3-Apr-2023 12:41:28 -0400 | DMV-021 formated 350 of 425
+3-Apr-2023 12:41:32 -0400 | DMV-021 formated 360 of 425
+3-Apr-2023 12:41:35 -0400 | DMV-021 formated 370 of 425
+3-Apr-2023 12:41:38 -0400 | DMV-021 formated 380 of 425
+3-Apr-2023 12:41:42 -0400 | DMV-021 formated 390 of 425
+3-Apr-2023 12:41:47 -0400 | DMV-021 formated 400 of 425
+3-Apr-2023 12:41:51 -0400 | DMV-021 formated 410 of 425
+3-Apr-2023 12:41:56 -0400 | DMV-021 formated 420 of 425
+3-Apr-2023 12:42:02 -0400 | DMV-008 results formated for export and displayed in table
+3-Apr-2023 13:08:48 -0400 | DMV-025 saving data from Groupings
+3-Apr-2023 13:09:21 -0400 | DMV-026 data saved from Groupings
+3-Apr-2023 13:09:45 -0400 | DMV-021 formated 10 of 422
+3-Apr-2023 13:09:56 -0400 | DMV-021 formated 20 of 422
+3-Apr-2023 13:10:06 -0400 | DMV-021 formated 30 of 422
+3-Apr-2023 13:10:18 -0400 | DMV-021 formated 40 of 422
+3-Apr-2023 13:10:28 -0400 | DMV-021 formated 50 of 422
+3-Apr-2023 13:10:38 -0400 | DMV-021 formated 60 of 422
+3-Apr-2023 13:10:49 -0400 | DMV-021 formated 70 of 422
+3-Apr-2023 13:10:58 -0400 | DMV-021 formated 80 of 422
+3-Apr-2023 13:11:01 -0400 | DMV-021 formated 90 of 422
+3-Apr-2023 13:11:05 -0400 | DMV-021 formated 100 of 422
+3-Apr-2023 13:11:09 -0400 | DMV-021 formated 110 of 422
+3-Apr-2023 13:11:12 -0400 | DMV-021 formated 120 of 422
+3-Apr-2023 13:11:16 -0400 | DMV-021 formated 130 of 422
+3-Apr-2023 13:11:20 -0400 | DMV-021 formated 140 of 422
+3-Apr-2023 13:11:24 -0400 | DMV-021 formated 150 of 422
+3-Apr-2023 13:11:28 -0400 | DMV-021 formated 160 of 422
+3-Apr-2023 13:11:32 -0400 | DMV-021 formated 170 of 422
+3-Apr-2023 13:11:36 -0400 | DMV-021 formated 180 of 422
+3-Apr-2023 13:11:40 -0400 | DMV-021 formated 190 of 422
+3-Apr-2023 13:11:43 -0400 | DMV-021 formated 200 of 422
+3-Apr-2023 13:11:46 -0400 | DMV-021 formated 210 of 422
+3-Apr-2023 13:11:48 -0400 | DMV-021 formated 220 of 422
+3-Apr-2023 13:11:51 -0400 | DMV-021 formated 230 of 422
+3-Apr-2023 13:11:54 -0400 | DMV-021 formated 240 of 422
+3-Apr-2023 13:11:57 -0400 | DMV-021 formated 250 of 422
+3-Apr-2023 13:12:02 -0400 | DMV-021 formated 260 of 422
+3-Apr-2023 13:12:07 -0400 | DMV-021 formated 270 of 422
+3-Apr-2023 13:12:10 -0400 | DMV-021 formated 280 of 422
+3-Apr-2023 13:12:15 -0400 | DMV-021 formated 290 of 422
+3-Apr-2023 13:12:19 -0400 | DMV-021 formated 300 of 422
+3-Apr-2023 13:12:23 -0400 | DMV-021 formated 310 of 422
+3-Apr-2023 13:12:27 -0400 | DMV-021 formated 320 of 422
+3-Apr-2023 13:12:33 -0400 | DMV-021 formated 330 of 422
+3-Apr-2023 13:12:36 -0400 | DMV-021 formated 340 of 422
+3-Apr-2023 13:12:39 -0400 | DMV-021 formated 350 of 422
+3-Apr-2023 13:12:42 -0400 | DMV-021 formated 360 of 422
+3-Apr-2023 13:12:46 -0400 | DMV-021 formated 370 of 422
+3-Apr-2023 13:12:49 -0400 | DMV-021 formated 380 of 422
+3-Apr-2023 13:12:53 -0400 | DMV-021 formated 390 of 422
+3-Apr-2023 13:12:57 -0400 | DMV-021 formated 400 of 422
+3-Apr-2023 13:13:01 -0400 | DMV-021 formated 410 of 422
+3-Apr-2023 13:13:07 -0400 | DMV-021 formated 420 of 422
+3-Apr-2023 13:13:09 -0400 | DMV-008 results formated for export and displayed in table
+3-Apr-2023 13:14:39 -0400 | DMV-001 file search started
+3-Apr-2023 13:14:39 -0400 | DMV-002 file search complete, 0 files found, 0 B total
+3-Apr-2023 13:14:46 -0400 | DMV-001 file search started
+3-Apr-2023 13:14:46 -0400 | DMV-002 file search complete, 2 files found, 987.8 MB total
+3-Apr-2023 13:14:54 -0400 | DMV-001 file search started
+3-Apr-2023 13:14:54 -0400 | DMV-002 file search complete, 1 files found, 511.6 MB total
+3-Apr-2023 13:14:55 -0400 | DMV-004 loading files started for: matDAMVi
+3-Apr-2023 13:15:18 -0400 | DMV-005 loading files complete for: matDAMVi
+3-Apr-2023 13:22:14 -0400 | DMV-025 saving data from Groupings
+3-Apr-2023 13:22:57 -0400 | DMV-026 data saved from Groupings
+3-Apr-2023 13:23:33 -0400 | DMV-021 formated 10 of 422
+3-Apr-2023 13:23:44 -0400 | DMV-021 formated 20 of 422
+3-Apr-2023 13:23:54 -0400 | DMV-021 formated 30 of 422
+3-Apr-2023 13:24:05 -0400 | DMV-021 formated 40 of 422
+3-Apr-2023 13:24:16 -0400 | DMV-021 formated 50 of 422
+3-Apr-2023 13:24:26 -0400 | DMV-021 formated 60 of 422
+3-Apr-2023 13:24:37 -0400 | DMV-021 formated 70 of 422
+3-Apr-2023 13:24:45 -0400 | DMV-021 formated 80 of 422
+3-Apr-2023 13:24:49 -0400 | DMV-021 formated 90 of 422
+3-Apr-2023 13:24:52 -0400 | DMV-021 formated 100 of 422
+3-Apr-2023 13:24:56 -0400 | DMV-021 formated 110 of 422
+3-Apr-2023 13:25:00 -0400 | DMV-021 formated 120 of 422
+3-Apr-2023 13:25:04 -0400 | DMV-021 formated 130 of 422
+3-Apr-2023 13:25:07 -0400 | DMV-021 formated 140 of 422
+3-Apr-2023 13:25:12 -0400 | DMV-021 formated 150 of 422
+3-Apr-2023 13:25:15 -0400 | DMV-021 formated 160 of 422
+3-Apr-2023 13:25:19 -0400 | DMV-021 formated 170 of 422
+3-Apr-2023 13:25:24 -0400 | DMV-021 formated 180 of 422
+3-Apr-2023 13:25:28 -0400 | DMV-021 formated 190 of 422
+3-Apr-2023 13:25:30 -0400 | DMV-021 formated 200 of 422
+3-Apr-2023 13:25:33 -0400 | DMV-021 formated 210 of 422
+3-Apr-2023 13:25:36 -0400 | DMV-021 formated 220 of 422
+3-Apr-2023 13:25:39 -0400 | DMV-021 formated 230 of 422
+3-Apr-2023 13:25:42 -0400 | DMV-021 formated 240 of 422
+3-Apr-2023 13:25:45 -0400 | DMV-021 formated 250 of 422
+3-Apr-2023 13:25:50 -0400 | DMV-021 formated 260 of 422
+3-Apr-2023 13:25:55 -0400 | DMV-021 formated 270 of 422
+3-Apr-2023 13:25:58 -0400 | DMV-021 formated 280 of 422
+3-Apr-2023 13:26:03 -0400 | DMV-021 formated 290 of 422
+3-Apr-2023 13:26:07 -0400 | DMV-021 formated 300 of 422
+3-Apr-2023 13:26:11 -0400 | DMV-021 formated 310 of 422
+3-Apr-2023 13:26:15 -0400 | DMV-021 formated 320 of 422
+3-Apr-2023 13:26:20 -0400 | DMV-021 formated 330 of 422
+3-Apr-2023 13:26:24 -0400 | DMV-021 formated 340 of 422
+3-Apr-2023 13:26:27 -0400 | DMV-021 formated 350 of 422
+3-Apr-2023 13:26:30 -0400 | DMV-021 formated 360 of 422
+3-Apr-2023 13:26:33 -0400 | DMV-021 formated 370 of 422
+3-Apr-2023 13:26:37 -0400 | DMV-021 formated 380 of 422
+3-Apr-2023 13:26:41 -0400 | DMV-021 formated 390 of 422
+3-Apr-2023 13:26:45 -0400 | DMV-021 formated 400 of 422
+3-Apr-2023 13:26:49 -0400 | DMV-021 formated 410 of 422
+3-Apr-2023 13:26:55 -0400 | DMV-021 formated 420 of 422
+3-Apr-2023 13:26:57 -0400 | DMV-008 results formated for export and displayed in table
+3-Apr-2023 13:29:43 -0400 | DMV-025 saving data from Groupings
+3-Apr-2023 13:30:22 -0400 | DMV-026 data saved from Groupings
+3-Apr-2023 13:30:38 -0400 | DMV-021 formated 10 of 422
+3-Apr-2023 13:30:48 -0400 | DMV-021 formated 20 of 422
+3-Apr-2023 13:30:58 -0400 | DMV-021 formated 30 of 422
+3-Apr-2023 13:31:09 -0400 | DMV-021 formated 40 of 422
+3-Apr-2023 13:31:19 -0400 | DMV-021 formated 50 of 422
+3-Apr-2023 13:31:28 -0400 | DMV-021 formated 60 of 422
+3-Apr-2023 13:31:39 -0400 | DMV-021 formated 70 of 422
+3-Apr-2023 13:31:47 -0400 | DMV-021 formated 80 of 422
+3-Apr-2023 13:31:50 -0400 | DMV-021 formated 90 of 422
+3-Apr-2023 13:31:54 -0400 | DMV-021 formated 100 of 422
+3-Apr-2023 13:31:57 -0400 | DMV-021 formated 110 of 422
+3-Apr-2023 13:32:01 -0400 | DMV-021 formated 120 of 422
+3-Apr-2023 13:32:05 -0400 | DMV-021 formated 130 of 422
+3-Apr-2023 13:32:08 -0400 | DMV-021 formated 140 of 422
+3-Apr-2023 13:32:12 -0400 | DMV-021 formated 150 of 422
+3-Apr-2023 13:32:16 -0400 | DMV-021 formated 160 of 422
+3-Apr-2023 13:32:19 -0400 | DMV-021 formated 170 of 422
+3-Apr-2023 13:32:23 -0400 | DMV-021 formated 180 of 422
+3-Apr-2023 13:32:27 -0400 | DMV-021 formated 190 of 422
+3-Apr-2023 13:32:30 -0400 | DMV-021 formated 200 of 422
+3-Apr-2023 13:32:33 -0400 | DMV-021 formated 210 of 422
+3-Apr-2023 13:32:35 -0400 | DMV-021 formated 220 of 422
+3-Apr-2023 13:32:38 -0400 | DMV-021 formated 230 of 422
+3-Apr-2023 13:32:41 -0400 | DMV-021 formated 240 of 422
+3-Apr-2023 13:32:43 -0400 | DMV-021 formated 250 of 422
+3-Apr-2023 13:32:48 -0400 | DMV-021 formated 260 of 422
+3-Apr-2023 13:32:53 -0400 | DMV-021 formated 270 of 422
+3-Apr-2023 13:32:56 -0400 | DMV-021 formated 280 of 422
+3-Apr-2023 13:33:00 -0400 | DMV-021 formated 290 of 422
+3-Apr-2023 13:33:04 -0400 | DMV-021 formated 300 of 422
+3-Apr-2023 13:33:08 -0400 | DMV-021 formated 310 of 422
+3-Apr-2023 13:33:12 -0400 | DMV-021 formated 320 of 422
+3-Apr-2023 13:33:17 -0400 | DMV-021 formated 330 of 422
+3-Apr-2023 13:33:20 -0400 | DMV-021 formated 340 of 422
+3-Apr-2023 13:33:23 -0400 | DMV-021 formated 350 of 422
+3-Apr-2023 13:33:26 -0400 | DMV-021 formated 360 of 422
+3-Apr-2023 13:33:29 -0400 | DMV-021 formated 370 of 422
+3-Apr-2023 13:33:33 -0400 | DMV-021 formated 380 of 422
+3-Apr-2023 13:33:36 -0400 | DMV-021 formated 390 of 422
+3-Apr-2023 13:33:40 -0400 | DMV-021 formated 400 of 422
+3-Apr-2023 13:33:44 -0400 | DMV-021 formated 410 of 422
+3-Apr-2023 13:33:50 -0400 | DMV-021 formated 420 of 422
+3-Apr-2023 13:33:52 -0400 | DMV-008 results formated for export and displayed in table
+3-Apr-2023 13:37:01 -0400 | DMV-007 results exported

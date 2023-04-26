@@ -1,0 +1,194 @@
+13-Apr-2023 16:40:53 -0400 | DMV-000 DAMVi App v1.3
+13-Apr-2023 16:41:52 -0400 | DMV-001 file search started
+13-Apr-2023 16:42:17 -0400 | DMV-001 file search started
+13-Apr-2023 16:43:38 -0400 | DMV-001 file search started
+13-Apr-2023 16:44:33 -0400 | DMV-001 file search started
+13-Apr-2023 16:47:46 -0400 | DMV-001 file search started
+13-Apr-2023 16:53:23 -0400 | DMV-002 file search complete, 453 files found, 2.9 MB total
+13-Apr-2023 16:54:13 -0400 | DMV-004 loading files started for: xlsxMedoc
+13-Apr-2023 16:54:16 -0400 | DMV-003 error reading file: R:13-Apr-2023 16:54:16 -0400 | DMV-031 Sheet name 'Description' does not exist or is not supported. To check if the sheet is supported, specify the sheet by its worksheet index.
+13-Apr-2023 16:54:17 -0400 | DMV-003 error reading file: R:13-Apr-2023 16:54:17 -0400 | DMV-031 Sheet name 'Description' does not exist or is not supported. To check if the sheet is supported, specify the sheet by its worksheet index.
+13-Apr-2023 16:54:17 -0400 | DMV-003 error reading file: R:13-Apr-2023 16:54:17 -0400 | DMV-031 Sheet name 'Description' does not exist or is not supported. To check if the sheet is supported, specify the sheet by its worksheet index.
+13-Apr-2023 16:54:17 -0400 | DMV-027 loaded 10 of 453 files
+13-Apr-2023 16:54:17 -0400 | DMV-003 error reading file: R:13-Apr-2023 16:54:17 -0400 | DMV-031 Sheet name 'Description' does not exist or is not supported. To check if the sheet is supported, specify the sheet by its worksheet index.
+13-Apr-2023 16:54:42 -0400 | DMV-003 error reading file: R:13-Apr-2023 16:54:42 -0400 | DMV-031 Sheet name 'Description' does not exist or is not supported. To check if the sheet is supported, specify the sheet by its worksheet index.
+13-Apr-2023 16:54:43 -0400 | DMV-003 error reading file: R:13-Apr-2023 16:54:43 -0400 | DMV-031 Sheet name 'Description' does not exist or is not supported. To check if the sheet is supported, specify the sheet by its worksheet index.
+13-Apr-2023 16:54:43 -0400 | DMV-027 loaded 20 of 453 files
+13-Apr-2023 16:54:44 -0400 | DMV-003 error reading file: R:13-Apr-2023 16:54:44 -0400 | DMV-031 Sheet name 'Description' does not exist or is not supported. To check if the sheet is supported, specify the sheet by its worksheet index.
+13-Apr-2023 16:54:44 -0400 | DMV-003 error reading file: R:13-Apr-2023 16:54:44 -0400 | DMV-031 Sheet name 'Description' does not exist or is not supported. To check if the sheet is supported, specify the sheet by its worksheet index.
+13-Apr-2023 16:54:44 -0400 | DMV-027 loaded 30 of 453 files
+13-Apr-2023 16:55:30 -0400 | DMV-003 error reading file: R:13-Apr-2023 16:55:30 -0400 | DMV-031 Sheet name 'Description' does not exist or is not supported. To check if the sheet is supported, specify the sheet by its worksheet index.
+13-Apr-2023 16:55:30 -0400 | DMV-003 error reading file: R:13-Apr-2023 16:55:30 -0400 | DMV-031 Sheet name 'Description' does not exist or is not supported. To check if the sheet is supported, specify the sheet by its worksheet index.
+13-Apr-2023 16:55:31 -0400 | DMV-003 error reading file: R:13-Apr-2023 16:55:31 -0400 | DMV-031 Sheet name 'Description' does not exist or is not supported. To check if the sheet is supported, specify the sheet by its worksheet index.
+13-Apr-2023 16:55:31 -0400 | DMV-027 loaded 40 of 453 files
+13-Apr-2023 16:55:31 -0400 | DMV-003 error reading file: R:13-Apr-2023 16:55:31 -0400 | DMV-031 Sheet name 'Description' does not exist or is not supported. To check if the sheet is supported, specify the sheet by its worksheet index.
+13-Apr-2023 16:55:32 -0400 | DMV-003 error reading file: R:13-Apr-2023 16:55:32 -0400 | DMV-031 Sheet name 'Description' does not exist or is not supported. To check if the sheet is supported, specify the sheet by its worksheet index.
+13-Apr-2023 16:55:32 -0400 | DMV-003 error reading file: R:13-Apr-2023 16:55:32 -0400 | DMV-031 Sheet name 'Description' does not exist or is not supported. To check if the sheet is supported, specify the sheet by its worksheet index.
+13-Apr-2023 16:55:32 -0400 | DMV-027 loaded 50 of 453 files
+13-Apr-2023 16:55:33 -0400 | DMV-003 error reading file: R:13-Apr-2023 16:55:33 -0400 | DMV-031 Sheet name 'Description' does not exist or is not supported. To check if the sheet is supported, specify the sheet by its worksheet index.
+13-Apr-2023 16:55:33 -0400 | DMV-003 error reading file: R:13-Apr-2023 16:55:33 -0400 | DMV-031 Sheet name 'Description' does not exist or is not supported. To check if the sheet is supported, specify the sheet by its worksheet index.
+13-Apr-2023 16:55:34 -0400 | DMV-027 loaded 60 of 453 files
+13-Apr-2023 16:55:34 -0400 | DMV-003 error reading file: R:13-Apr-2023 16:55:34 -0400 | DMV-031 Sheet name 'Description' does not exist or is not supported. To check if the sheet is supported, specify the sheet by its worksheet index.
+13-Apr-2023 16:55:34 -0400 | DMV-003 error reading file: R:13-Apr-2023 16:55:34 -0400 | DMV-031 Sheet name 'Description' does not exist or is not supported. To check if the sheet is supported, specify the sheet by its worksheet index.
+13-Apr-2023 16:55:35 -0400 | DMV-003 error reading file: R:13-Apr-2023 16:55:35 -0400 | DMV-031 Sheet name 'Description' does not exist or is not supported. To check if the sheet is supported, specify the sheet by its worksheet index.
+13-Apr-2023 16:56:59 -0400 | DMV-001 file search started
+13-Apr-2023 17:06:11 -0400 | DMV-002 file search complete, 332 files found, 2.4 MB total
+13-Apr-2023 17:06:32 -0400 | DMV-004 loading files started for: xlsxMedoc
+13-Apr-2023 17:06:33 -0400 | DMV-027 loaded 10 of 332 files
+13-Apr-2023 17:06:35 -0400 | DMV-027 loaded 20 of 332 files
+13-Apr-2023 17:06:36 -0400 | DMV-027 loaded 30 of 332 files
+13-Apr-2023 17:06:38 -0400 | DMV-027 loaded 40 of 332 files
+13-Apr-2023 17:06:39 -0400 | DMV-027 loaded 50 of 332 files
+13-Apr-2023 17:07:17 -0400 | DMV-003 error reading file: R:13-Apr-2023 17:07:17 -0400 | DMV-031 Sheet name 'Description' does not exist or is not supported. To check if the sheet is supported, specify the sheet by its worksheet index.
+13-Apr-2023 17:07:18 -0400 | DMV-027 loaded 60 of 332 files
+13-Apr-2023 17:07:19 -0400 | DMV-027 loaded 70 of 332 files
+13-Apr-2023 17:07:21 -0400 | DMV-027 loaded 80 of 332 files
+13-Apr-2023 17:07:22 -0400 | DMV-027 loaded 90 of 332 files
+13-Apr-2023 17:07:24 -0400 | DMV-027 loaded 100 of 332 files
+13-Apr-2023 17:07:25 -0400 | DMV-027 loaded 110 of 332 files
+13-Apr-2023 17:07:27 -0400 | DMV-027 loaded 120 of 332 files
+13-Apr-2023 17:07:30 -0400 | DMV-027 loaded 130 of 332 files
+13-Apr-2023 17:07:31 -0400 | DMV-027 loaded 140 of 332 files
+13-Apr-2023 17:07:33 -0400 | DMV-027 loaded 150 of 332 files
+13-Apr-2023 17:07:35 -0400 | DMV-027 loaded 160 of 332 files
+13-Apr-2023 17:07:38 -0400 | DMV-027 loaded 170 of 332 files
+13-Apr-2023 17:07:40 -0400 | DMV-027 loaded 180 of 332 files
+13-Apr-2023 17:07:41 -0400 | DMV-027 loaded 190 of 332 files
+13-Apr-2023 17:07:43 -0400 | DMV-027 loaded 200 of 332 files
+13-Apr-2023 17:07:44 -0400 | DMV-027 loaded 210 of 332 files
+13-Apr-2023 17:07:45 -0400 | DMV-027 loaded 220 of 332 files
+13-Apr-2023 17:07:47 -0400 | DMV-027 loaded 230 of 332 files
+13-Apr-2023 17:09:44 -0400 | DMV-027 loaded 240 of 332 files
+13-Apr-2023 17:09:45 -0400 | DMV-027 loaded 250 of 332 files
+13-Apr-2023 17:09:47 -0400 | DMV-027 loaded 260 of 332 files
+13-Apr-2023 17:09:48 -0400 | DMV-027 loaded 270 of 332 files
+13-Apr-2023 17:09:50 -0400 | DMV-027 loaded 280 of 332 files
+13-Apr-2023 17:09:51 -0400 | DMV-027 loaded 290 of 332 files
+13-Apr-2023 17:09:53 -0400 | DMV-027 loaded 300 of 332 files
+13-Apr-2023 17:09:54 -0400 | DMV-027 loaded 310 of 332 files
+13-Apr-2023 17:09:56 -0400 | DMV-027 loaded 320 of 332 files
+13-Apr-2023 17:09:57 -0400 | DMV-003 error reading file: R:13-Apr-2023 17:09:57 -0400 | DMV-031 Sheet name 'Description' does not exist or is not supported. To check if the sheet is supported, specify the sheet by its worksheet index.
+13-Apr-2023 17:09:57 -0400 | DMV-027 loaded 330 of 332 files
+13-Apr-2023 17:11:03 -0400 | DMV-003 error reading file: R:13-Apr-2023 17:11:03 -0400 | DMV-031 Sheet name 'Description' does not exist or is not supported. To check if the sheet is supported, specify the sheet by its worksheet index.
+13-Apr-2023 17:11:04 -0400 | DMV-003 error reading file: R:13-Apr-2023 17:11:04 -0400 | DMV-031 Unable to open file 'R:13-Apr-2023 17:11:04 -0400 | DMV-005 loading files complete for: xlsxMedoc
+13-Apr-2023 17:11:53 -0400 | DMV-025 saving data from Groupings
+13-Apr-2023 17:11:57 -0400 | DMV-026 data saved from Groupings
+13-Apr-2023 17:12:07 -0400 | DMV-022 starting analysis:QST
+13-Apr-2023 17:12:17 -0400 | DMV-024 10 of 328 analyzed
+13-Apr-2023 17:12:25 -0400 | DMV-024 20 of 328 analyzed
+13-Apr-2023 17:12:33 -0400 | DMV-024 30 of 328 analyzed
+13-Apr-2023 17:12:40 -0400 | DMV-024 40 of 328 analyzed
+13-Apr-2023 17:12:48 -0400 | DMV-024 50 of 328 analyzed
+13-Apr-2023 17:12:55 -0400 | DMV-024 60 of 328 analyzed
+13-Apr-2023 17:13:02 -0400 | DMV-024 70 of 328 analyzed
+13-Apr-2023 17:13:10 -0400 | DMV-024 80 of 328 analyzed
+13-Apr-2023 17:13:18 -0400 | DMV-024 90 of 328 analyzed
+13-Apr-2023 17:13:25 -0400 | DMV-024 100 of 328 analyzed
+13-Apr-2023 17:13:33 -0400 | DMV-024 110 of 328 analyzed
+13-Apr-2023 17:13:41 -0400 | DMV-024 120 of 328 analyzed
+13-Apr-2023 17:13:48 -0400 | DMV-024 130 of 328 analyzed
+13-Apr-2023 17:13:55 -0400 | DMV-024 140 of 328 analyzed
+13-Apr-2023 17:14:03 -0400 | DMV-024 150 of 328 analyzed
+13-Apr-2023 17:14:10 -0400 | DMV-024 160 of 328 analyzed
+13-Apr-2023 17:14:18 -0400 | DMV-024 170 of 328 analyzed
+13-Apr-2023 17:14:25 -0400 | DMV-024 180 of 328 analyzed
+13-Apr-2023 17:14:33 -0400 | DMV-024 190 of 328 analyzed
+13-Apr-2023 17:14:40 -0400 | DMV-024 200 of 328 analyzed
+13-Apr-2023 17:14:48 -0400 | DMV-024 210 of 328 analyzed
+13-Apr-2023 17:14:55 -0400 | DMV-024 220 of 328 analyzed
+13-Apr-2023 17:15:03 -0400 | DMV-024 230 of 328 analyzed
+13-Apr-2023 17:15:11 -0400 | DMV-024 240 of 328 analyzed
+13-Apr-2023 17:15:19 -0400 | DMV-024 250 of 328 analyzed
+13-Apr-2023 17:15:27 -0400 | DMV-024 260 of 328 analyzed
+13-Apr-2023 17:15:35 -0400 | DMV-024 270 of 328 analyzed
+13-Apr-2023 17:15:44 -0400 | DMV-024 280 of 328 analyzed
+13-Apr-2023 17:15:53 -0400 | DMV-024 290 of 328 analyzed
+13-Apr-2023 17:16:00 -0400 | DMV-024 300 of 328 analyzed
+13-Apr-2023 17:16:08 -0400 | DMV-024 310 of 328 analyzed
+13-Apr-2023 17:16:16 -0400 | DMV-024 320 of 328 analyzed
+13-Apr-2023 17:16:22 -0400 | DMV-025 saving data from QST
+13-Apr-2023 17:16:27 -0400 | DMV-026 data saved from QST
+13-Apr-2023 17:17:06 -0400 | DMV-021 formated files 10 of 328
+13-Apr-2023 17:17:07 -0400 | DMV-021 formated files 20 of 328
+13-Apr-2023 17:17:09 -0400 | DMV-021 formated files 30 of 328
+13-Apr-2023 17:17:12 -0400 | DMV-021 formated files 40 of 328
+13-Apr-2023 17:17:16 -0400 | DMV-021 formated files 50 of 328
+13-Apr-2023 17:17:20 -0400 | DMV-021 formated files 60 of 328
+13-Apr-2023 17:17:25 -0400 | DMV-021 formated files 70 of 328
+13-Apr-2023 17:17:31 -0400 | DMV-021 formated files 80 of 328
+13-Apr-2023 17:17:38 -0400 | DMV-021 formated files 90 of 328
+13-Apr-2023 17:17:45 -0400 | DMV-021 formated files 100 of 328
+13-Apr-2023 17:17:55 -0400 | DMV-021 formated files 110 of 328
+13-Apr-2023 17:18:03 -0400 | DMV-021 formated files 120 of 328
+13-Apr-2023 17:18:13 -0400 | DMV-021 formated files 130 of 328
+13-Apr-2023 17:18:23 -0400 | DMV-021 formated files 140 of 328
+13-Apr-2023 17:18:35 -0400 | DMV-021 formated files 150 of 328
+13-Apr-2023 17:18:47 -0400 | DMV-021 formated files 160 of 328
+13-Apr-2023 17:18:59 -0400 | DMV-021 formated files 170 of 328
+13-Apr-2023 17:19:13 -0400 | DMV-021 formated files 180 of 328
+13-Apr-2023 17:19:26 -0400 | DMV-021 formated files 190 of 328
+13-Apr-2023 17:19:41 -0400 | DMV-021 formated files 200 of 328
+13-Apr-2023 17:19:55 -0400 | DMV-021 formated files 210 of 328
+13-Apr-2023 17:20:10 -0400 | DMV-021 formated files 220 of 328
+13-Apr-2023 17:20:29 -0400 | DMV-021 formated files 230 of 328
+13-Apr-2023 17:20:45 -0400 | DMV-021 formated files 240 of 328
+13-Apr-2023 17:21:02 -0400 | DMV-021 formated files 250 of 328
+13-Apr-2023 17:21:20 -0400 | DMV-021 formated files 260 of 328
+13-Apr-2023 17:21:39 -0400 | DMV-021 formated files 270 of 328
+13-Apr-2023 17:22:00 -0400 | DMV-021 formated files 280 of 328
+13-Apr-2023 17:22:53 -0400 | DMV-021 formated files 10 of 328
+13-Apr-2023 17:22:54 -0400 | DMV-021 formated files 20 of 328
+13-Apr-2023 17:22:56 -0400 | DMV-021 formated files 30 of 328
+13-Apr-2023 17:22:59 -0400 | DMV-021 formated files 40 of 328
+13-Apr-2023 17:23:03 -0400 | DMV-021 formated files 50 of 328
+13-Apr-2023 17:23:07 -0400 | DMV-021 formated files 60 of 328
+13-Apr-2023 17:23:11 -0400 | DMV-021 formated files 70 of 328
+13-Apr-2023 17:23:17 -0400 | DMV-021 formated files 80 of 328
+13-Apr-2023 17:23:24 -0400 | DMV-021 formated files 90 of 328
+13-Apr-2023 17:23:31 -0400 | DMV-021 formated files 100 of 328
+13-Apr-2023 17:23:39 -0400 | DMV-021 formated files 110 of 328
+13-Apr-2023 17:23:48 -0400 | DMV-021 formated files 120 of 328
+13-Apr-2023 17:23:57 -0400 | DMV-021 formated files 130 of 328
+13-Apr-2023 17:24:07 -0400 | DMV-021 formated files 140 of 328
+13-Apr-2023 17:24:18 -0400 | DMV-021 formated files 150 of 328
+13-Apr-2023 17:24:30 -0400 | DMV-021 formated files 160 of 328
+13-Apr-2023 17:24:42 -0400 | DMV-021 formated files 170 of 328
+13-Apr-2023 17:24:55 -0400 | DMV-021 formated files 180 of 328
+13-Apr-2023 17:25:08 -0400 | DMV-021 formated files 190 of 328
+13-Apr-2023 17:25:23 -0400 | DMV-021 formated files 200 of 328
+13-Apr-2023 17:25:37 -0400 | DMV-021 formated files 210 of 328
+13-Apr-2023 17:25:52 -0400 | DMV-021 formated files 220 of 328
+13-Apr-2023 17:26:11 -0400 | DMV-021 formated files 230 of 328
+13-Apr-2023 17:26:27 -0400 | DMV-021 formated files 240 of 328
+13-Apr-2023 17:26:44 -0400 | DMV-021 formated files 250 of 328
+13-Apr-2023 17:27:02 -0400 | DMV-021 formated files 260 of 328
+13-Apr-2023 17:27:22 -0400 | DMV-021 formated files 270 of 328
+13-Apr-2023 17:27:42 -0400 | DMV-021 formated files 280 of 328
+13-Apr-2023 17:29:29 -0400 | DMV-021 formated files 10 of 328
+13-Apr-2023 17:29:31 -0400 | DMV-021 formated files 20 of 328
+13-Apr-2023 17:29:33 -0400 | DMV-021 formated files 30 of 328
+13-Apr-2023 17:29:36 -0400 | DMV-021 formated files 40 of 328
+13-Apr-2023 17:29:39 -0400 | DMV-021 formated files 50 of 328
+13-Apr-2023 17:29:43 -0400 | DMV-021 formated files 60 of 328
+13-Apr-2023 17:29:48 -0400 | DMV-021 formated files 70 of 328
+13-Apr-2023 17:29:54 -0400 | DMV-021 formated files 80 of 328
+13-Apr-2023 17:30:00 -0400 | DMV-021 formated files 90 of 328
+13-Apr-2023 17:30:07 -0400 | DMV-021 formated files 100 of 328
+13-Apr-2023 17:30:16 -0400 | DMV-021 formated files 110 of 328
+13-Apr-2023 17:30:24 -0400 | DMV-021 formated files 120 of 328
+13-Apr-2023 17:30:33 -0400 | DMV-021 formated files 130 of 328
+13-Apr-2023 17:30:43 -0400 | DMV-021 formated files 140 of 328
+13-Apr-2023 17:30:54 -0400 | DMV-021 formated files 150 of 328
+13-Apr-2023 17:31:07 -0400 | DMV-021 formated files 160 of 328
+13-Apr-2023 17:31:19 -0400 | DMV-021 formated files 170 of 328
+13-Apr-2023 17:31:32 -0400 | DMV-021 formated files 180 of 328
+13-Apr-2023 17:31:45 -0400 | DMV-021 formated files 190 of 328
+13-Apr-2023 17:32:00 -0400 | DMV-021 formated files 200 of 328
+13-Apr-2023 17:32:14 -0400 | DMV-021 formated files 210 of 328
+13-Apr-2023 17:32:29 -0400 | DMV-021 formated files 220 of 328
+13-Apr-2023 17:32:47 -0400 | DMV-021 formated files 230 of 328
+13-Apr-2023 17:33:04 -0400 | DMV-021 formated files 240 of 328
+13-Apr-2023 17:33:20 -0400 | DMV-021 formated files 250 of 328
+13-Apr-2023 17:33:40 -0400 | DMV-021 formated files 260 of 328
+13-Apr-2023 17:34:03 -0400 | DMV-021 formated files 270 of 328
+13-Apr-2023 17:34:24 -0400 | DMV-021 formated files 280 of 328

@@ -1,0 +1,13 @@
+14-Apr-2023 14:20:29 -0400 | DMV-000 DAMVi App v1.3
+14-Apr-2023 14:20:54 -0400 | DMV-001 file search started
+14-Apr-2023 14:20:54 -0400 | DMV-016 no files found in the selected directory
+14-Apr-2023 14:21:08 -0400 | DMV-001 file search started
+14-Apr-2023 14:21:08 -0400 | DMV-002 file search complete, 4 files found, 833.7 MB total
+14-Apr-2023 14:21:12 -0400 | DMV-001 file search started
+14-Apr-2023 14:21:13 -0400 | DMV-002 file search complete, 4 files found, 833.7 MB total
+14-Apr-2023 14:21:17 -0400 | DMV-001 file search started
+14-Apr-2023 14:21:18 -0400 | DMV-002 file search complete, 1 files found, 11.6 MB total
+14-Apr-2023 14:21:18 -0400 | DMV-004 loading files started for: matDAMVi
+14-Apr-2023 14:21:18 -0400 | DMV-030 no data loaded
+14-Apr-2023 14:21:31 -0400 | DMV-004 loading files started for: matDAMVi
+14-Apr-2023 14:21:31 -0400 | DMV-030 no data loaded

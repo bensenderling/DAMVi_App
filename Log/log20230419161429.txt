@@ -1,0 +1,74 @@
+19-Apr-2023 16:14:29 -0400 | DMV-000 DAMVi App v1.3
+19-Apr-2023 16:16:11 -0400 | DMV-001 file search started
+19-Apr-2023 16:16:11 -0400 | DMV-002 file search complete, 1 files found, 29.6 MB total
+19-Apr-2023 16:16:13 -0400 | DMV-004 loading files started for: matDAMVi
+19-Apr-2023 16:16:17 -0400 | DMV-005 loading files complete for: matDAMVi
+19-Apr-2023 16:16:23 -0400 | DMV-021 formated files 10 of 328
+19-Apr-2023 16:16:23 -0400 | DMV-021 formated files 20 of 328
+19-Apr-2023 16:16:24 -0400 | DMV-021 formated files 30 of 328
+19-Apr-2023 16:16:24 -0400 | DMV-021 formated files 40 of 328
+19-Apr-2023 16:16:24 -0400 | DMV-021 formated files 50 of 328
+19-Apr-2023 16:16:25 -0400 | DMV-021 formated files 60 of 328
+19-Apr-2023 16:16:25 -0400 | DMV-021 formated files 70 of 328
+19-Apr-2023 16:16:26 -0400 | DMV-021 formated files 80 of 328
+19-Apr-2023 16:16:26 -0400 | DMV-021 formated files 90 of 328
+19-Apr-2023 16:16:27 -0400 | DMV-021 formated files 100 of 328
+19-Apr-2023 16:16:27 -0400 | DMV-021 formated files 110 of 328
+19-Apr-2023 16:16:28 -0400 | DMV-021 formated files 120 of 328
+19-Apr-2023 16:16:28 -0400 | DMV-021 formated files 130 of 328
+19-Apr-2023 16:16:29 -0400 | DMV-021 formated files 140 of 328
+19-Apr-2023 16:16:29 -0400 | DMV-021 formated files 150 of 328
+19-Apr-2023 16:16:30 -0400 | DMV-021 formated files 160 of 328
+19-Apr-2023 16:16:30 -0400 | DMV-021 formated files 170 of 328
+19-Apr-2023 16:16:31 -0400 | DMV-021 formated files 180 of 328
+19-Apr-2023 16:16:31 -0400 | DMV-021 formated files 190 of 328
+19-Apr-2023 16:16:32 -0400 | DMV-021 formated files 200 of 328
+19-Apr-2023 16:16:32 -0400 | DMV-021 formated files 210 of 328
+19-Apr-2023 16:16:33 -0400 | DMV-021 formated files 220 of 328
+19-Apr-2023 16:16:33 -0400 | DMV-021 formated files 230 of 328
+19-Apr-2023 16:16:34 -0400 | DMV-021 formated files 240 of 328
+19-Apr-2023 16:16:35 -0400 | DMV-021 formated files 250 of 328
+19-Apr-2023 16:16:35 -0400 | DMV-021 formated files 260 of 328
+19-Apr-2023 16:16:36 -0400 | DMV-021 formated files 270 of 328
+19-Apr-2023 16:16:37 -0400 | DMV-021 formated files 280 of 328
+19-Apr-2023 16:16:38 -0400 | DMV-021 formated files 290 of 328
+19-Apr-2023 16:16:39 -0400 | DMV-021 formated files 300 of 328
+19-Apr-2023 16:16:40 -0400 | DMV-021 formated files 310 of 328
+19-Apr-2023 16:16:42 -0400 | DMV-021 formated files 320 of 328
+19-Apr-2023 16:16:43 -0400 | DMV-021 formated analysis 1 of 1
+19-Apr-2023 16:16:43 -0400 | DMV-008 results formated for export and displayed in table
+19-Apr-2023 16:44:10 -0400 | DMV-021 formated files 10 of 328
+19-Apr-2023 16:44:11 -0400 | DMV-021 formated files 20 of 328
+19-Apr-2023 16:44:13 -0400 | DMV-021 formated files 30 of 328
+19-Apr-2023 16:44:16 -0400 | DMV-021 formated files 40 of 328
+19-Apr-2023 16:44:20 -0400 | DMV-021 formated files 50 of 328
+19-Apr-2023 16:44:24 -0400 | DMV-021 formated files 60 of 328
+19-Apr-2023 16:44:29 -0400 | DMV-021 formated files 70 of 328
+19-Apr-2023 16:44:35 -0400 | DMV-021 formated files 80 of 328
+19-Apr-2023 16:44:42 -0400 | DMV-021 formated files 90 of 328
+19-Apr-2023 16:44:50 -0400 | DMV-021 formated files 100 of 328
+19-Apr-2023 16:44:59 -0400 | DMV-021 formated files 110 of 328
+19-Apr-2023 16:45:08 -0400 | DMV-021 formated files 120 of 328
+19-Apr-2023 16:45:18 -0400 | DMV-021 formated files 130 of 328
+19-Apr-2023 16:45:28 -0400 | DMV-021 formated files 140 of 328
+19-Apr-2023 16:45:40 -0400 | DMV-021 formated files 150 of 328
+19-Apr-2023 16:45:52 -0400 | DMV-021 formated files 160 of 328
+19-Apr-2023 16:46:05 -0400 | DMV-021 formated files 170 of 328
+19-Apr-2023 16:46:19 -0400 | DMV-021 formated files 180 of 328
+19-Apr-2023 16:46:32 -0400 | DMV-021 formated files 190 of 328
+19-Apr-2023 16:46:48 -0400 | DMV-021 formated files 200 of 328
+19-Apr-2023 16:47:03 -0400 | DMV-021 formated files 210 of 328
+19-Apr-2023 16:47:18 -0400 | DMV-021 formated files 220 of 328
+19-Apr-2023 16:47:38 -0400 | DMV-021 formated files 230 of 328
+19-Apr-2023 16:47:55 -0400 | DMV-021 formated files 240 of 328
+19-Apr-2023 16:48:13 -0400 | DMV-021 formated files 250 of 328
+19-Apr-2023 16:48:32 -0400 | DMV-021 formated files 260 of 328
+19-Apr-2023 16:48:53 -0400 | DMV-021 formated files 270 of 328
+19-Apr-2023 16:49:14 -0400 | DMV-021 formated files 280 of 328
+19-Apr-2023 16:49:36 -0400 | DMV-021 formated files 290 of 328
+19-Apr-2023 16:49:59 -0400 | DMV-021 formated files 300 of 328
+19-Apr-2023 16:50:22 -0400 | DMV-021 formated files 310 of 328
+19-Apr-2023 16:50:45 -0400 | DMV-021 formated files 320 of 328
+19-Apr-2023 16:51:05 -0400 | DMV-021 formated analysis 1 of 1
+19-Apr-2023 16:51:06 -0400 | DMV-008 results formated for export and displayed in table
+19-Apr-2023 16:52:44 -0400 | DMV-007 results exported
