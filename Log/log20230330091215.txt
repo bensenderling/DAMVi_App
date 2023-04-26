@@ -1,4 +1,0 @@
-30-Mar-2023 09:12:15 -0400 | DMV-000 DAMVi App v1.3
-30-Mar-2023 09:17:59 -0400 | DMV-001 file search started
-30-Mar-2023 09:18:02 -0400 | DMV-002 file search complete, 426 files found, 105.4 MB total
-30-Mar-2023 09:18:07 -0400 | DMV-004 loading files started for: txtV3D

@@ -1,3 +1,0 @@
-14-Apr-2023 10:30:41 -0400 | DMV-000 DAMVi App v1.3
-14-Apr-2023 10:33:13 -0400 | DMV-001 file search started
-14-Apr-2023 10:49:24 -0400 | DMV-001 file search started
