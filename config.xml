@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
     <configuration>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\\config.xml</configuration>
-    <directory>R:\PROJECTS\wesens\Data\W077</directory>
-    <database>R:\PROJECTS\wesens\Data\Analysis\Senderling\WESENS</database>
+    <directory>R:\PROJECTS\Tufts\Data</directory>
+    <database>R:\PROJECTS\Tufts\Analysis\Senderling\APDM</database>
     <options>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\Load</filesload>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App Beta\Load</filesload>

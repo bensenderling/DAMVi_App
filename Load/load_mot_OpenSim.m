@@ -15,6 +15,12 @@ fid = fopen(file);
 % The first line is the type of data from OpenSim.
 data{1, :} = fgetl(fid);
 obj = data{1};
+if numel(strfind(obj, '\')) > 0
+    ind = strfind(obj, '\');
+    obj = obj(ind(end) + 1:end - 4);
+end
+illegalCharacters = {'!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '[', ']', '{', '}', ';', ':', ',', '\.', '<', '>', '/', '?', ' '};
+obj = regexprep(obj, illegalCharacters, '_');
 
 % Save the version number in meta data.
 data{2, :} = fgetl(fid);
