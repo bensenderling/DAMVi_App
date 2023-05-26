@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
     <configuration>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\\config.xml</configuration>
-    <directory>R:\PROJECTS\wesens\Data\Analysis\Senderling\013 Nonlinear Variability in Knee Osteoarthritis\Data\RQA of Stairclimbing</directory>
+    <directory>C:\Users\bsender\Documents\Senderling\013 Nonlinear Variability in Knee Osteoarthritis\Data\Stair Climbing</directory>
     <database>R:\PROJECTS\wesens\Data\Analysis\Senderling\013 Nonlinear Variability in Knee Osteoarthritis</database>
     <options>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\Load</filesload>
@@ -31,9 +31,11 @@
             <h5>APDM3QuaRightFoot</h5>
             <m>MATLAB</m>
             <mat>DAMVi</mat>
+            <mat>OpenCap</mat>
             <mat>QTM</mat>
             <mat>QTMDelsysVL</mat>
             <mlapp>MATLAB</mlapp>
+            <mot>OpenSim</mot>
             <png>WIN</png>
             <qtm>QTM</qtm>
             <txt>Example</txt>
@@ -54,6 +56,7 @@
         <process>Merge</process>
         <process>Segment</process>
         <process>Treatment</process>
+        <analysis>ContinuousSignalMetrics</analysis>
         <analysis>Entropy</analysis>
         <analysis>Example</analysis>
         <analysis>ExampleApp</analysis>
@@ -77,6 +80,7 @@
         <analysis>V3DAPDMAlignment5aRightFoot</analysis>
         <analysis>V3DAPDMAlignment5bRightFoot</analysis>
         <review>General</review>
+        <review>QC</review>
         <review>APDMTurns</review>
         <review>APDMTurns2</review>
         <review>Anomaly</review>
@@ -84,6 +88,8 @@
         <segment>TurnsAPDM</segment>
         <segment>TurnsIMU</segment>
         <segment>WESENSOpal3</segment>
+        <quality>Outlier</quality>
+        <quality>Threshold</quality>
     </options>
     <treatment_general>Low-pass Filter</treatment_general>
     <treatment_general>process_Treatment_LowPass</treatment_general>

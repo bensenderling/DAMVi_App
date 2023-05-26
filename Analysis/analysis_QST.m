@@ -68,6 +68,16 @@ for i = 1:length(files)
         else
             data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.Body_Site_Specific = 'Undefined';
         end
+        if isfield(data.raw.(files{i}).meta, 'ID')
+            data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.ID = data.raw.(files{i}).meta.ID;
+        else
+            data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.ID = 'Undefined';
+        end
+        if isfield(data.raw.(files{i}).meta, 'Department')
+            data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.Department = data.raw.(files{i}).meta.Department;
+        else
+            data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.Department = 'Undefined';
+        end
         
         % Find the maximum pressure delivered and save it in the results.
         [m, I] = max(data.raw.(files{i}).(obj{j}).data.Pressure_kPa_);
