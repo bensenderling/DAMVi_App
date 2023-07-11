@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
     <configuration>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\\config.xml</configuration>
-    <directory>C:\Users\bsender\Documents\Senderling\013 Nonlinear Variability in Knee Osteoarthritis\Data\Stair Climbing</directory>
-    <database>R:\PROJECTS\wesens\Data\Analysis\Senderling\013 Nonlinear Variability in Knee Osteoarthritis</database>
+    <directory>C:\Users\bsender\OneDrive\Documents\Projects\019 Pennell Nonlinear Analysis\Data</directory>
+    <database>C:\Users\bsender\OneDrive\Documents\Projects\019 Pennell Nonlinear Analysis</database>
     <options>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\Load</filesload>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App Beta\Load</filesload>
@@ -55,6 +55,7 @@
         <process>Groupings</process>
         <process>Merge</process>
         <process>Segment</process>
+        <process>Surrogation</process>
         <process>Treatment</process>
         <analysis>ContinuousSignalMetrics</analysis>
         <analysis>Entropy</analysis>
@@ -69,6 +70,8 @@
         <analysis>01</analysis>
         <analysis>APDM</analysis>
         <analysis>APDMResultsFigures</analysis>
+        <analysis>CSM</analysis>
+        <analysis>CrossSignalMetrics</analysis>
         <analysis>DelsysApdmSynch</analysis>
         <analysis>MocapApdmAlignment</analysis>
         <analysis>MocapApdmAlignment2</analysis>
@@ -85,11 +88,13 @@
         <review>APDMTurns2</review>
         <review>Anomaly</review>
         <segment>Example</segment>
+        <segment>HeelStrikeAPDM</segment>
         <segment>TurnsAPDM</segment>
         <segment>TurnsIMU</segment>
         <segment>WESENSOpal3</segment>
         <quality>Outlier</quality>
         <quality>Threshold</quality>
+        <crossSignalMetrics>StatisticalParameterMapping</crossSignalMetrics>
     </options>
     <treatment_general>Low-pass Filter</treatment_general>
     <treatment_general>process_Treatment_LowPass</treatment_general>
