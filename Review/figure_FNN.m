@@ -44,23 +44,24 @@ for i = 1:length(files)
                     sigs = fieldnames(data.ana.FNN.(files{i}).(obj{j}).data);
                     % Iterate through the signal names.
                     for k = 1:length(sigs)
-                        % If the current signal is selected by the user, or
-                        % the selection is empty, or 'all' is selected.
+                        % If the current signal is selected by the user, or the selection is empty, or 'all' is selected.
                         if any(strcmp(app.SignalsListBox.Value, sigs{k})) || isempty(app.SignalsListBox.Value) || any(strcmp(app.SignalsListBox.Value, 'all'))
-                            % If there is 'dE' in the analysis results, and
-                            % there is a 'dim' field in the results, and
-                            % the 'dim' result is not a NaN.
-                            if isfield(data.ana.FNN.(files{i}).(obj{j}).data.(sigs{k}), 'dE') && isfield(data.res.FNN.(files{i}).(obj{j}).data.(sigs{k}), 'dim') && ~isnan(data.res.FNN.(files{i}).(obj{j}).data.(sigs{k}).dim)
-                                % The length of the 'dE' result is the
-                                % number of dimensions and the x axis.
-                                plotData{1}(:, ind) = 1:length(data.ana.FNN.(files{i}).(obj{j}).data.(sigs{k}).dE);
-                                % The 'dE' values are the y axis.
-                                plotData{2}(:, ind) = data.ana.FNN.(files{i}).(obj{j}).data.(sigs{k}).dE;
-                                % Increase the column index.
-                                ind = ind + 1;
-                                % Add the dimension to the list to use in
-                                % the histogram.
-                                plotDims = [plotDims; data.res.FNN.(files{i}).(obj{j}).data.(sigs{k}).dim, data.ana.FNN.(files{i}).(obj{j}).data.(sigs{k}).dE(data.res.FNN.(files{i}).(obj{j}).data.(sigs{k}).dim)];
+                            % If there is 'dE' in the analysis results, and there is a 'dim' field in the results, and the 'dim' result is not a NaN.
+                            if isfield(data.ana.FNN.(files{i}).(obj{j}).data.(sigs{k}), 'dE') && isfield(data.res.FNN.(files{i}).(obj{j}).data.(sigs{k}), 'dim')
+                                % Iterate through the dimensions.
+                                for ind_dim = 1:size(data.res.FNN.(files{i}).(obj{j}).data.(sigs{k}).dim, 2)
+                                    % If the current dimension is selected by the user, or the selection is empty, or 'all' is selected.
+                                    if (any(str2double(app.DimensionListBox.Value) == ind_dim) || isempty(app.DimensionListBox.Value) || any(strcmp(app.DimensionListBox.Value, 'all'))) && ~isnan(data.res.FNN.(files{i}).(obj{j}).data.(sigs{k}).dim(ind_dim))
+                                        % The length of the 'dE' result is the number of dimensions and the x axis.
+                                        plotData{1}(:, ind) = 1:length(data.ana.FNN.(files{i}).(obj{j}).data.(sigs{k}).dE{ind_dim});
+                                        % The 'dE' values are the y axis.
+                                        plotData{2}(:, ind) = data.ana.FNN.(files{i}).(obj{j}).data.(sigs{k}).dE{ind_dim};
+                                        % Increase the column index.
+                                        ind = ind + 1;
+                                        % Add the dimension to the list to use in the histogram.
+                                        plotDims = [plotDims; data.res.FNN.(files{i}).(obj{j}).data.(sigs{k}).dim(ind_dim), data.ana.FNN.(files{i}).(obj{j}).data.(sigs{k}).dE{ind_dim}(data.res.FNN.(files{i}).(obj{j}).data.(sigs{k}).dim(ind_dim))];
+                                    end
+                                end
                             end
                         end
                     end
@@ -108,8 +109,7 @@ ylabel('% False Nearest Neighbors')
 
 % The second plot is a histogram of the results.
 subplot(2, 1, 2)
-% Create the bin edges. This is easy to create with the small number of
-% integer results.
+% Create the bin edges. This is easy to create with the small number of integer results.
 bins = (0:max(plotData{1}, [], 'all'));
 % create the histogram.
 histogram(plotDims(:, 1), bins, 'FaceColor', 'k');

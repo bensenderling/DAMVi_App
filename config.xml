@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
     <configuration>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\\config.xml</configuration>
-    <directory>C:\Users\bsender\OneDrive\Documents\Projects\019 Pennell Nonlinear Analysis\Data</directory>
-    <database>C:\Users\bsender\OneDrive\Documents\Projects\019 Pennell Nonlinear Analysis</database>
+    <directory>R:\PROJECTS\wesens\Data\W002</directory>
+    <directory>R:\PROJECTS\wesens\From-Pfizer\current\wesens_lab_gait\W002</directory>
+    <database>R:\PROJECTS\wesens\Data\Analysis\Senderling\Spatiotemporal Alignment</database>
     <options>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\Load</filesload>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App Beta\Load</filesload>
@@ -73,8 +74,10 @@
         <analysis>CSM</analysis>
         <analysis>CrossSignalMetrics</analysis>
         <analysis>DelsysApdmSynch</analysis>
+        <analysis>LyE</analysis>
         <analysis>MocapApdmAlignment</analysis>
         <analysis>MocapApdmAlignment2</analysis>
+        <analysis>SpatiotemporalAlignment</analysis>
         <analysis>V3DAPDMAlignment</analysis>
         <analysis>V3DAPDMAlignment1k</analysis>
         <analysis>V3DAPDMAlignment2PelvisAcc</analysis>
