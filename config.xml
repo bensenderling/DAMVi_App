@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
     <configuration>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\\config.xml</configuration>
-    <directory>R:\PROJECTS\wesens\Data\W002</directory>
-    <directory>R:\PROJECTS\wesens\From-Pfizer\current\wesens_lab_gait\W002</directory>
+    <directory>R:\PROJECTS\wesens\Data\Analysis\Senderling\Spatiotemporal Alignment\Results</directory>
     <database>R:\PROJECTS\wesens\Data\Analysis\Senderling\Spatiotemporal Alignment</database>
     <options>
         <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\Load</filesload>
@@ -18,6 +17,7 @@
             <csv>DAMVi</csv>
             <csv>Delsys</csv>
             <csv>Actigraph</csv>
+            <csv>Basic</csv>
             <csv>Pfizer01</csv>
             <csv>Pfizer02</csv>
             <gt3x>Actigraph</gt3x>
@@ -53,6 +53,7 @@
         <figure>Image</figure>
         <process>APDM</process>
         <process>APDMSpatiotemporalTurns</process>
+        <process>Eventing</process>
         <process>Groupings</process>
         <process>Merge</process>
         <process>Segment</process>
@@ -98,6 +99,8 @@
         <quality>Outlier</quality>
         <quality>Threshold</quality>
         <crossSignalMetrics>StatisticalParameterMapping</crossSignalMetrics>
+        <eventing>PeakPicker</eventing>
+        <eventing>PeakPickerOld</eventing>
     </options>
     <treatment_general>Low-pass Filter</treatment_general>
     <treatment_general>process_Treatment_LowPass</treatment_general>
