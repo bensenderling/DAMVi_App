@@ -32,7 +32,7 @@ sheets(strcmp(sheets, 'Description')) = [];
 for i = 1:length(sheets)
 
     % The data can be read as a table with the variable names.
-    data = readtable(file, 'Sheet', sheets{i});
+    data = readtable(file, 'Sheet', sheets{i}, 'VariableNamingRule', 'modify');
     % Make the sheet names valid structure field names.
     name = regexprep(sheets{i}, ' ', '_');
     % Get the field names of the table to use as structure field names.
@@ -49,6 +49,7 @@ for i = 1:length(sheets)
             else
                 x = ~cellfun(@isempty,x);
             end
+
             xlsx_Medoc.(name).data.(fields{j}) = x;
         else
             % This covers all none event data.

@@ -78,6 +78,32 @@ for i = 1:length(files)
         else
             data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.Department = 'Undefined';
         end
+        if isfield(data.raw.(files{i}).meta, 'Last_Name')
+            data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.Last_Name = data.raw.(files{i}).meta.Last_Name;
+        else
+            data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.Last_Name = 'Undefined';
+        end
+        if isfield(data.raw.(files{i}).meta, 'First_Name')
+            data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.First_Name = data.raw.(files{i}).meta.First_Name;
+        else
+            data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.First_Name = 'Undefined';
+        end
+        if isfield(data.raw.(files{i}).meta, 'Project')
+            data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.Project = data.raw.(files{i}).meta.Project;
+        else
+            data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.Project = 'Undefined';
+        end
+        if isfield(data.raw.(files{i}).meta, 'Participant_ID')
+            data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.Particpant_ID = data.raw.(files{i}).meta.Participant_ID;
+        else
+            data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.Participant_ID = 'Undefined';
+        end
+        if isfield(data.raw.(files{i}).meta, 'Operator')
+            data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.Operator = data.raw.(files{i}).meta.Operator;
+        else
+            data.res.QST.(files{i}).(obj{j}).data.Pressure_kPa_.Operator = 'Undefined';
+        end
+        
         
         % Find the maximum pressure delivered and save it in the results.
         [m, I] = max(data.raw.(files{i}).(obj{j}).data.Pressure_kPa_);
