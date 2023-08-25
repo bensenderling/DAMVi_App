@@ -1,26 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
-    <configuration>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\\config.xml</configuration>
-    <directory>R:\PROJECTS\wesens\Data\Analysis\Senderling\Spatiotemporal Alignment\Results</directory>
-    <database>R:\PROJECTS\wesens\Data\Analysis\Senderling\Spatiotemporal Alignment</database>
+    <configuration>C:\Users\bense\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\\config.xml</configuration>
+    <directory>R:\PROJECTS\fnirs\QST\rawQST</directory>
+    <database>R:\PROJECTS\fnirs\Analysis\Senderling\QST</database>
     <options>
-        <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\Load</filesload>
-        <filesload>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App Beta\Load</filesload>
-        <filesprocess>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\Process</filesprocess>
-        <filesprocess>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App Beta\Process</filesprocess>
-        <filesanalysis>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\Analysis</filesanalysis>
-        <filesanalysis>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App Beta\Analysis</filesanalysis>
-        <filesreview>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\Review</filesreview>
-        <filesreview>C:\Users\bsender\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App Beta\Review</filesreview>
+        <filesload>C:\Users\bense\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\Load</filesload>
+        <filesprocess>C:\Users\bense\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\Process</filesprocess>
+        <filesanalysis>C:\Users\bense\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\Analysis</filesanalysis>
+        <filesreview>C:\Users\bense\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\Review</filesreview>
         <filetypes>
             <agd>Actigraph</agd>
             <csv>DAMVi</csv>
             <csv>Delsys</csv>
-            <csv>Actigraph</csv>
-            <csv>Basic</csv>
-            <csv>Pfizer01</csv>
-            <csv>Pfizer02</csv>
-            <gt3x>Actigraph</gt3x>
             <h5>APDM0Meta</h5>
             <h5>APDM1Raw</h5>
             <h5>APDM1RawLumbar</h5>
@@ -37,70 +28,32 @@
             <mat>QTMDelsysVL</mat>
             <mlapp>MATLAB</mlapp>
             <mot>OpenSim</mot>
-            <png>WIN</png>
             <qtm>QTM</qtm>
             <txt>Example</txt>
             <txt>V3D</txt>
             <xlsx>Medoc</xlsx>
         </filetypes>
-        <figure>1D</figure>
-        <figure>2D</figure>
-        <figure>3D</figure>
-        <figure>FNN</figure>
-        <figure>Histogram</figure>
-        <figure>RQA</figure>
-        <figure>TimeLag</figure>
-        <figure>Image</figure>
-        <process>APDM</process>
-        <process>APDMSpatiotemporalTurns</process>
         <process>Eventing</process>
         <process>Groupings</process>
         <process>Merge</process>
         <process>Segment</process>
         <process>Surrogation</process>
         <process>Treatment</process>
+        <analysis>CSM</analysis>
         <analysis>ContinuousSignalMetrics</analysis>
+        <analysis>CrossSignalMetrics</analysis>
         <analysis>Entropy</analysis>
         <analysis>Example</analysis>
         <analysis>ExampleApp</analysis>
         <analysis>FNN</analysis>
+        <analysis>LyE</analysis>
         <analysis>MATLABDependencies</analysis>
         <analysis>QST</analysis>
         <analysis>QSTTraining</analysis>
         <analysis>RQA</analysis>
         <analysis>TimeLag</analysis>
-        <analysis>01</analysis>
-        <analysis>APDM</analysis>
-        <analysis>APDMResultsFigures</analysis>
-        <analysis>CSM</analysis>
-        <analysis>CrossSignalMetrics</analysis>
-        <analysis>DelsysApdmSynch</analysis>
-        <analysis>LyE</analysis>
-        <analysis>MocapApdmAlignment</analysis>
-        <analysis>MocapApdmAlignment2</analysis>
-        <analysis>SpatiotemporalAlignment</analysis>
-        <analysis>V3DAPDMAlignment</analysis>
-        <analysis>V3DAPDMAlignment1k</analysis>
-        <analysis>V3DAPDMAlignment2PelvisAcc</analysis>
-        <analysis>V3DAPDMAlignment3</analysis>
-        <analysis>V3DAPDMAlignment4RightFoot</analysis>
-        <analysis>V3DAPDMAlignment5aRightFoot</analysis>
-        <analysis>V3DAPDMAlignment5bRightFoot</analysis>
         <review>General</review>
         <review>QC</review>
-        <review>APDMTurns</review>
-        <review>APDMTurns2</review>
-        <review>Anomaly</review>
-        <segment>Example</segment>
-        <segment>HeelStrikeAPDM</segment>
-        <segment>TurnsAPDM</segment>
-        <segment>TurnsIMU</segment>
-        <segment>WESENSOpal3</segment>
-        <quality>Outlier</quality>
-        <quality>Threshold</quality>
-        <crossSignalMetrics>StatisticalParameterMapping</crossSignalMetrics>
-        <eventing>PeakPicker</eventing>
-        <eventing>PeakPickerOld</eventing>
     </options>
     <treatment_general>Low-pass Filter</treatment_general>
     <treatment_general>process_Treatment_LowPass</treatment_general>
