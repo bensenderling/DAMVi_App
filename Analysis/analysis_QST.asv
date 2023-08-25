@@ -22,7 +22,7 @@ function app = analysis_QST(app, data, analysis)
 %            give false estimate of low quality data.
 %          - The figures will now be saved to a subfolder in the Figure folder. They will also be named using the group information if
 %            a full file path (found by looking for a :) is not present. If a : is found it is assumed to be a full file path and the
-%            generic file#### name is used to name the file.
+%            generic file#### name
 %% Begin Code
 
 % Get the file names.
