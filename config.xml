@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
-    <configuration>C:\Users\bense\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\\config.xml</configuration>
-    <directory>R:\PROJECTS\fnirs\QST\rawQST</directory>
-    <database>R:\PROJECTS\fnirs\Analysis\Senderling\QST</database>
+    <configuration>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\\config.xml</configuration>
+    <directory>C:\Users\bense\OneDrive - Drexel University\TKA Study (UTMB)\Actigraph Data</directory>
+    <database>C:\Users\bense\OneDrive - Drexel University\Projects\023 UTMB</database>
     <options>
-        <filesload>C:\Users\bense\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\Load</filesload>
-        <filesprocess>C:\Users\bense\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\Process</filesprocess>
-        <filesanalysis>C:\Users\bense\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\Analysis</filesanalysis>
-        <filesreview>C:\Users\bense\OneDrive - Boston University\BU\Projects\017 BAR\Code\DAMVi_App\Review</filesreview>
+        <filesload>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\Load</filesload>
+        <filesload>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App Beta\Load</filesload>
+        <filesprocess>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\Process</filesprocess>
+        <filesprocess>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App Beta\Process</filesprocess>
+        <filesanalysis>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\Analysis</filesanalysis>
+        <filesanalysis>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App Beta\Analysis</filesanalysis>
+        <filesreview>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\Review</filesreview>
+        <filesreview>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App Beta\Review</filesreview>
         <filetypes>
+            <AllFiles>AllFiles</AllFiles>
             <agd>Actigraph</agd>
             <csv>DAMVi</csv>
             <csv>Delsys</csv>
+            <csv>Actigraph</csv>
+            <csv>Basic</csv>
+            <csv>Pfizer01</csv>
+            <csv>Pfizer02</csv>
+            <gt3x>Actigraph</gt3x>
             <h5>APDM0Meta</h5>
             <h5>APDM1Raw</h5>
             <h5>APDM1RawLumbar</h5>
@@ -28,30 +38,50 @@
             <mat>QTMDelsysVL</mat>
             <mlapp>MATLAB</mlapp>
             <mot>OpenSim</mot>
+            <png>WIN</png>
             <qtm>QTM</qtm>
-            <txt>Example</txt>
             <txt>V3D</txt>
             <xlsx>Medoc</xlsx>
         </filetypes>
+        <process>APDM</process>
+        <process>APDMSpatiotemporalTurns</process>
         <process>Eventing</process>
         <process>Groupings</process>
         <process>Merge</process>
         <process>Segment</process>
         <process>Surrogation</process>
         <process>Treatment</process>
+        <analysis>01</analysis>
+        <analysis>APDM</analysis>
+        <analysis>APDMResultsFigures</analysis>
         <analysis>CSM</analysis>
         <analysis>ContinuousSignalMetrics</analysis>
+        <analysis>CorrelationDimension</analysis>
         <analysis>CrossSignalMetrics</analysis>
+        <analysis>DelsysApdmSynch</analysis>
         <analysis>Entropy</analysis>
         <analysis>Example</analysis>
         <analysis>ExampleApp</analysis>
         <analysis>FNN</analysis>
         <analysis>LyE</analysis>
         <analysis>MATLABDependencies</analysis>
+        <analysis>MocapApdmAlignment</analysis>
+        <analysis>MocapApdmAlignment2</analysis>
         <analysis>QST</analysis>
         <analysis>QSTTraining</analysis>
         <analysis>RQA</analysis>
+        <analysis>SpatiotemporalAlignment</analysis>
         <analysis>TimeLag</analysis>
+        <analysis>V3DAPDMAlignment</analysis>
+        <analysis>V3DAPDMAlignment1k</analysis>
+        <analysis>V3DAPDMAlignment2PelvisAcc</analysis>
+        <analysis>V3DAPDMAlignment3</analysis>
+        <analysis>V3DAPDMAlignment4RightFoot</analysis>
+        <analysis>V3DAPDMAlignment5aRightFoot</analysis>
+        <analysis>V3DAPDMAlignment5bRightFoot</analysis>
+        <review>APDMTurns</review>
+        <review>APDMTurns2</review>
+        <review>Anomaly</review>
         <review>General</review>
         <review>QC</review>
     </options>

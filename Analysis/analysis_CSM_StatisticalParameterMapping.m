@@ -50,7 +50,7 @@ title('Statistical Non-Parametric Mapping')
 saveas(H, [app.Database.Value '\Figures\' plotName '.jpg'])
 close(H)
 
-results.ana.snpm = snpml;
+results.ana.snpm = snpm;
 results.ana.snpmi = snpmi;
 results.ana.signal1 = signal1;
 results.ana.signal2 = signal2;
