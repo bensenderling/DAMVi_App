@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
     <configuration>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\\config.xml</configuration>
-    <directory>C:\Users\bense\OneDrive - Drexel University\TKA Study (UTMB)\Actigraph Data</directory>
-    <database>C:\Users\bense\OneDrive - Drexel University\Projects\023 UTMB</database>
+    <directory>C:\Users\bense\OneDrive - Drexel University\TKA Study (UTMB)\Actigraph Data 2</directory>
+    <database>C:\Users\bense\OneDrive - Drexel University\Projects\023 Physical Activity, Diabetes and Joint Replacement</database>
     <options>
         <filesload>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\Load</filesload>
         <filesload>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App Beta\Load</filesload>
@@ -58,6 +58,7 @@
         <analysis>ContinuousSignalMetrics</analysis>
         <analysis>CorrelationDimension</analysis>
         <analysis>CrossSignalMetrics</analysis>
+        <analysis>DFA</analysis>
         <analysis>DelsysApdmSynch</analysis>
         <analysis>Entropy</analysis>
         <analysis>Example</analysis>
@@ -84,6 +85,14 @@
         <review>Anomaly</review>
         <review>General</review>
         <review>QC</review>
+        <figure>1D</figure>
+        <figure>2D</figure>
+        <figure>3D</figure>
+        <figure>FNN</figure>
+        <figure>Histogram</figure>
+        <figure>RQA</figure>
+        <figure>TimeLag</figure>
+        <figure>Image</figure>
     </options>
     <treatment_general>Low-pass Filter</treatment_general>
     <treatment_general>process_Treatment_LowPass</treatment_general>
