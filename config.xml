@@ -2,19 +2,28 @@
 <struct>
     <configuration>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\\config.xml</configuration>
     <directory>C:\Users\bense\OneDrive - Drexel University\TKA Study (UTMB)\Actigraph Data 2</directory>
-    <database>C:\Users\bense\OneDrive - Drexel University\Projects\023 Physical Activity, Diabetes and Joint Replacement</database>
+    <database>C:\Users\bense\Downloads\OneDrive_2025-02-05</database>
     <options>
         <filesload>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\Load</filesload>
         <filesload>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App Beta\Load</filesload>
+        <filesload>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\Load</filesload>
+        <filesload>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App Beta\Load</filesload>
         <filesprocess>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\Process</filesprocess>
         <filesprocess>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App Beta\Process</filesprocess>
+        <filesprocess>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\Process</filesprocess>
+        <filesprocess>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App Beta\Process</filesprocess>
         <filesanalysis>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\Analysis</filesanalysis>
         <filesanalysis>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App Beta\Analysis</filesanalysis>
+        <filesanalysis>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\Analysis</filesanalysis>
+        <filesanalysis>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App Beta\Analysis</filesanalysis>
         <filesreview>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\Review</filesreview>
         <filesreview>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App Beta\Review</filesreview>
+        <filesreview>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\Review</filesreview>
+        <filesreview>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App Beta\Review</filesreview>
         <filetypes>
             <AllFiles>AllFiles</AllFiles>
             <agd>Actigraph</agd>
+            <csv>BertecCDP</csv>
             <csv>DAMVi</csv>
             <csv>Delsys</csv>
             <csv>Actigraph</csv>
@@ -54,6 +63,8 @@
         <analysis>01</analysis>
         <analysis>APDM</analysis>
         <analysis>APDMResultsFigures</analysis>
+        <analysis>Actigraph</analysis>
+        <analysis>COP</analysis>
         <analysis>CSM</analysis>
         <analysis>ContinuousSignalMetrics</analysis>
         <analysis>CorrelationDimension</analysis>
@@ -93,6 +104,10 @@
         <figure>RQA</figure>
         <figure>TimeLag</figure>
         <figure>Image</figure>
+        <treatment>AddSignals</treatment>
+        <treatment>LowPass</treatment>
+        <treatment>Resample</treatment>
+        <treatment>SmoothWinter</treatment>
     </options>
     <treatment_general>Low-pass Filter</treatment_general>
     <treatment_general>process_Treatment_LowPass</treatment_general>
