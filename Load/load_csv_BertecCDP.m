@@ -14,6 +14,9 @@ function csv_BertecCDP = load_csv_BertecCDP(file)
 % - This function is just starting to be used. It is likely errors and 
 %   issues will arise as it is used more.
 % Feb 2025 - Created by Ben Senderling, bms322@drexel.edu
+% May 2025 - Modified by Ben Senderling, bms322@drexel.edu
+%          - Fixed a bug where previous data was overwritten with zeros if
+%            there was more than one dimension.
 
 % The data can be read as a table with the variable names.
 data = readtable(file, 'VariableNamingRule', 'preserve');
@@ -62,11 +65,14 @@ for i = 1:length(fields)
     end
 
     if ~isfield(csv_BertecCDP, object) && length(data.(fields{i})) > 1
-        csv_BertecCDP.(object).freq = 2000; % The Bertec CDP samples all data at this rate.
+        % The Bertec CDP samples all data at this rate.
+        csv_BertecCDP.(object).freq = 2000;
     end
 
+    % If an additional dimention is being added and the data already
+    % exists, add a new column of zeros.
     if dim > 1 && ~(isfield(csv_BertecCDP, object) && isfield(csv_BertecCDP.(object), data) && isfield(csv_BertecCDP.(object).data, signal))
-        csv_BertecCDP.(object).data.(signal) = zeros(size(data, 1), dim);
+        csv_BertecCDP.(object).data.(signal)(:, dim) = zeros(size(data, 1), 1);
     end
     
     csv_BertecCDP.(object).data.(signal)(:, dim) = data.(fields{i});
