@@ -69,45 +69,45 @@ for ind_files = 1:length(files)
                     COPradius = sqrt(COPxnorm.^2 + COPynorm.^2);
 
                     % Linear analyses
-                    % (Notes) Root Mean Square (x,y,d) - i.e. Standard 
-                    % deviation Prieto equations 6 and 7, p 958. In these 
+                    % (Notes) Root Mean Square (x,y,d) - i.e. Standard
+                    % deviation Prieto equations 6 and 7, p 958. In these
                     % equations Prieto divides by n, not n-1.
                     rms_x = sqrt((1/length(COPxnorm))*sum(COPxnorm.^2));
                     rms_y = sqrt((1/length(COPynorm))*sum(COPynorm.^2));
                     rms_d = sqrt((1/length(COPradius))*sum(COPradius.^2));
 
-                    rangeml = max(COPxnorm) - min(COPxnorm);
-                    rangeap = max(COPynorm) - min(COPynorm);
+                    range_x = max(COPxnorm) - min(COPxnorm);
+                    range_y = max(COPynorm) - min(COPynorm);
 
                     % Sway Path
-                    % This produces a measure of the total distance 
-                    % traveled along one dimension. It is similar to arc 
-                    % length but is not the same. For example the function 
+                    % This produces a measure of the total distance
+                    % traveled along one dimension. It is similar to arc
+                    % length but is not the same. For example the function
                     % f(t)=sin(t) on the interval [0 2pi] has a swaypath of
-                    % 4. The function travels a total of 4 units along the 
-                    % y axis within the interval. If y=sin(t) and x=cos(t) 
-                    % the resultant function is a circle. If the radial 
+                    % 4. The function travels a total of 4 units along the
+                    % y axis within the interval. If y=sin(t) and x=cos(t)
+                    % the resultant function is a circle. If the radial
                     % distance of this circle is used as the input (a
-                    % constant 1 value), the output of this script will be 
+                    % constant 1 value), the output of this script will be
                     % zero.
-                    % Ref - Measures of Postural Steadiness- Differences 
+                    % Ref - Measures of Postural Steadiness- Differences
                     % Between Healthy Young and Elderly Adults, Prieto 1996
-                    swaypathd = sum(abs(diff(COPradius)));
-                    swaypathx = sum(abs(diff(COPxnorm)));
-                    swaypathy = sum(abs(diff(COPynorm)));
+                    swaypath_x = sum(abs(diff(COPxnorm)));
+                    swaypath_y = sum(abs(diff(COPynorm)));
+                    swaypath_d = sum(abs(diff(COPradius)));
 
-                    % This version of the calculation provides the total 
+                    % This version of the calculation provides the total
                     % arc length.
                     i = 1:n - 1;
-                    swaypathtangential = sum(sqrt((COPxnorm(i + 1) - COPxnorm(i)).^2 + (COPynorm(i+1) - COPynorm(i)).^2));
+                    swaypath_tangential = sum(sqrt((COPxnorm(i + 1) - COPxnorm(i)).^2 + (COPynorm(i+1) - COPynorm(i)).^2));
 
                     % Area of 95% Confidence Circle
 
-                    % (Notes) Finds the area of a circle that includes 95% 
-                    % of radii(COPradius). This is a one sided test so the 
-                    % z score has a value of 1.645. It assumes a normal 
+                    % (Notes) Finds the area of a circle that includes 95%
+                    % of radii(COPradius). This is a one sided test so the
+                    % z score has a value of 1.645. It assumes a normal
                     % distribution of radii, as does Prieto. However the
-                    % distribution of radii is not normally distributed. 
+                    % distribution of radii is not normally distributed.
                     % For now use 1.645 from the normal pdf. Chi-square pdf
                     % needed?
 
@@ -124,8 +124,8 @@ for ind_files = 1:length(files)
 
                     prieto.f=3;
 
-                    % (Notes) Prieto has missed squaring the sum of the 
-                    % first two terms in his equation(16) page 959. This 
+                    % (Notes) Prieto has missed squaring the sum of the
+                    % first two terms in his equation(16) page 959. This
                     % equation is actually from Sokal and Rohlf (1995).
 
                     prieto.d = sqrt((sAP^2 + sML^2)^2 - 4*(sAP^2*sML^2 - sAPML^2));
@@ -141,13 +141,13 @@ for ind_files = 1:length(files)
 
                     %% Frequency Domain Analyses
 
-                    % (Notes) Prieto, et al (1996) used a sinusiodal 
-                    % multitaper method with eight tapers for their 
-                    % spectral analyses. They cite Minimum Bias Multiple 
-                    % Taper Spectral Emission by Riedel and Sidorenko 
-                    % (1995). It was published in the IEEE Transactions on 
+                    % (Notes) Prieto, et al (1996) used a sinusiodal
+                    % multitaper method with eight tapers for their
+                    % spectral analyses. They cite Minimum Bias Multiple
+                    % Taper Spectral Emission by Riedel and Sidorenko
+                    % (1995). It was published in the IEEE Transactions on
                     % Signal Processing 43(1) 188-195. This implementation
-                    % follows the equation on page 188, in paragraph 4 of 
+                    % follows the equation on page 188, in paragraph 4 of
                     % Riedel and Sidorenko.
 
                     N = length(COPradius);
@@ -164,21 +164,21 @@ for ind_files = 1:length(files)
 
                     Spectrum = TransformFFT(1:length(TransformFFT)/2).*conj(TransformFFT(1:length(TransformFFT)/2));
 
-                    % (Notes) This is why the index starts at 3 (so points 
-                    % 1 and 2 are removed) The big difference is here a 
-                    % Hanning window is used, whereas Prieto used a 
+                    % (Notes) This is why the index starts at 3 (so points
+                    % 1 and 2 are removed) The big difference is here a
+                    % Hanning window is used, whereas Prieto used a
                     % multitaper method. (BS) To make sense of this comment
-                    % look ahead to the Median Frequency calculation about 
+                    % look ahead to the Median Frequency calculation about
                     % 40 lines down. That is where the index starts at 3.
 
                     f = (.5/length(Spectrum))*sampfreq*(1:length(Spectrum));
 
                     % Median Frequency
 
-                    % (Notes) Prieto discards the first two points in the 
-                    % spectra and only uses data to 5 Hz. We have 
-                    % frequencies up at 7, so cutoff here is at 10 Hz - to 
-                    % avoid 60 Hz noise when doing power spectral 
+                    % (Notes) Prieto discards the first two points in the
+                    % spectra and only uses data to 5 Hz. We have
+                    % frequencies up at 7, so cutoff here is at 10 Hz - to
+                    % avoid 60 Hz noise when doing power spectral
                     % densities. See left-top of p 960
 
                     freqindex = 1;
@@ -205,35 +205,35 @@ for ind_files = 1:length(files)
                     %% Create Output
 
                     % RMS for ML
-                    data.res.COP.(files{ind_files}).(objs{ind_obj}).data.(sigs{ind_sig}).average = rms_x;
+                    data.res.COP.(files{ind_files}).(objs{ind_obj}).data.(sigs{ind_sig}).rms_x = rms_x;
                     % RMS for AP
-                    data.res.COP.(files{ind_files}).(objs{ind_obj}).data.(sigs{ind_sig}).average = rms_y;
+                    data.res.COP.(files{ind_files}).(objs{ind_obj}).data.(sigs{ind_sig}).rms_y = rms_y;
                     % RMS for radial
-                    data.res.COP.(files{ind_files}).(objs{ind_obj}).data.(sigs{ind_sig}).average = rms_d;
-                    
+                    data.res.COP.(files{ind_files}).(objs{ind_obj}).data.(sigs{ind_sig}).rms_d = rms_d;
+
                     % Range AP
-                    data.res.COP.(files{ind_files}).(objs{ind_obj}).data.(sigs{ind_sig}).average = rangeap;
+                    data.res.COP.(files{ind_files}).(objs{ind_obj}).data.(sigs{ind_sig}).range_y = range_y;
                     % Range ML
-                    data.res.COP.(files{ind_files}).(objs{ind_obj}).data.(sigs{ind_sig}).average = rangeml;
+                    data.res.COP.(files{ind_files}).(objs{ind_obj}).data.(sigs{ind_sig}).range_x = range_x;
 
                     % Sway path along ML
-                    data.res.COP.(files{ind_files}).(objs{ind_obj}).data.(sigs{ind_sig}).average = swaypathx;
+                    data.res.COP.(files{ind_files}).(objs{ind_obj}).data.(sigs{ind_sig}).swaypath_x = swaypath_x;
                     % Sway path along AP
-                    data.res.COP.(files{ind_files}).(objs{ind_obj}).data.(sigs{ind_sig}).average = swaypathy;
+                    data.res.COP.(files{ind_files}).(objs{ind_obj}).data.(sigs{ind_sig}).swaypath_y = swaypath_y;
                     % Sway path along radial
-                    data.res.COP.(files{ind_files}).(objs{ind_obj}).data.(sigs{ind_sig}).average = swaypathd;
+                    data.res.COP.(files{ind_files}).(objs{ind_obj}).data.(sigs{ind_sig}).swaypath_d = swaypath_d;
                     % Sway path tangential
-                    data.res.COP.(files{ind_files}).(objs{ind_obj}).data.(sigs{ind_sig}).average = swaypathtangential;
+                    data.res.COP.(files{ind_files}).(objs{ind_obj}).data.(sigs{ind_sig}).swaypath_tangential = swaypath_tangential;
 
                     % Circle area
-                    data.res.COP.(files{ind_files}).(objs{ind_obj}).data.(sigs{ind_sig}).average = Acir;
+                    data.res.COP.(files{ind_files}).(objs{ind_obj}).data.(sigs{ind_sig}).area_circle = Acir;
                     % Ellipse area
-                    data.res.COP.(files{ind_files}).(objs{ind_obj}).data.(sigs{ind_sig}).average = prieto.ellipA;
+                    data.res.COP.(files{ind_files}).(objs{ind_obj}).data.(sigs{ind_sig}).area_ellipse = prieto.ellipA;
 
                     % Median frequency
-                    data.res.COP.(files{ind_files}).(objs{ind_obj}).data.(sigs{ind_sig}).average = medianfreq;
+                    data.res.COP.(files{ind_files}).(objs{ind_obj}).data.(sigs{ind_sig}).freq_median = medianfreq;
                     % Frequency dispersion
-                    data.res.COP.(files{ind_files}).(objs{ind_obj}).data.(sigs{ind_sig}).average = freqdisp;
+                    data.res.COP.(files{ind_files}).(objs{ind_obj}).data.(sigs{ind_sig}).freq_dispersion = freqdisp;
 
                 end
 

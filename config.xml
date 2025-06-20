@@ -1,31 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
     <configuration>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\\config.xml</configuration>
-    <directory>C:\Users\bense\OneDrive - Drexel University\TKA Study (UTMB)\Actigraph Data 2</directory>
-    <database>C:\Users\bense\Downloads\OneDrive_2025-02-05</database>
+    <directory>C:\Users\bense\Downloads\OneDrive_2025-02-05\Practice Data</directory>
+    <directory>C:\Users\bense\Drexel University\Na Research Lab - 030 NHATS\030 NHATS\Data</directory>
+    <database>C:\Users\bense\Drexel University\Na Research Lab - 030 NHATS\030 NHATS</database>
     <options>
-        <filesload>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\Load</filesload>
-        <filesload>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App Beta\Load</filesload>
-        <filesload>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\Load</filesload>
-        <filesload>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App Beta\Load</filesload>
+        <filesload>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App\Load</filesload>
+        <filesload>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App Beta\Load</filesload>
+        <filesload>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App\Load</filesload>
+        <filesload>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App Beta\Load</filesload>
         <filesprocess>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\Process</filesprocess>
-        <filesprocess>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App Beta\Process</filesprocess>
-        <filesprocess>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\Process</filesprocess>
-        <filesprocess>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App Beta\Process</filesprocess>
-        <filesanalysis>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\Analysis</filesanalysis>
-        <filesanalysis>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App Beta\Analysis</filesanalysis>
-        <filesanalysis>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\Analysis</filesanalysis>
+        <filesprocess>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App Beta\Process</filesprocess>
+        <filesprocess>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App\Process</filesprocess>
+        <filesprocess>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App Beta\Process</filesprocess>
+        <filesanalysis>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App\Analysis</filesanalysis>
+        <filesanalysis>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App Beta\Analysis</filesanalysis>
+        <filesanalysis>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App\Analysis</filesanalysis>
         <filesanalysis>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App Beta\Analysis</filesanalysis>
-        <filesreview>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\Review</filesreview>
-        <filesreview>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App Beta\Review</filesreview>
-        <filesreview>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\Review</filesreview>
-        <filesreview>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App Beta\Review</filesreview>
+        <filesreview>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App\Review</filesreview>
+        <filesreview>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App Beta\Review</filesreview>
+        <filesreview>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App\Review</filesreview>
+        <filesreview>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App Beta\Review</filesreview>
         <filetypes>
             <AllFiles>AllFiles</AllFiles>
             <agd>Actigraph</agd>
+            <csv>Axivity</csv>
             <csv>BertecCDP</csv>
             <csv>DAMVi</csv>
             <csv>Delsys</csv>
+            <csv>NHATSAcceleration</csv>
             <csv>Actigraph</csv>
             <csv>Basic</csv>
             <csv>Pfizer01</csv>
@@ -55,10 +58,7 @@
         <process>APDM</process>
         <process>APDMSpatiotemporalTurns</process>
         <process>Eventing</process>
-        <process>Groupings</process>
-        <process>Merge</process>
         <process>Segment</process>
-        <process>Surrogation</process>
         <process>Treatment</process>
         <analysis>01</analysis>
         <analysis>APDM</analysis>
