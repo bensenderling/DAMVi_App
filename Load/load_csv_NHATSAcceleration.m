@@ -40,10 +40,10 @@ sigNames = fields(~contains(fields, 'mean'));
 accelNames = fields(contains(fields, 'mean'));
 
 % The same object name is used for all the sample persons.
-object = ['Round_' sigNames{2}(3:strfind(sigNames{2}, 'dday') - 1)];
+%object = ['Round_' sigNames{2}(3:strfind(sigNames{2}, 'dday') - 1)];
 
-N = 10;%size(data, 1);
-M = 10;%numel(unique(data.spid));
+N = size(data, 1);
+M = numel(unique(data.spid));
 
 activName = [sigNames{2}(1:strfind(sigNames{2}, 'dday') - 1)];
 
