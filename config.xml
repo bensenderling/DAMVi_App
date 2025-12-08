@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
     <configuration>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\\config.xml</configuration>
-    <directory>C:\Users\bense\Downloads\OneDrive_2025-02-05\Practice Data</directory>
-    <directory>C:\Users\bense\Drexel University\Na Research Lab - 030 NHATS\030 NHATS\Data</directory>
+    <directory>C:\Users\bense\Drexel University\Na Research Lab - 022 Dementia and Mobility\022 Dementia and Mobility\Data</directory>
     <database>C:\Users\bense\Drexel University\Na Research Lab - 030 NHATS\030 NHATS</database>
     <options>
         <filesload>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App\Load</filesload>
