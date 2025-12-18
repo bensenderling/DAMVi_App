@@ -1,17 +1,17 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration file="C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\BAR_APP.prj" location="C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App" name="BAR_APP" target="target.ezdeploy.standalone" target-name="Application Compiler">
-    <param.appname>BAR_APP</param.appname>
+  <configuration file="E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App\BAR_APP.prj" location="E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App" name="BAR_APP" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>DAMViApp</param.appname>
     <param.icon />
     <param.icons />
-    <param.version>1.4</param.version>
+    <param.version>2.0</param.version>
     <param.authnamewatermark>Ben Senderling</param.authnamewatermark>
-    <param.email>bms322@drexel.edu</param.email>
+    <param.email>bensenderling@gmail.com</param.email>
     <param.company>Drexel University</param.company>
     <param.summary>This app is designed to help streamline data analysis, management, visualization, review and reporting.</param.summary>
     <param.description>The app has a main core that uses modules to perform various tasks. These includes processing, analyzing, reviewing and reporting. They work around data types designed for specific files from specific equipment. Such as TRC files from motion capture systems or generic csv files with headers. Those modules can be added on by other users without needing an in-depth understanding of MATLAB or app design.</param.description>
-    <param.screenshot />
+    <param.screenshot>${PROJECT_ROOT}\Logo.png</param.screenshot>
     <param.guid />
-    <param.installpath.string>\Drexel University\BAR_APP\</param.installpath.string>
+    <param.installpath.string>\Drexel University\DAMViApp\</param.installpath.string>
     <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
     <param.logo />
     <param.install.notes />
@@ -45,7 +45,6 @@
     <unset>
       <param.icon />
       <param.icons />
-      <param.screenshot />
       <param.guid />
       <param.installpath.string />
       <param.installpath.combo />
@@ -76,33 +75,89 @@
     <fileset.resources />
     <fileset.package />
     <fileset.depfun>
-      <file>${PROJECT_ROOT}\createConfig.m</file>
+      <file>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App Beta\Analysis\analysis_Actigraph.m</file>
+      <file>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App Beta\Analysis\analysis_CorrelationDimension.mlapp</file>
+      <file>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App Beta\Load\load_csv_Actigraph.m</file>
+      <file>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App Beta\Load\load_csv_Basic.m</file>
+      <file>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App Beta\Load\load_csv_Pfizer01.m</file>
+      <file>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App Beta\Load\load_csv_Pfizer02.m</file>
+      <file>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App Beta\Load\load_png_WIN.m</file>
+      <file>${PROJECT_ROOT}\Analysis\analysis_ContinuousSignalMetrics.m</file>
+      <file>${PROJECT_ROOT}\Analysis\analysis_COP.m</file>
+      <file>${PROJECT_ROOT}\Analysis\analysis_CrossSignalMetrics.mlapp</file>
+      <file>${PROJECT_ROOT}\Analysis\analysis_DFA.mlapp</file>
+      <file>${PROJECT_ROOT}\Analysis\analysis_Entropy.mlapp</file>
+      <file>${PROJECT_ROOT}\Analysis\analysis_FNN.mlapp</file>
+      <file>${PROJECT_ROOT}\Analysis\analysis_LyE.mlapp</file>
+      <file>${PROJECT_ROOT}\Analysis\analysis_RQA.mlapp</file>
+      <file>${PROJECT_ROOT}\Load\load_agd_Actigraph.m</file>
+      <file>${PROJECT_ROOT}\Load\load_AllFiles_AllFiles.m</file>
+      <file>${PROJECT_ROOT}\Load\load_csv_Axivity.m</file>
+      <file>${PROJECT_ROOT}\Load\load_csv_BertecCDP.m</file>
+      <file>${PROJECT_ROOT}\Load\load_csv_DAMVi.m</file>
+      <file>${PROJECT_ROOT}\Load\load_csv_Delsys.m</file>
+      <file>${PROJECT_ROOT}\Load\load_csv_NHATSAcceleration.m</file>
+      <file>${PROJECT_ROOT}\Load\load_gt3x_Actigraph.m</file>
+      <file>${PROJECT_ROOT}\Load\load_h5_APDM1Raw.m</file>
+      <file>${PROJECT_ROOT}\Load\load_h5_APDM1RawLumbar.m</file>
+      <file>${PROJECT_ROOT}\Load\load_h5_APDM1RawRightFoot.m</file>
+      <file>${PROJECT_ROOT}\Load\load_h5_APDM1RawUpperLeg.m</file>
+      <file>${PROJECT_ROOT}\Load\load_h5_APDM2Results.m</file>
+      <file>${PROJECT_ROOT}\Load\load_h5_APDM3Qua.m</file>
+      <file>${PROJECT_ROOT}\Load\load_h5_APDM3QuaLumbar.m</file>
+      <file>${PROJECT_ROOT}\Load\load_h5_APDM3QuaRightFoot.m</file>
+      <file>${PROJECT_ROOT}\Load\load_m_MATLAB.m</file>
+      <file>${PROJECT_ROOT}\Load\load_mat_DAMVi.m</file>
+      <file>${PROJECT_ROOT}\Load\load_mat_OpenCap.m</file>
+      <file>${PROJECT_ROOT}\Load\load_mat_QTM.m</file>
+      <file>${PROJECT_ROOT}\Load\load_mat_QTMDelsysVL.m</file>
+      <file>${PROJECT_ROOT}\Load\load_mlapp_MATLAB.m</file>
+      <file>${PROJECT_ROOT}\Load\load_mot_OpenSim.m</file>
+      <file>${PROJECT_ROOT}\Load\load_qtm_QTM.m</file>
+      <file>${PROJECT_ROOT}\Load\load_txt_V3D.m</file>
+      <file>${PROJECT_ROOT}\Load\load_xlsx_Medoc.m</file>
+      <file>${PROJECT_ROOT}\Logo.png</file>
+      <file>${PROJECT_ROOT}\Process\process_Eventing.mlapp</file>
       <file>${PROJECT_ROOT}\Process\process_Groupings.mlapp</file>
       <file>${PROJECT_ROOT}\Process\process_Merge.mlapp</file>
+      <file>${PROJECT_ROOT}\Process\process_Segment.mlapp</file>
+      <file>${PROJECT_ROOT}\Process\process_Treatment.mlapp</file>
+      <file>${PROJECT_ROOT}\Process\process_Treatment_AddSignals.mlapp</file>
+      <file>${PROJECT_ROOT}\Process\process_Treatment_LowPass.mlapp</file>
+      <file>${PROJECT_ROOT}\Process\process_Treatment_Resample.mlapp</file>
+      <file>${PROJECT_ROOT}\Process\process_Treatment_ResidualAnalysis.mlapp</file>
+      <file>${PROJECT_ROOT}\Process\smoothWinter.m</file>
+      <file>${PROJECT_ROOT}\Review\figure_1D.m</file>
+      <file>${PROJECT_ROOT}\Review\figure_2D.m</file>
+      <file>${PROJECT_ROOT}\Review\figure_3D.m</file>
+      <file>${PROJECT_ROOT}\Review\figure_FNN.m</file>
+      <file>${PROJECT_ROOT}\Review\figure_Histogram.m</file>
+      <file>${PROJECT_ROOT}\Review\figure_Image.m</file>
+      <file>${PROJECT_ROOT}\Review\figure_RQA.m</file>
+      <file>${PROJECT_ROOT}\Review\figure_TimeLag.m</file>
+      <file>${PROJECT_ROOT}\Review\plot_DFA.m</file>
+      <file>${PROJECT_ROOT}\Review\plot_MFDFA.m</file>
+      <file>${PROJECT_ROOT}\Review\review_General.mlapp</file>
+      <file>${PROJECT_ROOT}\Review\review_QC.mlapp</file>
+      <file>${PROJECT_ROOT}\Subroutines\createConfig.m</file>
+      <file>${PROJECT_ROOT}\Subroutines\FilterM_20Jul2011\FiltFiltM.m</file>
+      <file>${PROJECT_ROOT}\Subroutines\Introduction_to_MFDFA4\MFDFA1.m</file>
+      <file>${PROJECT_ROOT}\Subroutines\load_data.m</file>
+      <file>${PROJECT_ROOT}\Subroutines\run_analysis.m</file>
+      <file>${PROJECT_ROOT}\Subroutines\run_process.m</file>
+      <file>${PROJECT_ROOT}\Subroutines\run_review.m</file>
     </fileset.depfun>
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\BAR_APP\for_testing" name="splash.png" optional="false">C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\BAR_APP\for_testing\splash.png</file>
-      <file location="${PROJECT_ROOT}\BAR_APP\for_testing" name="readme.txt" optional="true">C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\BAR_APP\for_testing\readme.txt</file>
-      <file location="${PROJECT_ROOT}\BAR_APP\for_testing" name="BAR_APP.exe" optional="false">C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\BAR_APP\for_testing\BAR_APP.exe</file>
+      <file location="${PROJECT_ROOT}\BAR_APP\for_testing" name="splash.png" optional="false">E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App\BAR_APP\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\BAR_APP\for_testing" name="DAMViApp.exe" optional="false">E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App\BAR_APP\for_testing\DAMViApp.exe</file>
+      <file location="${PROJECT_ROOT}\BAR_APP\for_testing" name="readme.txt" optional="true">E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App\BAR_APP\for_testing\readme.txt</file>
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>C:\Program Files\MATLAB\R2021b</root>
+      <root>C:\Program Files\MATLAB\R2023a</root>
       <toolboxes>
-        <toolbox name="matlabcoder" />
-        <toolbox name="gpucoder" />
         <toolbox name="neuralnetwork" />
       </toolboxes>
-      <toolbox>
-        <matlabcoder>
-          <enabled>true</enabled>
-        </matlabcoder>
-      </toolbox>
-      <toolbox>
-        <gpucoder>
-          <enabled>true</enabled>
-        </gpucoder>
-      </toolbox>
       <toolbox>
         <neuralnetwork>
           <enabled>true</enabled>

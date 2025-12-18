@@ -1,25 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
-    <configuration>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\\config.xml</configuration>
+    <configuration>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App\\config.xml</configuration>
     <directory>C:\Users\bense\Drexel University\Na Research Lab - 022 Dementia and Mobility\022 Dementia and Mobility\Data</directory>
-    <database>C:\Users\bense\Drexel University\Na Research Lab - 030 NHATS\030 NHATS</database>
+    <database>C:\Users\bense\Drexel University\Na Research Lab - 022 Dementia and Mobility\022 Dementia and Mobility</database>
     <options>
-        <filesload>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App\Load</filesload>
-        <filesload>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App Beta\Load</filesload>
-        <filesload>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App\Load</filesload>
-        <filesload>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App Beta\Load</filesload>
-        <filesprocess>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\Process</filesprocess>
-        <filesprocess>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App Beta\Process</filesprocess>
-        <filesprocess>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App\Process</filesprocess>
-        <filesprocess>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App Beta\Process</filesprocess>
-        <filesanalysis>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App\Analysis</filesanalysis>
-        <filesanalysis>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App Beta\Analysis</filesanalysis>
-        <filesanalysis>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App\Analysis</filesanalysis>
-        <filesanalysis>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App Beta\Analysis</filesanalysis>
-        <filesreview>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App\Review</filesreview>
-        <filesreview>C:\Users\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App Beta\Review</filesreview>
-        <filesreview>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App\Review</filesreview>
-        <filesreview>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App Beta\Review</filesreview>
+        <filesload></filesload>
+        <filesprocess></filesprocess>
+        <filesanalysis></filesanalysis>
+        <filesreview></filesreview>
         <filetypes>
             <AllFiles>AllFiles</AllFiles>
             <agd>Actigraph</agd>
@@ -30,23 +18,15 @@
             <csv>NHATSAcceleration</csv>
             <csv>Actigraph</csv>
             <csv>Basic</csv>
-            <csv>Pfizer01</csv>
-            <csv>Pfizer02</csv>
             <gt3x>Actigraph</gt3x>
             <h5>APDM0Meta</h5>
             <h5>APDM1Raw</h5>
-            <h5>APDM1RawLumbar</h5>
-            <h5>APDM1RawRightFoot</h5>
-            <h5>APDM1RawUpperLeg</h5>
             <h5>APDM2Results</h5>
             <h5>APDM3Qua</h5>
-            <h5>APDM3QuaLumbar</h5>
-            <h5>APDM3QuaRightFoot</h5>
             <m>MATLAB</m>
             <mat>DAMVi</mat>
             <mat>OpenCap</mat>
             <mat>QTM</mat>
-            <mat>QTMDelsysVL</mat>
             <mlapp>MATLAB</mlapp>
             <mot>OpenSim</mot>
             <png>WIN</png>
@@ -55,63 +35,35 @@
             <xlsx>Medoc</xlsx>
         </filetypes>
         <process>APDM</process>
-        <process>APDMSpatiotemporalTurns</process>
         <process>Eventing</process>
         <process>Segment</process>
         <process>Treatment</process>
-        <analysis>01</analysis>
-        <analysis>APDM</analysis>
-        <analysis>APDMResultsFigures</analysis>
+        <treatment>Add signals</treatment>
+        <treatment>Low-pass filter</treatment>
+        <treatment>Resample</treatment>
+        <treatment>Residual analysis</treatment>
         <analysis>Actigraph</analysis>
-        <analysis>COP</analysis>
-        <analysis>CSM</analysis>
         <analysis>ContinuousSignalMetrics</analysis>
+        <analysis>COP</analysis>
         <analysis>CorrelationDimension</analysis>
         <analysis>CrossSignalMetrics</analysis>
+        <analysis>Delsys</analysis>
         <analysis>DFA</analysis>
-        <analysis>DelsysApdmSynch</analysis>
         <analysis>Entropy</analysis>
-        <analysis>Example</analysis>
-        <analysis>ExampleApp</analysis>
         <analysis>FNN</analysis>
         <analysis>LyE</analysis>
-        <analysis>MATLABDependencies</analysis>
-        <analysis>MocapApdmAlignment</analysis>
-        <analysis>MocapApdmAlignment2</analysis>
-        <analysis>QST</analysis>
-        <analysis>QSTTraining</analysis>
         <analysis>RQA</analysis>
-        <analysis>SpatiotemporalAlignment</analysis>
-        <analysis>TimeLag</analysis>
-        <analysis>V3DAPDMAlignment</analysis>
-        <analysis>V3DAPDMAlignment1k</analysis>
-        <analysis>V3DAPDMAlignment2PelvisAcc</analysis>
-        <analysis>V3DAPDMAlignment3</analysis>
-        <analysis>V3DAPDMAlignment4RightFoot</analysis>
-        <analysis>V3DAPDMAlignment5aRightFoot</analysis>
-        <analysis>V3DAPDMAlignment5bRightFoot</analysis>
-        <review>APDMTurns</review>
-        <review>APDMTurns2</review>
-        <review>Anomaly</review>
         <review>General</review>
         <review>QC</review>
         <figure>1D</figure>
         <figure>2D</figure>
         <figure>3D</figure>
-        <figure>FNN</figure>
-        <figure>Histogram</figure>
-        <figure>RQA</figure>
         <figure>TimeLag</figure>
+        <figure>FNN</figure>
+        <figure>RQA</figure>
+        <figure>Histogram</figure>
         <figure>Image</figure>
-        <treatment>AddSignals</treatment>
-        <treatment>LowPass</treatment>
-        <treatment>Resample</treatment>
-        <treatment>SmoothWinter</treatment>
     </options>
-    <treatment_general>Low-pass Filter</treatment_general>
-    <treatment_general>process_Treatment_LowPass</treatment_general>
-    <treatment_general>Resample</treatment_general>
-    <treatment_general>process_Treatment_Resample</treatment_general>
     <export>General</export>
     <export>BU Caltesting</export>
     <export>Tables</export>

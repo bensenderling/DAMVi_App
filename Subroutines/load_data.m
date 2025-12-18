@@ -1,4 +1,15 @@
 function data = load_data(fileExtension, equipment, loadFile)
+% results = load_data(fileExtension, equipment, loadFile)
+% inputs  - fileExtension, the file extension selected in the DAMVi app.
+%         - equipment, the equipment type selected in the DAMVi app.
+%         - loadFile, the full file path and name with the data to be loaded.
+% Remarks
+% - This function became required when MATLAB stopped allowing code to compile with the feval function. It was deemed a security flaw
+%   because any text could be run as code by an unsuspecting user. This function keeps the load routines in a single place where
+%   they can be modified or added to without going into the larger app code.
+% Future Work
+% - Exception handling could be useful here, but is currently handled within the DAMVi app.
+% Dec 2024 - Created by Ben Senderling, bensenderling@gmail.com
 
 switch fileExtension
     case 'AllFiles'
