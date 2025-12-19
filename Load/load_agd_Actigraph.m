@@ -8,7 +8,7 @@ function dataout = load_agd_Actigraph(file)
 %   way to load them directly into MATLAB.
 % Future Work
 % - Possibly these files could be read directly into MATLAB.
-% Aug 2022 - Created by Ben Senderling, bsender@bu.edu
+% Aug 2022 - Created by Ben Senderling, bensenderling@gmail.com
 %% Begin Code
 
 dataout = [];

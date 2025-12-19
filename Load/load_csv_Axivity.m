@@ -1,15 +1,10 @@
 function csv_Axivity = load_csv_Axivity(file)
-% xlsx_BAR = load_csv_AxivityResampled(file)
+% csv_Axivity = load_csv_Axivity(file)
 % inputs  - file, the csv file to load.
-% outputs - csv_AxivityResampled, the BAR App data structure recreated from the 
-%                          csv file.
+% outputs - csv_Axivity, the activity data in a DAMVi data structure.
 % Remarks
-% - This load function reads in data from most of the different Bertec CDP 
-%   CSV files. The Info files are not loaded as the contian participant 
-%   information without any additional useful information.
-% - All of the Bertec CDP CSV files follow a standard CSV format and are 
-%   not very long. This allows the same readtable function to be used for
-%   all of them.
+% - This load function reads in data from most of the different Axivity 
+%   CSV files. 
 % Future Work
 % - This function is just starting to be used. It is likely errors and 
 %   issues will arise as it is used more.
