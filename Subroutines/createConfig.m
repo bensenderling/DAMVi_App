@@ -35,6 +35,7 @@ config.options.filetypes.csv = {'Axivity', 'BertecCDP', 'DAMVi', 'Delsys', 'NHAT
 config.options.filetypes.gt3x = {'Actigraph'};
 config.options.filetypes.h5 = {'APDM0Meta', 'APDM1Raw', 'APDM2Results', 'APDM3Qua', };
 config.options.filetypes.m = {'MATLAB'};
+config.options.filetypes.m4a = {'Microsoft'};
 config.options.filetypes.mat = {'DAMVi', 'OpenCap', 'QTM'};
 config.options.filetypes.mlapp = {'MATLAB'};
 config.options.filetypes.mot = {'OpenSim'};

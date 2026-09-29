@@ -74,6 +74,11 @@ switch fileExtension
             case 'MATLAB'
                 data = load_m_MATLAB(loadFile);
         end
+    case 'm4a'
+        switch equipment
+            case 'Microsoft'
+                data = load_m4a_Microsoft(loadFile);
+        end
     case 'mat'
         switch equipment
             case 'DAMVi'

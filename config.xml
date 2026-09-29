@@ -1,58 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <struct>
-    <configuration>E:\bense\OneDrive\Documents\Academic\Projects\016 DAMVi App\Code\DAMVi_App\\config.xml</configuration>
-    <directory>C:\Users\bense\Drexel University\Na Research Lab - 022 Dementia and Mobility\022 Dementia and Mobility\Data</directory>
-    <database>C:\Users\bense\Drexel University\Na Research Lab - 022 Dementia and Mobility\022 Dementia and Mobility</database>
+    <configuration>C:\Users\bms322\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\\config.xml</configuration>
+    <directory>C:\Users\bms322\Drexel University\Na Research Lab - 022 Dementia and Mobility\022 Dementia and Mobility\Data</directory>
+    <database>C:\Users\bms322\Drexel University\Na Research Lab - 022 Dementia and Mobility\022 Dementia and Mobility</database>
     <options>
-        <filesload></filesload>
-        <filesprocess></filesprocess>
-        <filesanalysis></filesanalysis>
-        <filesreview></filesreview>
+        <filesload>C:\Users\bms322\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\Load</filesload>
+        <filesprocess>C:\Users\bms322\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\Process</filesprocess>
+        <filesanalysis>C:\Users\bms322\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\Analysis</filesanalysis>
+        <filesreview>C:\Users\bms322\Documents\Academic\Projects\016 DAMVi\Code\DAMVi_App\Review</filesreview>
         <filetypes>
             <AllFiles>AllFiles</AllFiles>
             <agd>Actigraph</agd>
+            <csv>Actigraph</csv>
             <csv>Axivity</csv>
             <csv>BertecCDP</csv>
             <csv>DAMVi</csv>
             <csv>Delsys</csv>
             <csv>NHATSAcceleration</csv>
-            <csv>Actigraph</csv>
-            <csv>Basic</csv>
             <gt3x>Actigraph</gt3x>
             <h5>APDM0Meta</h5>
             <h5>APDM1Raw</h5>
+            <h5>APDM1RawLumbar</h5>
+            <h5>APDM1RawRightFoot</h5>
+            <h5>APDM1RawUpperLeg</h5>
             <h5>APDM2Results</h5>
             <h5>APDM3Qua</h5>
+            <h5>APDM3QuaLumbar</h5>
+            <h5>APDM3QuaRightFoot</h5>
             <m>MATLAB</m>
+            <m4a>Microsoft</m4a>
             <mat>DAMVi</mat>
             <mat>OpenCap</mat>
             <mat>QTM</mat>
+            <mat>QTMDelsysVL</mat>
             <mlapp>MATLAB</mlapp>
             <mot>OpenSim</mot>
-            <png>WIN</png>
             <qtm>QTM</qtm>
             <txt>V3D</txt>
             <xlsx>Medoc</xlsx>
         </filetypes>
-        <process>APDM</process>
         <process>Eventing</process>
+        <process>Groupings</process>
+        <process>Merge</process>
         <process>Segment</process>
+        <process>Surrogation</process>
         <process>Treatment</process>
         <treatment>Add signals</treatment>
         <treatment>Low-pass filter</treatment>
         <treatment>Resample</treatment>
         <treatment>Residual analysis</treatment>
-        <analysis>Actigraph</analysis>
-        <analysis>ContinuousSignalMetrics</analysis>
         <analysis>COP</analysis>
-        <analysis>CorrelationDimension</analysis>
+        <analysis>CSM</analysis>
+        <analysis>ContinuousSignalMetrics</analysis>
         <analysis>CrossSignalMetrics</analysis>
-        <analysis>Delsys</analysis>
         <analysis>DFA</analysis>
         <analysis>Entropy</analysis>
+        <analysis>Example</analysis>
+        <analysis>ExampleApp</analysis>
         <analysis>FNN</analysis>
         <analysis>LyE</analysis>
+        <analysis>MATLABDependencies</analysis>
+        <analysis>QST</analysis>
+        <analysis>QSTTraining</analysis>
         <analysis>RQA</analysis>
+        <analysis>TimeLag</analysis>
         <review>General</review>
         <review>QC</review>
         <figure>1D</figure>
