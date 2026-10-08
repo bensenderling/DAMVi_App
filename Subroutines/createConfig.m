@@ -7,11 +7,13 @@ function createConfig(filepath)
 % time.
 % Future Work
 % - As some of the method choices in the app are made more dynamic these options will need to change.
-% Nov 2022 - Created by Ben Senderling, bsender@bu.edu
-% Dec 2022 - Modified by Ben Senderling, bsender@bu.edu
-%          - Made a number of the fields dynamically created by the app so here they only need to be initiallized.
+% Oct 2026 - Modified by Ben Senderling, bensenderling@gmail.com
+%          - Commented out APDM for Processing methods due to disuse.
 % Jan 2023 - Modified by Ben Senderling, bsender@bu.edu
 %          - Added a field point to the location of this configuration file.
+% Dec 2022 - Modified by Ben Senderling, bsender@bu.edu
+%          - Made a number of the fields dynamically created by the app so here they only need to be initiallized.
+% Nov 2022 - Created by Ben Senderling, bsender@bu.edu
 
 % Create the structure that will be the conf file.
 config = struct;
@@ -46,7 +48,8 @@ config.options.filetypes.xlsx = {'Medoc'};
 
 % Available processing modules.
 config.options.process = {...
-    'APDM',...
+    %'APDM',... I'm not sure this is used anymore and shouldn't be part of
+    %the app.
     'Eventing',...
     'Segment',...
     'Treatment'...
